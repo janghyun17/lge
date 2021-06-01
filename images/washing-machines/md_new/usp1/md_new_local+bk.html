@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>LG전자 : 세탁기 | 모델No</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0"/>
+	<link rel="shortcut icon" href="./css/lg_favicon.ico" />
+
+	<!-- 5.0에 있는것으로 확인 -->
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/jquery.event.move.min.js"></script>
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/jquery.twentytwenty.min.js"></script>
+
+	<!-- 신규로 필요함 -->
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/swiper.min.js"></script>
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/scrollmagic/minified/ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="../../../../html_component/pdp/assets/js/libs/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+
+	<!-- 5.0 common css -->
+	<link type="text/css" rel="stylesheet" href="../../../../lg5-common/css/reset.min.css">
+	<link type="text/css" rel="stylesheet" href="../../../../lg5-common/css/app.min.css">
+
+	<!-- 로컬작업용, 실 등록시엔 태그 내에 import -->
+	<script type="text/javascript" src="./md_new.js"></script>
+	<link type="text/css" rel="stylesheet" href="./md_new.css">
+	
+</head>
+
+<body>
+	<!-- header -->
+
+
+	<!-- content -->
+	<div id="contentWrap">
+		<div id="content" class="usp usp_module">
+			
+			<!-- 프린트 영역, 개발 ajax 교체영역 시작 -->
+			<div class="print-area" id="replaceBox">
+
+				<!-- ############################## 섹션별 관리자 등록하는 영역 ############################## -->
+				<div class="feature_usp">
+
+					<!-- TODO START : 삭제예정 -->
+					<div id="titlechart">
+						<div class="tab">
+							<div class="top">
+								<div class="logo"><b style="margin-right:-2px;">LG Objet Collection</b> 광파오븐</div>
+							</div>
+							<ul>
+								<li><a href="#">오브제컬렉션</a></li>
+								<li><a href="#">트리플 광파쿡</a></li>
+								<li><a href="#">자동요리</a></li>
+								<li><a href="#">인공지능쿡</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- TODO END : 삭제예정 -->
+
+					<!-- 코딩 템플릿부분 -->
+					<!-- 관리자등록 : 특장점01 -->
+					<div id="featureIdx01" class="microwaves_202103">
+						<!-- 이부분 코딩 작업 -->
+						<section id="scene0">
+							<div id="animate0">
+								<!-- animate_intro -->
+								<div class="animate_intro">
+									<p class="eyebrow">공간인테리어 가전</p>
+									<h2 class="title"><img src="./LGObjetCollection.svg" alt="LG Objet Collection"></h2>
+									<div class="visual_area">
+										<img src="./scene0_0_intro_m.jpg" class="only_m" alt="" />
+										<img src="./scene0_0_intro.jpg" class="only_pc" alt="" />
+									</div>
+									<div class="info">
+										<p>LG 오브제컬렉션 브랜드 사이트에서 다양한 소재와 색상을 입힌 나만의 LG 오브제컬렉션을 경험해보세요</p>
+										<a href="/lg-objet-collection/experience" target="_blank">체험하기</a>
+									</div>
+								</div>
+								<!-- //animate_intro -->
+								<!--
+								<div id="animate0_0">
+									<div class="title">
+										<span>처음 만나는 공간인테리어 가전</span>
+										<img src="./pc_scene0_0_01_ico.png" alt="LG Object Collection 로고">
+									</div>
+									<div class="info">
+										<p>LG 오브제컬렉션 브랜드 사이트에서 <br class="only_m"/>다양한 소재와 색상을 입힌 <br/><strong>나만의 LG 오브제컬렉션</strong>을 경험해보세요</p>
+										<a href="https://www.lgobjetcollection.co.kr/html_mobi/simulator_mbti.html?_ga=2.243471045.1377157126.1616737738-1919699259.1610550497" target="_blank">체험하기</a>
+									</div>
+									<img src="./mo_scene0_0_01.jpg" class="only_m" alt="">
+								</div>
+								-->
+								<div id="animate0_1">
+									<div class="title">
+										<h2>LG 오브제컬렉션 <br class="only_m"/>광파오븐</h2>
+									</div>
+									<ul class="product_list">
+										<li class="product_img1">
+											<img src="./mo_scene0_1_01.png" class="only_m" alt="식기세척기 이미지" />
+											<img src="./pc_scene0_1_01.png" class="only_pc" alt="식기세척기 이미지" />
+										</li>
+										<li class="product_img2">
+											<img src="./mo_scene0_1_02.png" class="only_m" alt="식기세척기 이미지" />
+											<img src="./pc_scene0_1_02.png" class="only_pc" alt="식기세척기 이미지" />
+										</li>
+										<li class="product_img3">
+											<img src="./mo_scene0_1_03.png" class="only_m" alt="식기세척기 이미지" />
+											<img src="./pc_scene0_1_03.png" class="only_pc" alt="식기세척기 이미지" />
+										</li>
+									</ul>
+									<ul class="interior_list">
+										<li class="interior_img1">
+											<img src="./mo_scene0_1_04.jpg" class="only_m" alt="">
+											<img src="./pc_scene0_1_04.jpg" class="only_pc" alt="">
+											<strong>자연이 묻어나는 <br class="only_m"/>내추럴 스타일</strong>
+										</li>
+										<li class="interior_img2">
+											<img src="./mo_scene0_1_05.jpg" class="only_m" alt="">
+											<img src="./pc_scene0_1_05.jpg" class="only_pc" alt="">
+											<strong>미니멀하고 시크한 <br class="only_m"/>모던 스타일</strong>
+										</li>
+										<li class="interior_img3">
+											<img src="./mo_scene0_1_06.jpg" class="only_m" alt="">
+											<img src="./pc_scene0_1_06.jpg" class="only_pc" alt="">
+											<strong>따뜻하고 감각적인 <br class="only_m"/>북유럽 스타일</strong>
+										</li>
+									</ul>
+								</div>
+								<div id="animate0_2">
+									<div class="title" data-role="ani"  data-hook="0.8" data-dur="60">
+										<span class="eyebrow">소재와 컬러</span>
+										<h2>당신의 공간을 위해 <br class="only_m"/>엄선한 컬러</h2>
+									</div>
+									<ul class="material_color_list">
+										<li>
+											<figure>
+												<img src="./mo_scene0_2_01.png" class="only_m" alt="">
+												<img src="./pc_scene0_2_01.png" class="only_pc" alt="">
+											</figure>
+											<dl>
+												<dt>미스트 베이지</dt>
+												<dd>
+													<strong>매트한 유리 소재</strong>
+													어느 공간에나 어울리는<br class="only_pc" />차분한 베이지 컬러
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<figure>
+												<img src="./mo_scene0_2_02.png" class="only_m" alt="">
+												<img src="./pc_scene0_2_02.png" class="only_pc" alt="">
+											</figure>
+											<dl>
+												<dt>솔리드 그린</dt>
+												<dd>
+													<strong>매트한 스테인리스</strong>
+													자연 그대로의 느낌을<br class="only_m" />
+													주는<br class="only_pc" /> 그린 컬러
+												</dd>
+											</dl>
+										</li>
+										<li>
+											<figure>
+												<img src="./mo_scene0_2_03.png" class="only_m" alt="">
+												<img src="./pc_scene0_2_03.png" class="only_pc" alt="">
+											</figure>
+											<dl>
+												<dt>솔리드 실버</dt>
+												<dd>
+													<strong>매트한 스테인리스</strong>
+													모든 공간과의 조화를 <br class="only_m" />
+													이루는 <br class="only_pc"/>실버 컬러
+												</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene1">
+							<div id="animate1">
+								<div id="animate1_1" class="title">
+									<h2>세상의 모든요리 <br class="only_m" />광파오븐 하나로</h2>
+								</div>
+								<ul id="animate1_2" class="anchor_list">
+									<li>
+										<a href="#" data-scroll="animate2">
+											<span>겉은 바삭 속은 촉촉하게</span>
+											<strong>트리플 광파쿡 + 스팀</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#" data-scroll="animate3">
+											<span>9가지 기능으로 다양하게</span>
+											<strong>272가지 자동요리</strong>
+										</a>
+									</li>
+									<li>
+										<a href="#" data-scroll="animate4">
+											<span>바코드 스캔으로 간편하게</span>
+											<strong>인공지능쿡</strong>
+										</a>
+									</li>
+								</ul>
+								<div id="animate1_3" class="image">
+									<img src="./mo_scene1_01.jpg" class="only_m" alt="">
+									<img src="./pc_scene1_01.jpg" class="only_pc" alt="">
+								</div>
+							</div>
+						</section>
+						<!-- //이부분 코딩 작업 -->
+					</div>
+					<!-- //관리자등록 : 특장점01 -->
+				
+					<!-- 관리자등록 : 특장점02 -->
+					<div id="featureIdx02" class="microwaves_202103">
+						<!-- 이부분 코딩 작업 -->
+						<section id="scene2">
+							<div id="animate2">
+								<div id="animate2_1" class="title" data-role="ani">
+									<span class="eyebrow">트리플 광파쿡 + 스팀</span>
+									<h2>겉은 바삭하고 속은<br class="only_m"/> 촉촉하게</h2>
+								</div>
+								<div id="animate2_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate2_2_video" src="./mo_scene2_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate2_2_video_pc" src="./pc_scene2_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+									<ol class="hidden">
+										<li>1 겉면을 바삭하게 해주는 메탈 히터</li>
+										<li>2 빛으로 속까지 빠르고 고르게 익혀주는 광파히터</li>
+										<li>3 모든 면을 균일하게 조리해 주는 열풍 히터</li>
+										<li>+ 촉촉함을 유지시켜 주는 스팀</li>
+									</ol>
+								</div>
+							</div>
+						</section>
+						<!-- //이부분 코딩 작업 -->
+					</div>
+					<!-- //관리자등록 : 특장점02 -->
+				
+					<!-- 관리자등록 : 특장점03 -->
+					<div id="featureIdx03" class="microwaves_202103">
+						<!-- 이부분 코딩 작업 -->
+						<section id="scene3">
+							<div id="animate3">
+								<div id="animate3_1" class="title" data-role="ani">
+									<span class="eyebrow">272가지 자동요리</span>
+									<h2>9가지 기능으로 <br />다양한 요리를 간편하게</h2>
+									<p class="info">찜부터 에어프라이까지 다양한 기능으로, <br class="only_m"/>메뉴 선택만 하면 <br class="only_pc">온도/시간 설정할 필요없이 <br class="only_m"/>간편하게 조리할 수 있습니다</p>
+								</div>
+								<div id="animate3_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate3_2_video" src="./mo_scene3_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate3_2_video_pc" src="./pc_scene3_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+								</div>
+								<div id="animate3_3" class="desc">
+									<ul class="bullet">
+										<li data-bullet="*">이해를 돕기 위해 연출된 이미지 입니다 </li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<!-- //이부분 코딩 작업 -->
+					</div>
+					<!-- //관리자등록 : 특장점03 -->
+		
+					<!-- 관리자등록 : 특장점04 -->
+					<div id="featureIdx04" class="microwaves_202103">
+						<!-- 이부분 코딩 작업 -->
+						<section id="scene4">
+							<div id="animate4">
+								<div id="animate4_1" class="title" data-role="ani">
+									<span class="eyebrow">인공지능쿡</span>
+									<h2>바코드를 찍으면 <br class="only_m"/>간편식이 더 맛있어지는</h2>
+									<p class="info">스마트폰 카메라로 간편식 제품 바코드를 찍으면 가장 맛있는 조리 모드와 시간을 자동으로 설정해<br class="only_pc" />바삭하고 노릇하게 간편식 요리를 완성해 줍니다</p>
+								</div>
+								<div id="animate4_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate4_2_video" src="./mo_scene4_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate4_2_video_pc" src="./pc_scene4_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+									<ol class="hidden">
+										<li>STEP 1. LG ThinQ 앱에서 광파오븐&gt;바코드 이아콘 선택 </li>
+										<li>STEP 2. 간편식 식품 바코드 촬영</li>
+										<li>STEP 3. 메뉴 확인 및 분량 선택 후 오븐으로 전송</li>
+									</ol>
+								</div>
+								<div id="animate4_3" class="desc">
+									<ul class="effect">
+										<li>
+											<span class="name">바삭함</span>
+											<em class="num"><strong class="count1">3</strong>배</em>
+											<span class="up">UP</span>
+										</li>
+										<li>
+											<span class="name">노릇함</span>
+											<em class="num"><strong class="count2">13</strong>%</em>
+											<span class="up">UP</span>
+										</li>
+									</ul>
+									<a href="javascript:void(0);" class="button popupBtn" data-popup-id="popup01">실험결과 자세히 보기</a>
+									<div class="brand_list">
+										<span>인공지능쿡 제휴 브랜드</span>
+										<div class="brand">
+											<ul>
+												<li><img src="./mo_scene4_01_ico.png" alt="풀무원 로고"></li>
+												<li><img src="./mo_scene4_02_ico.png" alt="동원 로고"></li>
+												<li><img src="./mo_scene4_03_ico.png" alt="cj 제일제당 로고"></li>
+											</ul>
+											<a href="javascript:void(0);" class="popupBtn" data-popup-id="popup02">인공지능쿡 적용 제품 보기</a>
+										</div>
+									</div>
+								</div>
+								<div id="animate4_4" class="desc">
+									<ul class="bullet">
+										<li data-bullet="*">이해를 돕기 위해 연출된 이미지 입니다</li>
+										<li data-bullet="*">인공지능쿡 제휴 브랜드 및 제품은 회사 운영에 따라 달라질 수 있음</li>
+										<li data-bullet="*">제품에 등록된 간편식에 한해 바코드 인식 됨</li>
+										<li data-bullet="*">LG ThinQ 앱에서 사용가능, LG ThinQ앱은 일부 스마트폰에서는 기능 사용에 제약이 발생하거나 작동하지 않을 수 있으니, 최소사양을 확인 후 사용하세요 <br />(Android OS 7.0 이상, iOS 11.0 이상)</li>
+										<li data-bullet="*">LG ThinQ 앱에서 가정 간편식을 구매할 수 있습니다</li>
+										<li data-bullet="*">LG ThinQ 기능 사용을 위해서는 스마트폰의 Google 스토어 또는 Apple App 스토어에서 LG ThinQ 앱을 설치하여 Wi-Fi에 연결해야 합니다</li>
+										<li>자세한 사용 방법은 애플리케이션의 도움말을 참고해 주세요</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene5">
+							<div id="animate5">
+								<div id="animate5_1" class="title" data-role="ani" data-hook="0.4">
+									<span class="eyebrow">스마트 인버터</span>
+									<h2>더 적은 에너지로 <br />더 빠르게</h2>
+									<p class="info">스마트 인버터 기술로 정밀한 출력제어가 가능하기 때문에 에너지 손실을 최소화 하는 동시에, 더 빠르고 맛있는 요리가 가능합니다</p>
+								</div>
+								<div id="animate5_2" class="image" data-role="ani" data-dur="60" data-delay="6">
+									<img src="./mo_scene5_01.jpg" class="only_m" alt="">
+									<img src="./pc_scene5_01.jpg" class="only_pc" alt="">
+								</div>
+								<ul id="animate5_3" class="effect">
+									<li>
+										<div class="txt">
+											<span class="name">조리시간</span>
+											<span class="num"><strong class="count1">0.0</strong>배</span>
+										</div>
+										<div class="graphs time">
+											<div class="graph">
+												<div class="graph_bar">
+													<i class="bar"></i>
+													<span>18:25</span>
+												</div>
+												<span class="graph_txt">기존 <br/>광파오븐</span>
+											</div>
+											<div class="graph active">
+												<div class="graph_bar">
+													<i class="bar"></i>
+													<span>12:00</span>
+												</div>
+												<span class="graph_txt">인버터 <br/>광파오븐</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="txt">
+											<span class="name">전기절약</span>
+											<span class="num"><strong class="count2">0</strong>%</span>
+										</div>
+										<div class="graphs watt">
+											<div class="graph">
+												<div class="graph_bar">
+													<i class="bar"></i>
+													<span>541 Wh</span>
+												</div>
+												<span class="graph_txt">기존 <br/>광파오븐</span>
+											</div>
+											<div class="graph active">
+												<div class="graph_bar">
+													<i class="bar"></i>
+													<span>432 Wh</span>
+												</div>
+												<span class="graph_txt">인버터 <br/>광파오븐</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div id="animate5_4" class="desc">
+									<ul class="bullet">
+										<li data-bullet="*">닭다리 0.3 kg 조리 기준으로 측정한 결과입니다</li>
+										<li data-bullet="*">자사 기존 광파오븐(MA323***) 대비 자사 인버터 광파오븐(ML32**) 대상, 자동메뉴 설정 후 조리 소요 시간 측정 (자사실험 기준, 2014.01)</li>
+										<li data-bullet="*">자사 실험치로 실제 사용 환경과 다를 수 있습니다</li>
+										<li data-bullet="*">이해를 돕기 위해 연출된 이미지 입니다</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene6">
+							<div id="animate6">
+								<div id="animate6_1" class="title" data-role="ani">
+									<span class="eyebrow">팝업다이얼</span>
+									<h2>간단한 조작으로 <br />누구나 쉽고 편리하게 </h2>
+									<p class="info">보기 쉬운 한글 메뉴와 팝업다이얼로<br class="only_m"/> 더 쉽고 편리하게 조작하세요</p>
+								</div>
+								<div id="animate6_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate6_2_video" src="./mo_scene6_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate6_2_video_pc" src="./pc_scene6_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene7">
+							<div id="animate7">
+								<div id="animate7_1" class="title" data-role="ani">
+									<span class="eyebrow">멀티 클린</span>
+									<h2>손이 닿지 않는 <br class="only_m"/>깊숙한 곳까지 깨끗하게</h2>
+									<p class="info">다양한 청소 기능으로 손이 닿지 않는 <br class="only_m"/>조리실 깊숙한 곳까지 깨끗하고 편리하게 <br class="only_m"/>청소할 수 있습니다</p>
+								</div>
+								<div id="animate7_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate7_2_video" src="./mo_scene7_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate7_2_video_pc" src="./pc_scene7_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+								</div>
+								<div id="animate7_3" class="desc">
+									<ul class="smart_list">
+										<li>
+											<strong>냄새 탈취</strong>
+											<p>요리 후 조리실 내부의<br class="only_pc" />음식 냄새를 줄일 때</p>
+										</li>
+										<li>
+											<strong>스팀 청소</strong>
+											<p>조리실 벽면이나 바닥면에 묻은<br class="only_pc" />기름때 등을 청소할 때</p>
+										</li>
+										<li>
+											<strong>잔수 제거</strong>
+											<p>스팀 발생기에 남아있는<br class="only_pc" />잔수를 제거할 때</p>
+										</li>
+										<li>
+											<strong>스팀기 세정</strong>
+											<p>스팀 발생기 내부에 발생할 수<br class="only_pc" />있는 하얀 침전물을 제거할 때</p>
+										</li>
+										<li>
+											<strong>조리실 건조</strong>
+											<p>스팀 기능 사용 후 조리실 내부의<br class="only_pc" />남은 물기를 제거할 때</p>
+										</li>
+									</ul>
+									<ul class="bullet">
+										<li data-bullet="*">5가지 기능 중 원하는 청소 기능을 선택하여 사용할 수 있습니다</li>
+										<li data-bullet="*">이해를 돕기 위해 연출된 이미지 입니다 </li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene8">
+							<div id="animate8">
+								<div id="animate8_1" class="title" data-role="ani">
+									<span class="eyebrow">스마트 커넥티비티</span>
+									<h2>레시피만 선택하면 <br />요리부터 설거지까지 <br />한 번에 세팅</h2>
+									<p class="info">정수기, 광파오븐, 식기세척기가 서로 교감합니다<br class="only_pc" />LG ThinQ 앱으로 원하는 요리 레시피를 선택하면 <br class="only_pc" /> 딱 맞는 오븐 온도 및 시간, 필요한 정수기 물의 양, 요리에 맞는 <br class="only_pc" />식기세척기 코스까지 자동으로 선택해줍니다</p>
+									<a href="javascript:void(0);" class="button popupBtn" data-popup-id="popup03">스마트 커넥트비티 사용방법</a>
+									<ul class="bullet only_pc">
+										<li data-bullet="*">요리 레시피는 ThinQ 광파오븐 연결 시에만 가능합니다</li>
+										<li data-bullet="*">LG ThinQ 앱에서 사용가능, LG ThinQ앱은 일부 스마트폰에서는 기능 사용에 제약이 발생하거나 <br />작동하지 않을 수 있으니, 최소사양을 확인 후 사용하세요<br />(Android OS 7.0 이상, iOS 11.0 이상)</li>
+										<li data-bullet="*">해당 이미지는 이해를 돕기 위해 연출된 이미지 입니다</li>
+									</ul>
+								</div>
+								<div id="animate8_2" class="video" data-role="ani" data-dur="60" data-hook="0.4" data-delay="6">
+									<video id="animate8_2_video" src="./mo_scene8_mv.mp4" class="only_m" muted="" playsinline="" autoplay loop></video>
+									<video id="animate8_2_video_pc" src="./pc_scene8_mv.mp4" class="only_pc" muted="" playsinline="" autoplay loop></video>
+								</div>
+								<div id="animate8_3" class="desc only_m">
+									<ul class="bullet">
+										<li data-bullet="*">요리 레시피는 ThinQ 광파오븐 연결 시에만 가능합니다</li>
+										<li data-bullet="*">LG ThinQ 앱에서 사용가능, LG ThinQ앱은 일부 스마트폰에서는 기능 사용에 제약이 발생하거나 <br class="only_pc" />작동하지 않을 수 있으니, 최소사양을 확인 후 사용하세요 <br class="only_m" />(Android OS 7.0 이상, iOS 11.0 이상)</li>
+										<li data-bullet="*">해당 이미지는 이해를 돕기 위해 연출된 이미지 입니다</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="scene9">
+							<div id="animate9">
+								<div id="animate9_1" class="title" data-role="ani">
+									<span class="eyebrow">스마트 기능</span>
+									<h2>LG ThinQ 앱으로 <br class="only_m"/>조리에서 진단까지</h2>
+								</div>
+								<div id="animate9_2" class="slide" data-role="ani" data-dur="60" data-delay="4">
+									<div class="swiper-container">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide currentActive">
+												<div class="image">
+													<img src="./mo_scene9_01.png" alt="">
+												</div>
+												<div class="txt">
+													<strong>레시피 검색</strong>
+													<p>레시피를 검색하고 식 재료, 조리법을 확인한 후 오븐에 <br/>전송하면 조리 기능, 온도, 조리 시간이 자동으로 설정되어 <br/>제품을 조작할 필요없이 간편한 조리가 가능합니다</p>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="image">
+													<img src="./mo_scene9_02.png" alt="">
+												</div>
+												<div class="txt">
+													<strong>오븐 모니터링</strong>
+													<p>광파오븐 앱을 통해 주방 밖에서도 오븐의 상태를 <br/>알 수 있어 거실에서도 TV 드라마 등을 시청하며 <br/>더 여유롭게 요리해보세요 </p>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="image">
+													<img src="./mo_scene9_03.png" alt="">
+												</div>
+												<div class="txt">
+													<strong>스마트 진단</strong>
+													<p>제품의 이상이 의심될 경우 진단 기능을 통해 <br/>이상 여부나 조치 사항을 확인하여 신속 문제 해결이 <br/>가능합니다</p>
+												</div>
+											</li>
+										</ul>
+										<div class="swiper-page-wrap"><div class="swiper-pagination"></div></div>
+										<span class="swiper-arrow swiper-button-next"></span>
+										<span class="swiper-arrow swiper-button-prev"></span>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- TODO: 삭제예정 -->
+						<section id="scene10" class="only_m">
+							<div id="animate10">
+								<h2 class="hidden">리뷰</h2>
+								<img src="./mo_scene10_01.jpg" alt="">
+							</div>
+						</section>
+
+						<div class="popup" id="popup01">
+							<div class="inner">
+								<a href="javascript:void(0);" class="close"><span>팝업 닫기</span></a>
+								<div class="content scroll">
+									<strong class="name">간편식 조리 실험결과</strong>
+									<div class="scroll_content">
+										<div class="desc">
+											<ul class="result_list">
+												<li>
+													<figure>
+														<figcaption>바삭함 최대 3배 증가</figcaption>
+														<img src="./mo_scene4_popup_01.png" alt="">
+														<!--<img src="./pc_scene4_popup_01.png" alt="" class="only_pc">
+														<img src="./mo_scene4_popup_01.png" alt="" class="only_m">-->
+														<ul class="hidden">
+															<li><strong>브리또 (힘 변화율 N/sec)</strong>전자레인지 1.44 → DIOS 광파오븐 3.00 (2.08 배 증가)</li>
+															<li><strong>냉동만두 (힘 변화율 N/sec)</strong>전자레인지 0.12 → DIOS 광파오븐 0.36 (3.0 배 증가)</li>
+														</ul>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<figcaption>노릇함 최대 13 % 증가</figcaption>
+														<img src="./mo_scene4_popup_02.png" alt="">
+														<!--<img src="./pc_scene4_popup_02.png" alt="" class="only_pc">
+														<img src="./mo_scene4_popup_02.png" alt="" class="only_m">
+														-->
+													</figure>
+													<div class="hidden">
+														<ul>
+															<li><strong>브리또 (L*값)</strong>전자레인지 77.8 → DIOS 광파오븐 67.1 (13% 향상)</li>
+															<li><strong>냉동만두 (L*값)</strong>전자레인지 61.2 → DIOS 광파오븐 55.8 (8.8% 향상)</li>
+														</ul>
+														<p>※ L*값은 낮을수로 노릇함을 나타냄
+															L* : 명도, + 일수록 밝은색, - 일수록 어두운 색 (0~100)
+														</p>
+													</div>
+												</li>
+											</ul>
+											<ul class="bullet">
+												<li data-bullet="*">기존 LG 전자레인지(MW25*, 2016년 단종) VS 신규 LG DIOS 광파오븐(ML32**)모델로 풀무원 얇은피만두/풀무원 모짜렐라 브리또 실험</li>
+												<li data-bullet="*">컬러(Browning) 값: L*(명암)기준 색차계 측정 결과 (TUV라일란드 2019.12)</li>
+												<li data-bullet="*">식감(Texture) 값: TA(Texture Analyzer) 측정 결과(세종대 식품가공학실험실 실험결과 2019.11)</li>
+												<li data-bullet="*">측정결과는 실제 사용환경에 따라 달라질 수 있습니다.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dim"></div>
+						</div>
+						<div class="popup" id="popup02">
+							<div class="inner">
+								<a href="javascript:void(0);" class="close"><span>팝업 닫기</span></a>
+								<div class="content scroll">
+									<strong class="name">제휴 브랜드 제품</strong>
+									<ul role="tablist" class="tab_list">
+										<li id="tabList1" role="tab" class="active" aria-selected="true" aria-controls="tabContents1">
+											<a href="#" role="button">풀무원</a>
+										</li>
+										<li id="tabList2" role="tab" aria-selected="false" aria-controls="tabContents2">
+												<a href="#" role="button">동원</a>
+										</li>
+										<li id="tabList3" role="tab" aria-selected="false" aria-controls="tabContents3">
+												<a href="#" role="button">CJ 제일제당</a>
+										</li>
+									</ul>
+									<div >
+										<div id="tabContents1" role="tabpanel" class="tab_contents scroll_content active" aria-labelledby="tabList1">
+											<div class="tab_inner">
+												<ul>
+													<li>올바른 핫도그</li>
+													<li>탱글뽀득 점보핫도그</li>
+													<li>모짜렐라 핫도그</li>
+													<li>체다모짜 핫도그</li>
+													<li>얇은피 꽉찬속 고기만두</li>
+													<li>얇은피 꽉찬속 김치만두</li>
+													<li>납작 지짐만두</li>
+													<li>귀리소고기죽 260g (용기)</li>
+													<li>현미전복죽 260g (용기)</li>
+													<li>오곡삼계죽 260g (용기)</li>
+													<li>귀리소고기죽 450g (파우치)</li>
+													<li>현미전복죽 450g (파우치)</li>
+													<li>오곡삼계죽 450g (파우치)</li>
+													<li>황금 밥알 볶음밥 (새우&갈릭)</li>
+													<li>황금 밥알 볶음밥 (포크&스크램블)</li>
+													<li>통새우 볶음밥</li>
+													<li>소불고기 치즈필라프</li>
+													<li>곤드레나물 솥밥</li>
+													<li>취나물 솥밥</li>
+													<li>소고기버섯 비빔밥</li>
+													<li>씨푸드야채 철판볶음밥</li>
+													<li>모짜렐라 브리또 에그 토마토 치킨 (냉동)</li>
+													<li>모짜렐라 브리또 비프&할라피뇨 (냉동)</li>
+													<li>모짜렐라 브리또 스위트 치킨텐더 (냉동)</li>
+													<li>골드크러스트피자 베이컨 파이브치즈 </li>
+													<li>노엣지 꽉찬 토핑피자 직화불고기 </li>
+													<li>노엣지 꽉찬 토핑피자 베이컨 파이브치즈</li>
+													<li>노엣지 꽉찬 토핑피자 페퍼로니 콤비네이션</li>
+													<li>치즈크러스트피자 크림치즈 슈퍼디럭스</li>
+													<li>단팥씨앗 호떡만두</li>
+													<li>얇은피 꽉찬속 땡초만두</li>
+													<li>부추잡채 군만두 </li>
+													<li>청고추 군만두 </li>
+													<li>정선 5일장 메밀지짐만두 </li>
+													<li>얇은피 꽉찬 교자 고기 </li>
+													<li>얇은피 꽉찬 교자 매콤해물</li>
+													<li>생 물만두</li>
+													<li>우리아이 첫 물만두</li>
+													<li>5색야채 물만두</li>
+													<li>탱글 새우 물만두</li>
+													<li>새우 듬뿍 만두</li>
+													<li>모짜렐라 치즈볼 </li>
+													<li>앙크림 치즈볼 </li>
+													<li>토이쿠키 숲속 동물들 생일파티</li>
+													<li>토이쿠키 신비한 바닷속 이야기</li>
+													<li>닭가슴살 볶음밥 </li>
+													<li>황금밥알 중화풍 불맛 볶음밥</li>
+													<li>새알 동지 팥죽 </li>
+													<li>콘치즈 생수프</li>
+													<li>양송이버섯 생수프</li>
+													<li>브로컬리치즈 생수프</li>
+													<li>마파두부덮밥소스</li>
+													<li>청국장두부덮밥소스</li>
+													<li>강된장두부덮밥소스</li>
+													<li>토이쿠키 브레드 이발소 만들기</li>
+												</ul>
+											</div>
+										</div>
+										<div id="tabContents2" role="tabpanel" class="tab_contents scroll_content" aria-labelledby="tabList2">
+											<div class="tab_inner">
+												<ul>
+													<li>리챔 오리지널 340g</li>
+													<li>심야식당 뼈없는불닭발</li>
+													<li>심야식당 불막창</li>
+													<li>심야식당 오븐에 구운 치킨윙</li>
+													<li>심야식당 오븐에 구운 치킨봉</li>
+													<li>퀴진 체바피 소시지</li>
+													<li>오븐&통그릴 직화통삼겹 오리지널</li>
+													<li>오븐&통그릴 트러플델리햄 올리브채소</li>
+													<li>오븐&통그릴 트러플델리햄 버섯채소</li>
+													<li>캠핑&통그릴 부어스트</li>
+													<li>양반 전복죽 (용기) </li>
+													<li>양반 단호박죽 (용기) </li>
+													<li>양반 쇠고기죽 (용기) </li>
+													<li>양반 밤단팥죽 (용기) </li>
+													<li>양반 전복죽 (파우치) </li>
+													<li>양반 쇠고기죽 (파우치) </li>
+													<li>양반 단호박죽 (파우치)</li>
+													<li>양반 밤단팥죽 (파우치)</li>
+													<li>개성 육교자</li>
+													<li>개성 김치육교자</li>
+													<li>리챔 오리지널 120g</li>
+													<li>리챔 오리지널 200g</li>
+													<li>리챔 오리지널 300g</li>
+													<li>퀴진 크리스피 핫도그</li>
+													<li>퀴진 크리스피 돈까스 통등심</li>
+													<li>퀴진 크리스피 돈까스 모짜렐라치즈</li>
+													<li>퀴진 양념감자</li>
+													<li>비욘드 버거</li>
+													<li>비욘드 소시지 </li>
+												</ul>
+											</div>
+										</div>
+										<div id="tabContents3" role="tabpanel" class="tab_contents scroll_content" aria-labelledby="tabList3">
+											<div class="tab_inner">
+												<ul>
+													<li>고메 크리스피 핫도그</li>
+													<li>고메 치즈크리스피 핫도그</li>
+													<li>고메 포테이토 치즈 핫도그</li>
+													<li>고메 빅 크리스피 핫도그</li>
+													<li>고메 바삭 튀겨낸 통등심 돈카츠</li>
+													<li>고메 바삭 튀겨낸 모짜렐라 돈카츠</li>
+													<li>고메 바삭 튀겨낸 멘치 돈카츠</li>
+													<li>고메 바삭 튀겨낸 꼬마돈카츠</li>
+													<li>고메 로마 콰트로 포르마지 피자</li>
+													<li>고메 나폴리 마르게리타 피자</li>
+													<li>고메 바르셀로나 칠리감바스 피자</li>
+													<li>고메 순살크리스피 치킨 스윗허니</li>
+													<li>고메 순살크리스피 치킨 고추크런치</li>
+													<li>고메 순살크리스피 치킨</li>
+													<li>고메 크리스피 너겟</li>
+													<li>고메 핫스파이시 치킨</li>
+													<li>고메 사이드 바이츠 치즈볼</li>
+													<li>비비고 한입떡갈비</li>
+													<li>야채고기말이</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dim"></div>
+						</div>
+						<div class="popup" id="popup03">
+							<div class="inner">
+								<a href="javascript:void(0);" class="close"><span>팝업 닫기</span></a>
+								<div class="content scroll">
+									<strong class="name">스마트 커넥티비티 사용방법</strong>
+									<div class="scroll_content">
+										<div class="desc">
+											<ul class="bullet">
+												<li data-bullet="-">구글플레이(안드로이드) 또는 앱스토어(iOS)접속 후 LG ThinQ 또는 씽큐 검색 후 앱 다운로드</li>
+												<li data-bullet="-">제품에서 ‘광파오븐’ 추가 후 Wi-Fi로 제품 연결 후 진행</li>
+											</ul>
+											<ol class="smart_step">
+												<li>
+													<figure>
+														<img src="./mo_scene8_popup_01.png" alt="">
+														<figcaption>LG ThinQ 앱에서<br/>광파오븐 제품 선택</figcaption>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<img src="./mo_scene8_popup_02.png" alt="">
+														<figcaption>쿡북선택</figcaption>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<img src="./mo_scene8_popup_03.png" alt="">
+														<figcaption>레시피 리스트 또는 검색을 통해 메뉴선택 </figcaption>
+													</figure>
+												</li>
+												<li>
+													<figure>
+														<img src="./mo_scene8_popup_04.png" alt="">
+														<figcaption>오븐, 정수기, 식기 <br/>세척기로 전송 선택</figcaption>
+													</figure>
+												</li>
+											</ol>
+											<ul class="bullet">
+												<li data-bullet="*">해당 이미지는 이해를 돕기 위한 연출된 이미지 입니다. 해당 기능 제공 모델에 한함.</li>
+												<li data-bullet="*">
+													오븐(ML32*W*, Wi-Fi 모델), 식기세척기(D*B*2*A, Wi-Fi 모델), 정수기(WD503A*B 모델) ThinQ 앱에 모델 등록 완료 및 제품과 Wi-Fi 연결상태일 때만 사용 가능합니다.
+													<ul class="bullet">
+														<li data-bullet="-">아래 조합으로만 연결 가능합니다.<br/>① ThinQ 앱 + 오븐 + 정수기, ② ThinQ 앱 + 오븐 + 식기세척기, ③ ThinQ 앱 + 오븐 + 식기세척기 + 정수기</li>
+														<li data-bullet="-">정수기 연동 레시피(11종) : 식혜, 팥죽, 흰죽, 라면, 달걀찜(인분 조절), 일식 달걀찜, 찹쌀(감자)크로켓, 중국식 공갈빵, 피자, 마르게리타 피자, 더덕구이</li>
+														<li data-bullet="-">식기세척기 연동 레시피(11종) : 통닭, 통삼겹살, 바비큐 베이비립, 스테이크, 피자, 전통 수육, 찐닭, 달걀찜, 일식 달걀찜, 감자 그라탱, 연어 스테이크</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dim"></div>
+						</div>
+						<!-- //이부분 코딩 작업 -->
+					</div>
+					<!-- //관리자등록 : 특장점04 -->
+
+				</div>
+				<!-- ############################## 섹션별 관리자 등록하는 영역 ############################## -->
+			</div>
+			<!-- 프린트 영역, 개발 ajax 교체영역 종료 -->
+			
+		</div>
+	</div>
+	<!-- content //-->
+
+	<!-- footer -->
+	
+	<!-- footer //-->
+</body>
+</html>

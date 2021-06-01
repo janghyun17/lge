@@ -1,11 +1,123 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#fb5b72">
+<title>LGE USP - Publishing List</title>
+<link rel="shortcut icon" href="./etc/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./etc/apple-touch-icon.png">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(function(){
+	$('.hit').click(function(){
+		return false;
+	});
+});
+
+</script>
+<style>
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {margin:0;padding:0;}
+img {border:0;}
+a {text-decoration:none;}
+li {list-style:none;}
+body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;line-height:22px;-webkit-text-size-adjust:none;-webkit-overflow-scrolling:touch;word-wrap:break-word;word-break:keep-all;white-space:normal;overflow-y:scroll;}
+#wrap {position:relative;margin:20px auto 50px auto;}
+#wrap h1 {padding:30px;color:#fff;font-size:21px;line-height:29px;text-align:center;transition:all 0.4s;}
+#wrap h1 img {width:100px;}
+.gate_list {margin:0 auto;padding:0 15px;font-size:0;transition:all 0.4s;}
+.gate_list li {display:inline-block;;width:calc(100% / 2 - 10px);margin:5px;vertical-align:top;transition:all 0.4s;}
+.gate_list li a {display:table;position:relative;width:100%;height:calc((100vw - 30px) / 2 + 60px);padding:10px;box-sizing:border-box;box-shadow:3px 4px 8px 0 rgba(0, 0, 0, 0.4);color:#fff;font-size:22px;font-weight:500;line-height:28px;overflow:hidden;}
+.gate_list li a.hit {cursor:default;}
+.gate_list li a.hit .img:before {opacity:0.4;}
+.gate_list li a i {display:none;position:absolute;left:0;top:0;width:100%;height:100%;background:#fb5b72;opacity:0;z-index:1;transition:all 0.4s;}
+.gate_list li a .img {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.gate_list li a .img:before {position:absolute;left:0;top:0;width:100%;height:100%;background:#000;content:"";opacity:1;transition:all 0.4s;}
+.gate_list li a .img img {position:absolute;left:50%;top:50%;width:auto;height:auto;max-width:120%;max-height:120%;transform:translate(-50%,-50%);}
+.gate_list li a .txt {display:table-cell;position:relative;width:100%;height:100%;text-align:center;vertical-align:middle;z-index:5;opacity:0.2;transition:all 0.4s;}
+.gate_list li a strong {display:block;margin-top:10px;font-size:15px;line-height:20px;text-transform:uppercase;}
+.gate_list li a span {display:block;margin-top:50px;font-size:15px;font-weight:300;line-height:20px;font-style:normal;}
+.gate_list li a img {width:100%;}
+.gate_list li a em {position:absolute;left:50%;top:50%;display:block;width:60px;height:60px;margin:0 0 0 -30px;opacity:0;transition:all 0.4s;z-index:10;}
+.gate_list li a em:before {position:absolute;left:50%;top:50%;width:60px;height:3px;margin:-2px 0 0 -30px;background:#fff;content:"";}
+.gate_list li a em:after {position:absolute;left:50%;top:50%;width:3px;height:60px;margin:-30px 0 0 -2px;background:#fff;content:"";}
+.gate_list li a.link i {display:block;}
+.gate_list li a.link:hover i {opacity:0.8;}
+.gate_list li a.link:hover .img:before {opacity:0.3;}
+.gate_list li a.link:hover .txt {opacity:0;transform:translateY(10px);}
+.gate_list li a.link:hover em {margin-top:-30px;opacity:0.95;}
+.gate_list li a.link .txt {opacity:1;}
+	
+@media all and (min-width:580px) and (max-width:760px) {
+.gate_list li {width:calc(100%/3 - 11px);}
+.gate_list li a {height:calc((100vw - 30px) / 3 + 40px);}
+}
+
+@media all and (min-width:761px) and (max-width:1000px) {
+#wrap {margin:30px auto 100px auto;}
+#wrap h1 {padding:50px;}
+.gate_list {padding:0 40px;}
+.gate_list li {width:calc(100%/4 - 11px);}
+.gate_list li a {height:calc((100vw - 80px) / 4 + 40px);}
+}
+
+@media all and (min-width:1001px) and (max-width:1200px) {
+#wrap {margin:50px auto 120px auto;}
+#wrap h1 {padding:50px;font-size:25px;line-height:33px;}
+.gate_list {padding:0 50px;}
+.gate_list li {width:calc(100%/5 - 11px);}
+.gate_list li a {height:calc((100vw - 100px) / 5 + 40px);}
+}
+
+@media all and (min-width:1201px) and (max-width:1425px) {
+#wrap {margin:70px auto 150px auto;}
+#wrap h1 {padding:60px;font-size:27px;line-height:35px;}
+.gate_list {padding:0 50px;}
+.gate_list li {width:calc(100%/6 - 17px);margin:8px;}
+.gate_list li a {height:calc((100vw - 100px) / 6 + 36px);max-height:280px;}
+}
+	
+@media all and (min-width:1426px) {
+#wrap {margin:70px auto 150px auto;}
+#wrap h1 {padding:70px;font-size:29px;line-height:37px;}
+.gate_list {max-width:1426px;}
+.gate_list li {width:calc(100%/6 - 17px);margin:8px;}
+.gate_list li a {height:calc((100vw - 100px) / 6 + 36px);max-height:280px;}
+}
+</style>
 </head>
 
 <body>
-	index 11
+<!-- wrap -->
+<div id="wrap">
+	<h1>LGE USP - Publishing List</h1>
+	<ul class="gate_list">
+		<li>
+			<a href="./images/washing-machines/md_new/usp/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<i></i>
+				<p class="txt">세탁기
+					<strong>New Tromm</strong>
+					<span>2021.07</span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+		<li>
+			<a class="hit">
+				<p class="img"></p>
+				<i></i>
+				<p class="txt">건조기
+					<strong>New Tromm</strong>
+					<span>2021.07</span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- //wrap -->
 </body>
 </html>
