@@ -588,7 +588,7 @@
 .washing_machines_202106 .scene03_5_ani .obj2:before,
 .washing_machines_202106 .scene03_5_ani .obj2 :before,
 .washing_machines_202106 .scene03_5_ani .obj2:after,
-.washing_machines_202106 .scene03_5_ani .obj2 :after {position:absolute;top:50%;width:1.0vw;height:1.0vw;background:#da0f47;border-radius:50%;content:"";transform:translateY(-50%);}
+.washing_machines_202106 .scene03_5_ani .obj2 :after {position:absolute;top:50%;/*width:1.0vw;height:1.0vw;*/width:4px;height:4px;background:#da0f47;border-radius:50%;content:"";/*transform:translateY(-50%);*/}
 .washing_machines_202106 .scene03_5_ani .obj2:before {left:36%;}
 .washing_machines_202106 .scene03_5_ani .obj2 em:before {left:38%;}
 .washing_machines_202106 .scene03_5_ani .obj2 i:before {left:40%;}
@@ -608,6 +608,14 @@
 .washing_machines_202106 .animate.active .scene03_5_ani .obj2 em:after {animation:scene03_5_ani both 3 1.5s 0.9s;}
 .washing_machines_202106 .animate.active .scene03_5_ani .obj2:before,
 .washing_machines_202106 .animate.active .scene03_5_ani .obj2:after {animation:scene03_5_ani both 3 1.5s 1.2s;}
+
+@media only screen and (min-width:500px) {
+.washing_machines_202106 .scene03_5_ani .obj2:before,
+.washing_machines_202106 .scene03_5_ani .obj2 :before,
+.washing_machines_202106 .scene03_5_ani .obj2:after,
+.washing_machines_202106 .scene03_5_ani .obj2 :after {width:5px;height:5px;}
+}
+
 
 /* Animation */
 @keyframes scene03_5_ani {
