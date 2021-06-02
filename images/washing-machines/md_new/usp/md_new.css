@@ -588,7 +588,7 @@
 .washing_machines_202106 .scene03_5_ani .obj2:before,
 .washing_machines_202106 .scene03_5_ani .obj2 :before,
 .washing_machines_202106 .scene03_5_ani .obj2:after,
-.washing_machines_202106 .scene03_5_ani .obj2 :after {position:absolute;top:50%;/*width:1.0vw;height:1.0vw;*/width:4px;height:4px;background:#da0f47;border-radius:50%;content:"";/*transform:translateY(-50%);*/}
+.washing_machines_202106 .scene03_5_ani .obj2 :after {display:block;position:absolute;top:50%;/*width:1.0vw;height:1.0vw;background:#da0f47;border-radius:50%;*/width:4px;height:4px;background:url("ico_scene03_5.svg") center/100% no-repeat;content:"";/*transform:translateY(-50%);*/}
 .washing_machines_202106 .scene03_5_ani .obj2:before {left:36%;}
 .washing_machines_202106 .scene03_5_ani .obj2 em:before {left:38%;}
 .washing_machines_202106 .scene03_5_ani .obj2 i:before {left:40%;}
