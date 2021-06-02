@@ -2,6 +2,42 @@
     세탁기 : 21.06
 */
 
+function slideLoopSlider() {
+	var $target = $('.washing_machines_202106 .loop_slider .swiper-container');
+	var menu = ['두드리기', '주무르기', '비비기', '풀어주기', '꼭꼭짜기', '흔들기']
+	var slideOption = {
+		effect :'fade', // 페이드 효과 사용
+		loop:true,
+        pagination: {
+            el: '.loop_pagn',
+            clickable: true,
+			renderBullet: function (index, className) {
+				return '<div class=" ' + className +' i' + (index + 1) + ' ">' + (menu[index]) + '</div>';	
+        	},
+        },
+		navigation:false,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+		speed:700,
+		//observer:true,
+		//observeParents:true,
+		on:{
+			slideChange:function(){
+				var idx = this.realIndex + 1
+				if($(idx ==2)){
+					
+				}
+			},
+		},
+	};
+	slideLoop = new Swiper($target.get(0), slideOption);
+	slideLoop.autoplay.stop();
+}
+
+
+
 
 /** 인공지능 DD모터 x 6모션 **/
 function slideStepSlider() {
@@ -25,12 +61,19 @@ function slideStepSlider() {
 		observeParents:true,
 		on:{
 			slideChange:function(){
+				
 				var idx = this.realIndex + 1
 				if($(idx ==2)){
 					var numbers = [
 						{$el:$('.slide_step .obj3 .count'), first:0, last:24, duration:2000},
 					]
 					countNumAni(numbers);
+					//slideLoop.autoplay.stop();
+				}
+				if($(idx ==4)){
+					
+					slideLoop.slideTo(1);
+					slideLoop.autoplay.start();
 				}
 			},
 		},
@@ -102,8 +145,8 @@ $(function(){
 	/* Swiper */
 	slideStepSlider();
 	slideWeatherSlider();
-	
-	
+	slideLoopSlider();
+
 	/* 페이지 내 스크롤 앵커  */
     $('.washing_machines_202106 .btn_go_info').click(function(e){
         e.preventDefault();
