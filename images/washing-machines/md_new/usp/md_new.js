@@ -2,42 +2,6 @@
     세탁기 : 21.06
 */
 
-function slideLoopSlider() {
-	var $target = $('.washing_machines_202106 .loop_slider .swiper-container');
-	var menu = ['두드리기', '주무르기', '비비기', '풀어주기', '꼭꼭짜기', '흔들기']
-	var slideOption = {
-		effect :'fade', // 페이드 효과 사용
-		loop:true,
-        pagination: {
-            el: '.loop_pagn',
-            clickable: true,
-			renderBullet: function (index, className) {
-				return '<div class=" ' + className +' i' + (index + 1) + ' ">' + (menu[index]) + '</div>';	
-        	},
-        },
-		navigation:false,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-		speed:700,
-		//observer:true,
-		//observeParents:true,
-		on:{
-			slideChange:function(){
-				var idx = this.realIndex + 1
-				if($(idx ==2)){
-					
-				}
-			},
-		},
-	};
-	slideLoop = new Swiper($target.get(0), slideOption);
-	slideLoop.autoplay.stop();
-}
-
-
-
 
 /** 인공지능 DD모터 x 6모션 **/
 function slideStepSlider() {
@@ -61,24 +25,79 @@ function slideStepSlider() {
 		observeParents:true,
 		on:{
 			slideChange:function(){
-				
 				var idx = this.realIndex + 1
 				if($(idx ==2)){
 					var numbers = [
 						{$el:$('.slide_step .obj3 .count'), first:0, last:24, duration:2000},
 					]
 					countNumAni(numbers);
-					//slideLoop.autoplay.stop();
-				}
-				if($(idx ==4)){
-					
-					slideLoop.slideTo(1);
-					slideLoop.autoplay.start();
 				}
 			},
 		},
 	};
 	slideStep = new Swiper($target.get(0), slideOption);
+	
+	if ($target.find('.slide_six_motion').length){
+		slideStep.on('slideChange', function (e, idx) {
+			$target.find('.swiper-wrapper > .swiper-slide').find('.slide_six_motion').each(function(params){
+				slideSixMotion.autoplay.stop();
+			});
+			$target.find('.swiper-wrapper > .swiper-slide').eq(slideStep.activeIndex).find('.slide_six_motion').each(function() {	
+				slideSixMotion.autoplay.start();
+				slideSixMotion.slideTo(0);
+				$('.slide_six_motion .currentActive video').get(0).currentTime = 0;
+				$('.slide_six_motion .currentActive video').get(0).play();
+			});
+		});
+	}
+}
+function slideSixMotionSlider() {
+	var $target = $('.washing_machines_202106 .slide_six_motion .swiper-container');
+	var slideOption = {
+		effect :'fade', // 페이드 효과 사용
+		loop:false,
+		pagination:false,
+		navigation:false,
+        autoplay:{
+        	delay:2500,
+        	disableOnInteraction: false,
+        },
+		speed:700,
+		on:{
+			slideChange:function(){
+				var idx = this.realIndex
+				$('.slide_six_motion_pagn a').removeClass('on');
+				$('.slide_six_motion_pagn a').eq(idx).addClass('on');
+			},
+		},
+		//observer:true,
+		//observeParents:true,
+	};
+	slideSixMotion = new Swiper($target.get(0), slideOption);
+	slideSixMotion.autoplay.stop();
+	
+	if ($target.find('video').length){
+		slideSixMotion.on('slideChange', function (e, idx) {
+			$target.find('.swiper-slide').find('video').each(function(params){
+				$(this).get(0).currentTime = 0;
+				$(this).get(0).pause();
+			});
+			$target.find('.swiper-slide').eq(slideSixMotion.activeIndex).find('video').each(function(){
+				// Show loading animation.
+				var playPromise = $(this).get(0).play();
+				if (playPromise !== undefined) {
+					playPromise.then(_ => {
+						$(this).get(0).play();
+					})
+					.catch(error => {
+						$(this).get(0).currentTime = 0;
+						$(this).get(0).pause();
+					});
+				}
+				console.log('st')
+			});
+		});
+	}
 }
 
 
@@ -145,7 +164,8 @@ $(function(){
 	/* Swiper */
 	slideStepSlider();
 	slideWeatherSlider();
-	slideLoopSlider();
+	slideSixMotionSlider();
+	
 
 	/* 페이지 내 스크롤 앵커  */
     $('.washing_machines_202106 .btn_go_info').click(function(e){
@@ -179,7 +199,8 @@ $(function(){
 /* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function() {
-    var offset = $(window).scrollTop() + $(window).height() * 0.9,
+    var offset = $(window).scrollTop() + $(window).height() * 0.9;
+	var offset_half = $(window).scrollTop() + $(window).height() * 0.2;
   	
 	$animate = $('.animate');
     $animate.each(function(i) {
@@ -210,14 +231,11 @@ $.fn.feScrollGet = function() {
         }
     });
 	
-	var offset_half = $(window).scrollTop() + $(window).height() * 0.2 ,
-	$videos = $('video');
-    if ($videos.length == 0) {
-        //$(window).off('scroll', feScrollFn);
-    }
+	
+	$videos = $('.img_video');
 
     $videos.each(function(i) {
-        var $video = $(this),
+        var $video = $(this).find('video'),
             video = $video,
             item_top = $video.offset().top,
             item_h = $video.height();
@@ -233,8 +251,28 @@ $.fn.feScrollGet = function() {
 				video.get(0).currentTime = 0;
                 $video.removeClass('video_on');
             }
-        }
+        }	
     });
+    $('.slide_six_motion').each(function(i) {
+        var $video2 = $(this),
+            video2 = $video2,
+            item_top = $video2.offset().top,
+            item_h = $video2.height();
+		
+			if (($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)) {
+				if (!$video2.hasClass('video_on')) {
+					slideSixMotion.autoplay.start();
+					$video2.addClass('video_on');
+					
+				}
+			} else {
+				if ($video2.hasClass('video_on')) {
+					slideSixMotion.autoplay.stop();
+					$video2.removeClass('video_on');
+				}
+			}	
+    });
+
 };
 
 // Scroll Event Function 
