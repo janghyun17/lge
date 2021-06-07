@@ -120,14 +120,14 @@
 /* Active */
 .washing_machines_202106 .box.animate .img,
 .washing_machines_202106 .box.animate .img_video,
-.washing_machines_202106 .box.animate .box_area {transform:translateY(15%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.washing_machines_202106 .box.animate .box_area {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
 .washing_machines_202106 .box.animate .img_resp img,
-.washing_machines_202106 .box.animate .img_resp video {transform:translateY(0%);opacity:0;transition:opacity 0.6s 0s;}
-.washing_machines_202106 .box.animate .ico_ani{display:none;}
+.washing_machines_202106 .box.animate .img_resp video {transform:translateY(0);opacity:0;transition:opacity 0.8s 0s;}
+.washing_machines_202106 .box.animate .ico_ani {display:none;}
 
 .washing_machines_202106 .box.active .img,
 .washing_machines_202106 .box.active .img_video,
-.washing_machines_202106 .box.active .box_area {transform:translateY(0%);opacity:1;transition-delay:0.3s;}
+.washing_machines_202106 .box.active .box_area {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
 .washing_machines_202106 .box.active .img_resp img,
 .washing_machines_202106 .box.active .img_resp video {opacity:1;transition-delay:0.2s;}
 .washing_machines_202106 .box.animate.active .ico_ani {display:block;}
