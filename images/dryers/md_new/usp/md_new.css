@@ -471,9 +471,9 @@
 /* Active */
 .dryers_202106 .scene04_1_ani.animate {opacity:0;transition:opacity 0.4s;}
 .dryers_202106 .scene04_1_ani.animate.active {opacity:1;}
-.dryers_202106 .scene04_1_ani.animate.active .a1 {animation:imgLeft both 0.6s 0.6s;}
+.dryers_202106 .scene04_1_ani.animate.active .a1 {animation:imgLeft both 0.6s 0.8s;}
 .dryers_202106 .scene04_1_ani.animate.active .a1 em {animation:scene04_1_ani both linear 3 1.8s 1.2s;}
-.dryers_202106 .scene04_1_ani.animate.active .a2 {animation:imgTop both 0.4s 0.4s;}
+.dryers_202106 .scene04_1_ani.animate.active .a2 {animation:imgTop both 0.4s 0.6s;}
 
 
 @keyframes scene04_1_ani {
@@ -568,6 +568,26 @@
 0% {transform:translateY(15%);opacity:0;}
 100% {transform:translateY(27%);opacity:1;}
 }
+
+
+
+
+
+
+/* 듀얼 인버터 컴프레서/모터 */
+.dryers_202106 .scene04_2_ani {position:absolute;left:0;top:0;width:100%;height:100%;}
+.dryers_202106 .scene04_2_ani p {position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:79% 69.3%;}
+.dryers_202106 .active .scene04_2_ani {animation:fade both 0.8s 0.5s;}
+.dryers_202106 .active .scene04_2_ani p {animation:scene04_2_ani both 0.8s 0.8s;}
+
+@keyframes scene04_2_ani {
+0% {transform:rotate(140deg)}
+100% {transform:rotate(0)}
+}
+
+
+
+
 
 
 
