@@ -55,7 +55,6 @@ $(function(){
 	$('.slide_six_motion_pagn a').click(function(e){
         e.preventDefault();
         var img_index = $(this).index();
-		
 		slideSixMotion.slideTo(img_index);
     });   
  }); 	
@@ -225,18 +224,19 @@ $.fn.feScrollGet = function() {
             item_top = $video2.offset().top,
             item_h = $video2.height();
 		
-			if (($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)) {
-				if (!$video2.hasClass('video_on')) {
-					slideSixMotion.autoplay.start();
-					$video2.addClass('video_on');
-					
-				}
-			} else {
-				if ($video2.hasClass('video_on')) {
-					slideSixMotion.autoplay.stop();
-					$video2.removeClass('video_on');
-				}
-			}	
+		if (($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)) {
+			if (!$video2.hasClass('mot_on')) {
+				slideSixMotion.autoplay.start();
+				$('.slide_six_motion .currentActive video').get(0).currentTime = 0;
+				$('.slide_six_motion .currentActive video').get(0).play();
+				$video2.addClass('mot_on');
+			}
+		} else {
+			if ($video2.hasClass('mot_on')) {
+				slideSixMotion.autoplay.stop();
+				$video2.removeClass('mot_on');
+			}
+		}	
     });
 
 };
