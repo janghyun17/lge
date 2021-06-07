@@ -305,11 +305,11 @@
 .washing_machines_202106 .slide_step .info_box_cont a.ico_c.on .ico_box:after {background-color:#da0f47;}
 
 /* Active */
-.washing_machines_202106 .slide_step .swiper-slide-active .txt {opacity:1;}
-.washing_machines_202106 .slide_step .swiper-slide-active .txt dt {animation:fade both 0.8s 0.4s;}
-.washing_machines_202106 .slide_step .swiper-slide-active .txt dd span {animation:txtTop both 0.4s 0.4s;}
-.washing_machines_202106 .slide_step .swiper-slide-active .info_box_cont,
-.washing_machines_202106 .slide_step .swiper-slide-active .info_box_cont02 {opacity:1;animation:fade both 0.8s 0.6s;}
+.washing_machines_202106 .slide_step.active .swiper-slide-active .txt {opacity:1;}
+.washing_machines_202106 .slide_step.active .swiper-slide-active .txt dt {animation:fade both 0.8s 0.4s;}
+.washing_machines_202106 .slide_step.active .swiper-slide-active .txt dd span {animation:txtTop both 0.4s 0.4s;}
+.washing_machines_202106 .slide_step.active .swiper-slide-active .info_box_cont,
+.washing_machines_202106 .slide_step.active .swiper-slide-active .info_box_cont02 {opacity:1;animation:fade both 0.8s 0.6s;}
 
 /* :: info_obj :: */
 .washing_machines_202106 .slide_step .info_obj {background:#fff;}
