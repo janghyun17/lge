@@ -70,7 +70,8 @@
 /**** Title ****/
 .washing_machines_202106 .title {position:relative;}
 .washing_machines_202106 .title.animate {opacity:0;transition:opacity 0.4s;}
-.washing_machines_202106 .eyebrow {position:relative;margin:-5px 0 10px 0;color:#767676;font-size:16px;font-weight:700;line-height:24px;}
+.washing_machines_202106 .eyebrow {position:relative;margin:-5px 0 10px 0;color:#767676;font-size:16px;font-weight:700;line-height:24px;overflow:hidden;}
+.washing_machines_202106 .eyebrow span {display:block;position:relative;}
 .washing_machines_202106 .tit {position:relative;left:-2px;font-size:31px;font-weight:bold;line-height:42px;letter-spacing:-0.8px;overflow:hidden;}
 .washing_machines_202106 .tit span {display:block;position:relative;}
 .washing_machines_202106 .desc {position:relative;margin-top:15px;}
@@ -79,10 +80,10 @@
 
 /* Active */
 .washing_machines_202106 .title.active {opacity:1}
-.washing_machines_202106 .title.active .eyebrow {animation:fade both 0.8s 0.2s;}
-.washing_machines_202106 .title.active .tit span {animation:txtTop both 0.6s 0.2s;}
-.washing_machines_202106 .title.active .desc {animation:fade both 0.8s 0.7s;}
-.washing_machines_202106 .title.active .btn_cat {animation:fade both 0.6s 0.9s;}
+.washing_machines_202106 .title.active .eyebrow span {animation:txtTop both 0.4s 0.2s;}
+.washing_machines_202106 .title.active .tit span {animation:txtTop both 0.6s 0.3s;}
+.washing_machines_202106 .title.active .desc {animation:fade both 0.8s 0.8s;}
+.washing_machines_202106 .title.active .btn_cat {animation:fade both 0.6s 1s;}
 
 
 /** -Tablet UI- **/
