@@ -14,9 +14,7 @@
 .dryers_202106 .only_m {display:block;}
 .dryers_202106 img {max-width:100%;margin:0 auto;}
 .dryers_202106 .ico_ani {display:block;position:absolute;left:0;top:0;width:100%;height:100%;}
-.dryers_202106 .ico_ani object {display:none;position:absolute;left:0;top:0;width:100%;height:100%;}
 .dryers_202106 .ico_ani img {display:none;position:absolute;left:0;top:0;width:100%;height:100%;}
-.dryers_202106 .animate.active .ico_ani object {display:block;}
 .dryers_202106 .animate.active .ico_ani img {display:block;}
 
 /* feature_cont */
@@ -303,12 +301,12 @@
 .dryers_202106 .slide_weather .txt li:first-child {margin-left:0;}
 
 /* Active */
-.dryers_202106 .slide_weather .swiper-slide-active .img {animation:scale both 1.8s 0.2s;}
-.dryers_202106 .slide_weather .swiper-slide-active .txt {opacity:1;}
-.dryers_202106 .slide_weather .swiper-slide-active .txt dt span {animation:txtTop both 0.4s 0.2s;}
-.dryers_202106 .slide_weather .swiper-slide-active .txt dd {animation:fade both 0.6s 0.6s;}
-.dryers_202106 .slide_weather .swiper-slide-active .txt ul {animation:fade both 0.8s 0.8s;}
-.dryers_202106 .slide_weather .swiper-slide-active .txt li.chk_info {animation:chk_info both 4 1s 1.2s;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .img {animation:scale both 1.8s 0.2s;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .txt {opacity:1;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .txt dt span {animation:txtTop both 0.4s 0.2s;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .txt dd {animation:fade both 0.6s 0.6s;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .txt ul {animation:fade both 0.8s 0.8s;}
+.dryers_202106 .slide_weather.active .swiper-slide-active .txt li.chk_info {animation:chk_info both 4 1s 1.2s;}
 
 /* mask */
 .dryers_202106 .slide_weather .swiper_mask {position:absolute;left:50%;top:0;width:1000px;height:410px;background:url("./img_mask.svg") center/100% no-repeat;transform:translateX(-31%);z-index:2;}
@@ -377,6 +375,34 @@
 
 
 /*** Contents : Section ***/
+/** 인공지능 정밀 센서 **/
+.dryers_202106 .scene01_3_ani li {position:absolute;left:0;top:0;width:100%;height:100%;}
+.dryers_202106 .scene01_3_ani .count40 {position:absolute;left:0;top:12%;width:100%;padding-left:47.5%;box-sizing:border-box;color:#d80f46;font-size:4.6vw;font-weight:bold;line-height:4.6vw;text-align:center;letter-spacing:-2px;}
+.dryers_202106 .scene01_3_ani .obj3 {transform:translateY(27%);}
+
+/* Active */
+.dryers_202106 .scene01_3_ani.active li.obj1 {animation:scene01_3_obj1 both 0.7s 0.6s;}
+.dryers_202106 .scene01_3_ani.active li.obj2 {animation:scene01_3_obj2 both infinite linear 1.8s 1.2s;}
+.dryers_202106 .scene01_3_ani.active li.obj3 {animation:scene01_3_obj3 both 0.6s 0.5s;}
+.dryers_202106 .scene01_3_ani.active li.obj4 {animation:fade both 0.4s 0.8s;}
+.dryers_202106 .scene01_3_ani.active li.obj5 {animation:fade both 0.4s 0.8s;}
+
+@keyframes scene01_3_obj1 {
+0% {opacity:0.3;}
+100% {opacity:1;}
+}
+@keyframes scene01_3_obj2 {
+0% {opacity:0;}
+50% {opacity:0.6;}
+100% {opacity:0;}
+}
+@keyframes scene01_3_obj3 {
+0% {transform:translateY(15%);opacity:0;}
+100% {transform:translateY(27%);opacity:1;}
+}
+
+
+
 /** 스마트 페어링 **/
 .dryers_202106 .scene01_5_ani {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
 .dryers_202106 .scene01_5_ani .obj1 {position:absolute;left:42.6%;top:20.4%;width:14.5%;z-index:1}
@@ -475,12 +501,26 @@
 .dryers_202106 .scene04_1_ani.animate.active .a1 em {animation:scene04_1_ani both linear 3 1.8s 1.2s;}
 .dryers_202106 .scene04_1_ani.animate.active .a2 {animation:imgTop both 0.4s 0.6s;}
 
-
 @keyframes scene04_1_ani {
 0% {opacity:1;}
 50% {opacity:0.4;}
 100% {opacity:1;}
 }
+
+
+/** 듀얼 인버터 컴프레서/모터 **/
+.dryers_202106 .scene04_2_ani {position:absolute;left:0;top:0;width:100%;height:100%;}
+.dryers_202106 .scene04_2_ani p {position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:79% 69.3%;}
+
+/* Active */
+.dryers_202106 .active .scene04_2_ani {animation:fade both 0.8s 0.5s;}
+.dryers_202106 .active .scene04_2_ani p {animation:scene04_2_ani both 0.8s 0.8s;}
+
+@keyframes scene04_2_ani {
+0% {transform:rotate(140deg)}
+100% {transform:rotate(0)}
+}
+
 
 /** LG ThinQ 앱 **/
 .dryers_202106 .scene04_3_ani {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
@@ -545,45 +585,9 @@
 
 
 
-/* 인공지능 정밀 센서 */
-.dryers_202106 .scene01_3_ani li {position:absolute;left:0;top:0;width:100%;height:100%;}
-.dryers_202106 .scene01_3_ani .count40 {position:absolute;left:0;top:12%;width:100%;padding-left:47.5%;box-sizing:border-box;color:#d80f46;font-size:4.6vw;font-weight:bold;line-height:4.6vw;text-align:center;letter-spacing:-2px;}
-.dryers_202106 .scene01_3_ani .obj3 {transform:translateY(27%);}
-.dryers_202106 .scene01_3_ani.active li.obj1 {animation:scene01_3_obj1 both 0.7s 0.6s;}
-.dryers_202106 .scene01_3_ani.active li.obj2 {animation:scene01_3_obj2 both infinite linear 1.8s 1.2s;}
-.dryers_202106 .scene01_3_ani.active li.obj3 {animation:scene01_3_obj3 both 0.6s 0.5s;}
-.dryers_202106 .scene01_3_ani.active li.obj4 {animation:fade both 0.4s 0.8s;}
-.dryers_202106 .scene01_3_ani.active li.obj5 {animation:fade both 0.4s 0.8s;}
-
-@keyframes scene01_3_obj1 {
-0% {opacity:0.3;}
-100% {opacity:1;}
-}
-@keyframes scene01_3_obj2 {
-0% {opacity:0;}
-50% {opacity:0.6;}
-100% {opacity:0;}
-}
-@keyframes scene01_3_obj3 {
-0% {transform:translateY(15%);opacity:0;}
-100% {transform:translateY(27%);opacity:1;}
-}
 
 
 
-
-
-
-/* 듀얼 인버터 컴프레서/모터 */
-.dryers_202106 .scene04_2_ani {position:absolute;left:0;top:0;width:100%;height:100%;}
-.dryers_202106 .scene04_2_ani p {position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:79% 69.3%;}
-.dryers_202106 .active .scene04_2_ani {animation:fade both 0.8s 0.5s;}
-.dryers_202106 .active .scene04_2_ani p {animation:scene04_2_ani both 0.8s 0.8s;}
-
-@keyframes scene04_2_ani {
-0% {transform:rotate(140deg)}
-100% {transform:rotate(0)}
-}
 
 
 
