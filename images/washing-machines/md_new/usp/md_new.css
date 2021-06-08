@@ -35,7 +35,6 @@
 
 @media only screen and (min-width:768px) {
 .washing_machines_202106 {font-size:18px;line-height:26px;}
-
 	
 /* feature_cont */
 .washing_machines_202106 .feature_cont {padding:140px 40px 0 40px;}
@@ -107,8 +106,7 @@
 
 
 
-
-/*** Contents : Box Type ***/
+/***** Contents : Box Type *****/
 .washing_machines_202106 .box + .title {margin-top:30px;}
 .washing_machines_202106 .img {position:relative;margin-top:38px;border-radius:10px;overflow:hidden;}
 .washing_machines_202106 .img.not_round {border-radius:0;}
@@ -153,7 +151,7 @@
 
 
 
-/*** Main ***/
+/***** Main *****/
 .washing_machines_202106 .section_cont.main:before {position:absolute;left:0;top:0;width:100%;height:calc(100% - 66px);background:#000 url("./img_scene00_bg.png") center top/cover no-repeat;content:"";}
 .washing_machines_202106 .section_cont.main .feature_cont {min-height:530px;padding:70px 25px 20px 25px;color:#fff;overflow:hidden;}
 .washing_machines_202106 .section_cont.main .feature_cont .tit {margin-top:-8px;}
@@ -206,7 +204,7 @@
 
 
 
-/*** Disclaimer ***/
+/***** Disclaimer *****/
 .washing_machines_202106 .disclaimer_info {position:relative;padding-bottom:46px;color:#888;font-size:13px;line-height:21px;}
 .washing_machines_202106 .disclaimer_info .li {position:relative;margin-top:24px;}
 .washing_machines_202106 .disclaimer_info .li:first-child {margin-top:0;}
@@ -235,7 +233,7 @@
 
 
 
-/*** Swiper ***/
+/***** Swiper *****/
 /** Common **/
 .washing_machines_202106 .slide {position:relative;}
 .washing_machines_202106 .swiper-container {position:relative;overflow:hidden;}
@@ -248,18 +246,38 @@
 .washing_machines_202106 .swiper-pagination {position:relative;display:block;width:100%;height:8px;font-size:0;text-align:center;overflow:hidden;z-index:4;}
 .washing_machines_202106 .swiper-pagination-bullet {display:inline-block;position:relative;width:8px;height:8px;margin:0 4px;background-color:#aaa !important;border-radius:4px;vertical-align:top;overflow:hidden;transition:padding 0.4s;}
 .washing_machines_202106 .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0 9px;background:#da0f47 !important;}
-.washing_machines_202106 .slide .swiper-arrow {position:absolute;left:-1px;top:50%;width:30px;height:55px;margin-top:-28px;background:rgba(0,0,0,0.5);border-radius:5px 0 0 5px;z-index:10;cursor:pointer;}
+.washing_machines_202106 .slide .swiper-arrow {position:absolute;left:-1px;top:50%;width:30px;height:55px;margin-top:-28px;background:rgba(0,0,0,0.5);border-radius:4px 0 0 4px;z-index:10;cursor:pointer;}
 .washing_machines_202106 .slide .swiper-arrow:after {position:absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;border:solid #fff;border-width:1px 1px 0 0;transform:rotate(45deg);transform-origin:center;content:'';}
 .washing_machines_202106 .slide .swiper-arrow.swiper-button-next {left:auto;right:-2px;}
 .washing_machines_202106 .slide .swiper-arrow.swiper-button-prev {transform:rotate(180deg);}
 .washing_machines_202106 .slide .swiper-arrow.swiper-button-disabled {display:none;}
 
 
-/** slide_step : 6모션 **/
+
+
+
+/***** Contents *****/
+/*** Scene01_1 : 퀵서클 컨트롤 ***/
+/* txt_info_decs : 글라스 도어 */
+.washing_machines_202106 .txt_info_decs {position:relative;margin-bottom:-3px;padding:20px 20px 0 20px;color:#999;font-size:14px;line-height:22px;}
+.washing_machines_202106 .txt_info_decs dt {position:relative;left:-1px;padding-top:9px;color:#222;font-size:24px;line-height:32px;letter-spacing:-0.5px;overflow:hidden;}
+.washing_machines_202106 .txt_info_decs dt span {display:block;}
+.washing_machines_202106 .txt_info_decs dt:before {position:absolute;left:2px;top:0;width:14px;height:14px;border:3px solid #d90e45;border-radius:50%;box-sizing:border-box;transform:scale(0.5);transform-origin:left top;content:"";}
+.washing_machines_202106 .txt_info_decs dd {margin-top:6px;}
+.washing_machines_202106 .box.animate .txt_info_decs {opacity:0;transition:opacity 0.1s 0s;}
+.washing_machines_202106 .box.active .txt_info_decs {opacity:1;}
+.washing_machines_202106 .box.active .txt_info_decs dt:before {animation:fade both 0.8s 0.2s;}
+.washing_machines_202106 .box.active .txt_info_decs dt span {animation:txtTop both 0.6s 0.2s;}
+.washing_machines_202106 .box.active .txt_info_decs dd {animation:fade both 0.6s 0.9s;}
+
+
+
+/*** Scene02_1 : 인공지능 DD모터 x 6모션 - slide_step ***/
 .washing_machines_202106 .slide_step {position:relative;margin:38px -25px -60px -25px;}
 .washing_machines_202106 .slide_step .swiper-wrapper {height:500px;}
 .washing_machines_202106 .slide_step .swiper-slide {height:500px;padding:0 25px;background:#fff;overflow:hidden;}
 .washing_machines_202106 .slide_step .swiper-pagination {bottom:60px;}
+.washing_machines_202106 .slide_step.slide .swiper-arrow {background:rgba(0,0,0,0.3);}
 .washing_machines_202106 .slide_step.animate {transform:translateY(10%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
 .washing_machines_202106 .slide_step.active {transform:translateY(0%);opacity:1;transition-delay:0.1s;}
 
@@ -378,16 +396,28 @@
 
 
 
-/** slide_weather : 날씨 **/
-.washing_machines_202106 .slide_weather {position:relative;margin:38px -25px 0 -25px;}
-.washing_machines_202106 .slide_weather .swiper-wrapper {height:420px;}
+/*** Scene02_2 : 인공지능 스마트 센서 ***/
+/* txt_info_decs : 인공지능 스마트 센서 */
+.washing_machines_202106 .img_txt_info {position:relative;}
+.washing_machines_202106 .img_txt_info strong {display:inline-block;position:absolute;left:50%;top:-12px;width:135px;height:24px;background:#da0f47;border:2px solid #fff;box-sizing:border-box;border-radius:12px;color:#fff;font-size:12px;font-weight:normal;line-height:19px;text-align:center;vertical-align:top;transform:translateX(-50%);}
+.washing_machines_202106 .img_txt_info strong:nth-child(2) {top:calc(50% - 12px);}
+.washing_machines_202106 .animate .img_txt_info strong {opacity:0;transition:opacity 0.1s 0s;}
+.washing_machines_202106 .active .img_txt_info strong {opacity:1;transition:opacity 0.6s 0.5s;}
+.washing_machines_202106 .active .img_txt_info strong:nth-child(2) {transition-delay:0.7s;}
+
+
+
+/*** Scene02_3 : 인공지능 스마트 케어 -  slide_weather / 날씨 ***/
+.washing_machines_202106 .slide_weather {position:relative;margin:38px -25px -20px -25px;}
+.washing_machines_202106 .slide_weather .swiper-wrapper {height:440px;}
 .washing_machines_202106 .slide_weather .swiper-slide {height:400px;background:#fff;overflow:hidden;}
 .washing_machines_202106 .slide_weather.animate {transform:translateY(10%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
 .washing_machines_202106 .slide_weather.active {transform:translateY(0%);opacity:1;transition-delay:0.1s;}
-.washing_machines_202106 .slide.slide_weather .swiper-arrow {top:65%;}
+.washing_machines_202106 .slide.slide_weather .swiper-pagination {bottom:20px;}
+.washing_machines_202106 .slide.slide_weather .swiper-arrow {top:60%;}
 
 /* img */
-.washing_machines_202106 .slide_weather .img {position:relative;height:400px;overflow:hidden;}
+.washing_machines_202106 .slide_weather .img {position:relative;height:400px;margin:0;overflow:hidden;}
 .washing_machines_202106 .slide_weather .img img {display:block;position:absolute;left:50%;top:0;width:auto;max-width:inherit;height:400px;transform:translateX(-50%);}
 .washing_machines_202106 .slide_weather .img:after {position:absolute;left:0;top:0;width:100%;height:150px;background:linear-gradient(to bottom,rgba(255,255,255,1) 20%,rgba(255,255,255,0));content:"";}
 
@@ -418,7 +448,7 @@
 .washing_machines_202106 .slide_weather .s3 .swiper_mask {transform:translateX(-69%);}
 
 /* swiper_obj */
-.washing_machines_202106 .slide_weather .swiper_obj li {display:none;position:absolute;bottom:-38px;width:215px;z-index:3;}
+.washing_machines_202106 .slide_weather .swiper_obj li {display:none;position:absolute;bottom:-32px;width:215px;z-index:3;}
 .washing_machines_202106 .slide_weather .swiper_obj .c1 {display:block;left:0;animation:swiper_obj01 both 0.5s 0.4s;}
 .washing_machines_202106 .slide_weather .swiper_obj .c2 {left:50%;transform:translateX(-50%);animation:swiper_obj02 both 0.5s 0.4s;}
 .washing_machines_202106 .slide_weather .swiper_obj .c3 {right:0;animation:swiper_obj03 both 0.5s 0.4s;}
@@ -449,7 +479,6 @@
 
 /** -Tablet UI- **/
 @media only screen and (min-width:650px) {
-/** slide_weather : 날씨 **/
 .washing_machines_202106 .slide_weather {max-width:600px;margin:38px auto 0 auto;}
 }
 
@@ -460,56 +489,7 @@
 
 
 
-
-
-/*** Contents : List Tyle ***/
-/* txt_info_decs : 글라스 도어 */
-.washing_machines_202106 .txt_info_decs {position:relative;margin-bottom:-3px;padding:20px 20px 0 20px;color:#999;font-size:14px;line-height:22px;}
-.washing_machines_202106 .txt_info_decs dt {position:relative;left:-1px;padding-top:9px;color:#222;font-size:24px;line-height:32px;letter-spacing:-0.5px;overflow:hidden;}
-.washing_machines_202106 .txt_info_decs dt span {display:block;}
-.washing_machines_202106 .txt_info_decs dt:before {position:absolute;left:2px;top:0;width:14px;height:14px;border:3px solid #d90e45;border-radius:50%;box-sizing:border-box;transform:scale(0.5);transform-origin:left top;content:"";}
-.washing_machines_202106 .txt_info_decs dd {margin-top:6px;}
-.washing_machines_202106 .box.animate .txt_info_decs {opacity:0;transition:opacity 0.1s 0s;}
-.washing_machines_202106 .box.active .txt_info_decs {opacity:1;}
-.washing_machines_202106 .box.active .txt_info_decs dt:before {animation:fade both 0.8s 0.2s;}
-.washing_machines_202106 .box.active .txt_info_decs dt span {animation:txtTop both 0.6s 0.2s;}
-.washing_machines_202106 .box.active .txt_info_decs dd {animation:fade both 0.6s 0.9s;}
-
-/* txt_info_decs : 인공지능 스마트 센서 */
-.washing_machines_202106 .img_txt_info {position:relative;}
-.washing_machines_202106 .img_txt_info strong {display:inline-block;position:absolute;left:50%;top:-12px;width:135px;height:24px;background:#da0f47;border:2px solid #fff;box-sizing:border-box;border-radius:12px;color:#fff;font-size:12px;font-weight:normal;line-height:19px;text-align:center;vertical-align:top;transform:translateX(-50%);}
-.washing_machines_202106 .img_txt_info strong:nth-child(2) {top:calc(50% - 12px);}
-.washing_machines_202106 .animate .img_txt_info strong {opacity:0;transition:opacity 0.1s 0s;}
-.washing_machines_202106 .active .img_txt_info strong {opacity:1;transition:opacity 0.6s 0.5s;}
-.washing_machines_202106 .active .img_txt_info strong:nth-child(2) {transition-delay:0.7s;}
-
-/* ico_li : ThinQ App 상세설명 */
-.washing_machines_202106 .ico_li {display:flex;flex-wrap:wrap;position:relative;max-width:1380px;margin:73px auto -25px auto;}
-.washing_machines_202106 .ico_li .li {display:flex;position:relative;width:100%;min-height:76px;padding:12px 1px 12px 70px;box-sizing:border-box;align-items:center;}
-.washing_machines_202106 .ico_li .li .ico {position:absolute;left:0;top:50%;width:56px;height:56px;margin-top:-28px;}
-.washing_machines_202106 .ico_li .li .txt dt {font-size:20px;font-weight:bold;line-height:28px;}
-.washing_machines_202106 .ico_li .li .txt {padding-bottom:2px;box-sizing:border-box;font-size:14px;line-height:22px;}
-.washing_machines_202106 .ico_li .li.animate {transform:translateY(10%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
-.washing_machines_202106 .ico_li .li.active {transform:translateY(0%);opacity:1;transition-delay:0.1s;}
-
-
-/** -Tablet UI- **/
-@media only screen and (min-width:768px) {
-/* ico_li : ThinQ App 상세설명 */
-.washing_machines_202106 .ico_li .li {width:50%;}
-}
-
-
-/** -PC UI- **/
-@media only screen and (min-width:1280px) {
-}
-
-
-
-
-
-/*** Contents : Section ***/
-/** 스마트 페어링 **/
+/** Scene02_4 : 스마트 페어링 **/
 .washing_machines_202106 .scene02_4_ani {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
 .washing_machines_202106 .scene02_4_ani .obj1 {position:absolute;left:42.6%;top:20.4%;width:14.5%;z-index:1}
 .washing_machines_202106 .scene02_4_ani .obj1:after {position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(218,15,71,0.2);border-radius:33%/35%;content:"";}
@@ -540,8 +520,6 @@
 .washing_machines_202106 .animate.active .scene02_4_ani .obj2 em:after {animation:scene02_4_ani32 both linear 0.4s 1.5s;}
 .washing_machines_202106 .animate.active .scene02_4_ani .obj3 li {animation:fade both 1s 1.7s;}
 
-
-
 /* Animation */
 @keyframes scene02_4_ani2 {
 0% {transform:scale(0.7);}
@@ -561,36 +539,21 @@
 100% {width:4.2%;}
 }
 
-/** -Tablet UI- **/
-@media only screen and (min-width:650px) {
-}
 
 
-/** -PC UI- **/
-@media only screen and (min-width:1280px) {
-}
+/** Scene03_3 : 스테인리스 세탁통 ***/
+.washing_machines_202106 .scene03_3 .img.only_m {margin-bottom:-15px;}
 
 
 
-
-/** 24kg 대용량 세탁 **/
+/** Scene03_4 : 24kg 대용량 세탁 ***/
 .washing_machines_202106 .scene03_4_ani .count24 {position:absolute;left:0;top:15%;width:100%;padding-right:2%;box-sizing:border-box;color:#da0f47;font-size:11vw;font-weight:500;line-height:11vw;text-align:center;letter-spacing:-1px;}
 .washing_machines_202106 .scene03_4_ani.animate .count24 {display:none;}
 .washing_machines_202106 .scene03_4_ani.active .count24 {display:block;}
 
 
-/** -Tablet UI- **/
-@media only screen and (min-width:650px) {
-}
 
-
-/** -PC UI- **/
-@media only screen and (min-width:1280px) {
-}
- 
-
-
-/** LG ThinQ 앱 **/
+/** Scene03_5 : LG ThinQ 앱 ***/
 .washing_machines_202106 .scene03_5_ani {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
 .washing_machines_202106 .scene03_5_ani .obj1 {position:absolute;left:42.6%;top:50%;width:14.5%;transform:translateY(-50%);}
 .washing_machines_202106 .scene03_5_ani .obj1:before {position:absolute;left:-6%;top:-6%;width:calc(100% + 12%);height:calc(100% + 12%);background:rgba(218,15,71,0.1);border-radius:33%/35%;content:"";}
@@ -602,7 +565,7 @@
 .washing_machines_202106 .scene03_5_ani .obj2:before,
 .washing_machines_202106 .scene03_5_ani .obj2 :before,
 .washing_machines_202106 .scene03_5_ani .obj2:after,
-.washing_machines_202106 .scene03_5_ani .obj2 :after {display:block;position:absolute;top:50%;/*width:1.0vw;height:1.0vw;background:#da0f47;border-radius:50%;*/width:4px;height:4px;background:url("ico_scene03_5.svg") center/100% no-repeat;content:"";/*transform:translateY(-50%);*/}
+.washing_machines_202106 .scene03_5_ani .obj2 :after {display:block;position:absolute;top:50%;width:4px;height:4px;background:url("ico_scene03_5.svg") center/100% no-repeat;content:"";}
 .washing_machines_202106 .scene03_5_ani .obj2:before {left:36%;}
 .washing_machines_202106 .scene03_5_ani .obj2 em:before {left:38%;}
 .washing_machines_202106 .scene03_5_ani .obj2 i:before {left:40%;}
@@ -623,6 +586,13 @@
 .washing_machines_202106 .animate.active .scene03_5_ani .obj2:before,
 .washing_machines_202106 .animate.active .scene03_5_ani .obj2:after {animation:scene03_5_ani both 3 1.5s 1.2s;}
 
+/* Animation */
+@keyframes scene03_5_ani {
+0% {opacity:1;}
+50% {opacity:0;}
+100% {opacity:1;}
+}
+
 @media only screen and (min-width:500px) {
 .washing_machines_202106 .scene03_5_ani .obj2:before,
 .washing_machines_202106 .scene03_5_ani .obj2 :before,
@@ -631,22 +601,25 @@
 }
 
 
-/* Animation */
-@keyframes scene03_5_ani {
-0% {opacity:1;}
-50% {opacity:0;}
-100% {opacity:1;}
-}
+/** ico_li : ThinQ App 상세설명 **/
+.washing_machines_202106 .ico_li {display:flex;flex-wrap:wrap;position:relative;max-width:1380px;margin:73px auto -25px auto;}
+.washing_machines_202106 .ico_li .li {display:flex;position:relative;width:100%;min-height:76px;padding:12px 1px 12px 70px;box-sizing:border-box;align-items:center;}
+.washing_machines_202106 .ico_li .li .ico {position:absolute;left:0;top:50%;width:56px;height:56px;margin-top:-28px;}
+.washing_machines_202106 .ico_li .li .txt dt {font-size:20px;font-weight:bold;line-height:28px;}
+.washing_machines_202106 .ico_li .li .txt {padding-bottom:2px;box-sizing:border-box;font-size:14px;line-height:22px;}
+.washing_machines_202106 .ico_li .li.animate {transform:translateY(10%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.washing_machines_202106 .ico_li .li.active {transform:translateY(0%);opacity:1;transition-delay:0.1s;}
 
 
 /** -Tablet UI- **/
-@media only screen and (min-width:650px) {
+@media only screen and (min-width:768px) {
+/* ico_li : ThinQ App 상세설명 */
+.washing_machines_202106 .ico_li .li {width:50%;}
 }
 
 
-/** -PC UI- **/
-@media only screen and (min-width:1280px) {
-}
+
+
 
 
 
@@ -674,8 +647,6 @@
 0% {transform:scale(1.1);}
 100% {transform:scale(1);}
 }
-
-
 
 
 
