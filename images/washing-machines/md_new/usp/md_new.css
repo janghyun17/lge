@@ -419,13 +419,13 @@
 .washing_machines_202107 .slide_step .c2.swiper-slide-active .obj3 {animation:fade both 0.7s;}
 
 /* Step2 : 옷감 감지 */
-.washing_machines_202107 .slide_step .c3 .obj3 {position:absolute;left:0;top:0;width:100%;height:300px;  transform-origin:center;}
+.washing_machines_202107 .slide_step .c3 .obj3 {position:absolute;left:0;top:0;width:100%;height:300px;transform-origin:center;opacity:0;}
 .washing_machines_202107 .slide_step .c3 .info_obj_box .cir {position:absolute;border-radius:50%;overflow:hidden;}
 .washing_machines_202107 .slide_step .c3 .info_obj_box .cir:nth-child(1) {left:43px;top:29px;width:235px;height:235px;background:linear-gradient(to bottom,#ef0a6a,#b7349b);opacity:0.1;}
 .washing_machines_202107 .slide_step .c3 .info_obj_box .cir:nth-child(2) {left:24px;top:46px;width:230px;height:230px;background:linear-gradient(to bottom,#00c0fa,#015fea);opacity:0.2;}
 .washing_machines_202107 .slide_step .c3 .info_obj_box .cir:nth-child(3) {left:29px;top:21px;width:218px;height:218px;background:linear-gradient(to bottom,#626fbf,#972ae6);opacity:0.2;}
 .washing_machines_202107 .slide_step .c3.swiper-slide-active .obj2 {animation:obj_box3_1 both infinite linear 1.8s 0.4s;}
-.washing_machines_202107 .slide_step .c3.swiper-slide-active .obj3 {animation:obj_box3_2 both infinite linear 3.5s 0.4s;}
+.washing_machines_202107 .slide_step .c3.swiper-slide-active .obj3 {animation:obj_box3_2 both infinite linear 3.5s 0.4s;opacity:1;}
 
 
 /* Step3 : 6모션 */
