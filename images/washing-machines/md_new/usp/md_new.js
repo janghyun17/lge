@@ -3,9 +3,45 @@
 */
 
 
+/** Swiper : 컬러 **/
+function slideColorTypeSlider(){
+	var $target = $('.washing_machines_202107 .slide_color_type .swiper-container');
+	var slideOption = {
+		effect : 'fade', // 페이드 효과 사용
+		loop:false,
+		pagination:{
+			el:'.slide_color_type .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.slide_color_type .swiper-button-next',
+			prevEl:'.slide_color_type .swiper-button-prev',
+		},
+		breakpoints:{
+
+		},
+		speed:0,
+		observer:true,
+		observeParents:true,
+		on: {
+			slidePrevTransitionEnd:function(){
+				$('.slide_color_type').removeClass('right');
+				$('.slide_color_type').addClass('left');
+			},
+			slideNextTransitionEnd:function(){
+				$('.slide_color_type').removeClass('left');
+				$('.slide_color_type').addClass('right');
+				
+			},
+		}
+	};
+	slideColorType = new Swiper($target.get(0), slideOption);
+}
+
+
 /** 인공지능 DD모터 x 6모션 **/
 function slideStepSlider() {
-	var $target = $('.washing_machines_202106 .slide_step .swiper-container')
+	var $target = $('.washing_machines_202107 .slide_step .swiper-container')
 	var slideOption = {
 		effect :'fade', // 페이드 효과 사용
 		loop:false,
@@ -54,7 +90,7 @@ function slideStepSlider() {
 
 /* 6모션 Loop */
 function slideSixMotionSlider(){
-	var $target = $('.washing_machines_202106 .slide_six_motion .swiper-container');
+	var $target = $('.washing_machines_202107 .slide_six_motion .swiper-container');
 	var slideOption = {
 		effect :'fade', // 페이드 효과 사용
 		loop:false,
@@ -91,10 +127,10 @@ function slideSixMotionSlider(){
 
 /** Swiper : 날씨 **/
 function slideWeatherSlider(){
-	var $target = $('.washing_machines_202106 .slide_weather .swiper-container');
+	var $target = $('.washing_machines_202107 .slide_weather .swiper-container');
 	var slideOption = {
 		effect : 'fade', // 페이드 효과 사용
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.slide_weather .swiper-pagination',
 			clickable:true,
@@ -150,13 +186,14 @@ function countNumAni(countNum){
 
 $(function(){
 	/* Swiper */
+	slideColorTypeSlider();
 	slideStepSlider();
 	slideWeatherSlider();
 	slideSixMotionSlider();
 	
 
 	/* 페이지 내 스크롤 앵커  */
-    $('.washing_machines_202106 .btn_go_info').click(function(e){
+    $('.washing_machines_202107 .btn_go_info').click(function(e){
         e.preventDefault();
 		var t = $(this).attr('href');
         if ($(t).length){
@@ -168,7 +205,7 @@ $(function(){
             });
         }
     });
-    $('.washing_machines_202106 .btn_anchor a').click(function(e){
+    $('.washing_machines_202107 .btn_anchor a').click(function(e){
         e.preventDefault();
 		var t = $(this).attr('href');
         if ($(t).length){
@@ -201,11 +238,14 @@ $.fn.feScrollGet = function(){
             if(!$ani.hasClass('active')){
                 $ani.addClass('active');	
             }
+			if(!$('.slide_color_type').hasClass('active')){
+				slideColorType.slideTo(0);
+			}
 			if(!$('.slide_step').hasClass('active')){
 				slideStep.slideTo(0);
 			}
 			if(!$('.slide_weather').hasClass('active')){
-				slideWeather.slideTo(1);
+				slideWeather.slideTo(0);
 			}
 			if(!$('.scene03_4_ani').hasClass('active')){
 				var numbers = [
