@@ -4,8 +4,8 @@
 
 
 /** 인공지능 DD모터 x 6모션 **/
-function slideSixMotionSlider() {
-	var $target = $('.dryers_202106 .slide_six_motion .swiper-container');
+function slideSixMotionSlider(){
+	var $target = $('.dryers_202107 .slide_six_motion .swiper-container');
 	var slideOption = {
 		effect :'fade', // 페이드 효과 사용
 		loop:true,
@@ -22,31 +22,19 @@ function slideSixMotionSlider() {
 				$('.slide_six_motion_pagn a').removeClass('on');
 				$('.slide_six_motion_pagn a').eq(idx).addClass('on');
 			},
-		},
-		//observer:true,
-		//observeParents:true,
+		}
 	};
 	slideSixMotion = new Swiper($target.get(0), slideOption);
 	slideSixMotion.autoplay.stop();
 	
 	if ($target.find('video').length){
-		slideSixMotion.on('slideChange', function (e, idx) {
+		slideSixMotion.on('slideChange', function (e, idx){
 			$target.find('.swiper-slide').find('video').each(function(params){
 				$(this).get(0).currentTime = 0;
 				$(this).get(0).pause();
 			});
 			$target.find('.swiper-slide').eq(slideSixMotion.activeIndex).find('video').each(function(){
-				// Show loading animation.
-				var playPromise = $(this).get(0).play();
-				if (playPromise !== undefined) {
-					playPromise.then(_ => {
-						$(this).get(0).play();
-					})
-					.catch(error => {
-						$(this).get(0).currentTime = 0;
-						$(this).get(0).pause();
-					});
-				}
+				$(this).get(0).play();
 			});
 		});
 	}
@@ -63,10 +51,10 @@ $(function(){
 
 /** Swiper : 날씨 **/
 function slideWeatherSlider() {
-	var $target = $('.dryers_202106 .slide_weather .swiper-container');
+	var $target = $('.dryers_202107 .slide_weather .swiper-container');
 	var slideOption = {
 		effect : 'fade', // 페이드 효과 사용
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.slide_weather .swiper-pagination',
 			clickable:true,
@@ -93,25 +81,60 @@ function slideWeatherSlider() {
 }
 
 
+/** Swiper : 컬러 **/
+function slideColorTypeSlider(){
+	var $target = $('.dryers_202107 .slide_color_type .swiper-container');
+	var slideOption = {
+		effect : 'fade', // 페이드 효과 사용
+		loop:false,
+		pagination:{
+			el:'.scene02_3 .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.scene02_3 .swiper-button-next',
+			prevEl:'.scene02_3 .swiper-button-prev',
+		},
+		breakpoints:{
+
+		},
+		speed:0,
+		observer:true,
+		observeParents:true,
+		on: {
+			slidePrevTransitionStart:function(){
+				$('.slide_color_type').removeClass('right');
+				$('.slide_color_type').addClass('left');
+			},
+			slideNextTransitionStart:function(){
+				$('.slide_color_type').removeClass('left');
+				$('.slide_color_type').addClass('right');
+			},
+		}
+	};
+	slideColorType = new Swiper($target.get(0), slideOption);
+}
+
+
 /* count */
 function countNumAni(countNum){
-	Number.isInteger = Number.isInteger || function (value) {
+	Number.isInteger = Number.isInteger || function(value){
 		return typeof value == "number" && isFinite(value) && Math.floor(value) == value;
 	}
-	countNum.map(function (num) {
+	countNum.map(function(num){
 		$({ val : num.first }).animate({ val : num.last }, {
-			duration: num.duration,
-			step: function() {
-				if (Number.isInteger(num.last) == false) {
+			duration:num.duration,
+			step:function(){
+				if(Number.isInteger(num.last) == false){
 					num.$el.html(this.val.toFixed(1));
-				} else {
+				}else{
 					num.$el.html(this.val.toFixed(0));
 				}
 			},
-			complete: function() {
-				if (Number.isInteger(num.last) == false) {
+			complete:function(){
+				if(Number.isInteger(num.last) == false){
 					num.$el.html(this.val.toFixed(1));
-				} else {
+				}else{
 					num.$el.html(this.val.toFixed(0));
 				}
 			}
@@ -122,13 +145,13 @@ function countNumAni(countNum){
 
 $(function(){
 	/* Swiper */
-	//slideStepSlider();
+	slideColorTypeSlider();
 	slideWeatherSlider();
 	slideSixMotionSlider();
 	
 
 	/* 페이지 내 스크롤 앵커  */
-    $('.dryers_202106 .btn_go_info').click(function(e){
+    $('.dryers_202107 .btn_go_info').click(function(e){
         e.preventDefault();
 		var t = $(this).attr('href');
         if ($(t).length){
@@ -140,7 +163,7 @@ $(function(){
             });
         }
     });
-    $('.dryers_202106 .btn_anchor a').click(function(e){
+    $('.dryers_202107 .btn_anchor a').click(function(e){
         e.preventDefault();
 		var t = $(this).attr('href');
         if ($(t).length){
@@ -161,28 +184,23 @@ $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function() {
     var offset = $(window).scrollTop() + $(window).height() * 0.9;
 	var offset_half = $(window).scrollTop() + $(window).height() * 0.2;
+	var offset_half2 = $(window).scrollTop() + $(window).height() * 0.5;
   	
 	$animate = $('.animate');
-    $animate.each(function(i) {
+    $animate.each(function(i){
         var $ani = $(this),
             ani = $ani,
             item_top = $ani.offset().top,
             item_h = $ani.height();
-		if (($ani.offset().top) < offset) {
-            if (!$ani.hasClass('active')) {
+		if (($ani.offset().top) < offset){
+            if(!$ani.hasClass('active')){
                 $ani.addClass('active');	
             }
 			if(!$('.slide_six_motion').hasClass('active')){
 				slideSixMotion.slideTo(1);
 			}
 			if(!$('.slide_weather').hasClass('active')){
-				slideWeather.slideTo(1);
-			}
-			if(!$('.scene02_2_ani').hasClass('active')){
-				var numbers = [
-					{$el:$('.scene02_2_ani .count20'), first:0, last:20, duration:1500},
-				]
-				countNumAni(numbers);
+				slideWeather.slideTo(0);
 			}
 			if(!$('.scene01_3_ani').hasClass('active')){
 				var numbers = [
@@ -190,27 +208,35 @@ $.fn.feScrollGet = function() {
 				]
 				countNumAni(numbers);
 			}	
-        } else {
-            if ($ani.hasClass('active')) {
+			if(!$('.scene02_2_ani').hasClass('active')){
+				var numbers = [
+					{$el:$('.scene02_2_ani .count20'), first:0, last:20, duration:1500},
+				]
+				countNumAni(numbers);
+			}
+			if(!$('.slide_color_type').hasClass('active')){
+				slideColorType.slideTo(0);
+			}
+        }else{
+            if($ani.hasClass('active')){
                $ani.removeClass('active');
             }
         }
     });
-	
-	
+
 	$videos = $('.img_video');
     $videos.each(function(i) {
         var $video = $(this).find('video'),
             video = $video,
             item_top = $video.offset().top,
             item_h = $video.height();
-		if (($video.offset().top) < (offset) && (item_top + item_h) > (offset_half)) {
-            if (!$video.hasClass('video_on')) {
+		if(($video.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
+            if (!$video.hasClass('video_on')){
                 video.get(0).play();
                 $video.addClass('video_on');
             }
-        } else {
-            if ($video.hasClass('video_on')) {
+        }else{
+            if($video.hasClass('video_on')){
                 video.get(0).pause();
 				video.get(0).currentTime = 0;
                 $video.removeClass('video_on');
@@ -218,27 +244,26 @@ $.fn.feScrollGet = function() {
         }	
     });
 	
-    $('.slide_six_motion').each(function(i) {
+    $('.slide_six_motion').each(function(i){
         var $video2 = $(this),
             video2 = $video2,
             item_top = $video2.offset().top,
             item_h = $video2.height();
 		
-		if (($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)) {
+		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
 			if (!$video2.hasClass('mot_on')) {
 				slideSixMotion.autoplay.start();
 				$('.slide_six_motion .currentActive video').get(0).currentTime = 0;
 				$('.slide_six_motion .currentActive video').get(0).play();
 				$video2.addClass('mot_on');
 			}
-		} else {
-			if ($video2.hasClass('mot_on')) {
+		}else{
+			if($video2.hasClass('mot_on')) {
 				slideSixMotion.autoplay.stop();
 				$video2.removeClass('mot_on');
 			}
 		}	
-    });
-
+    })
 };
 
 // Scroll Event Function 
