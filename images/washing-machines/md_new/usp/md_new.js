@@ -7,7 +7,10 @@
 function slideColorTypeSlider(){
 	var $target = $('.washing_machines_202107 .slide_color_type .swiper-container');
 	var slideOption = {
-		effect : 'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
+		fadeEffect: {
+			crossFade:true
+		},
 		loop:false,
 		pagination:{
 			el:'.slide_color_type .swiper-pagination',
@@ -190,6 +193,12 @@ $(function(){
 	slideStepSlider();
 	slideWeatherSlider();
 	slideSixMotionSlider();
+	
+	$(window).on("resize", function(){
+		$('.color_box_inner').css('width', $('.slide_color_type').innerWidth());
+	}).trigger('resize');
+	
+	
 	
 
 	/* 페이지 내 스크롤 앵커  */
