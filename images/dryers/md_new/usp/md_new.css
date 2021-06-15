@@ -695,7 +695,7 @@
 
 /* Active */
 .dryers_202107 .slide_color_type.right .swiper-slide.swiper-slide-active .color_box_wrap,
-.dryers_202107 .slide_color_type.left .swiper-slide.swiper-slide-active .color_box_wrap {animation:slide_color_type both linear 0.8s;}
+.dryers_202107 .slide_color_type.left .swiper-slide.swiper-slide-active .color_box_wrap {animation:slide_color_type both linear 0.6s;}
 
 /* Animation */
 @keyframes slide_color_type {
