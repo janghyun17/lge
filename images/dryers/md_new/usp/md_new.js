@@ -82,10 +82,27 @@ function slideWeatherSlider() {
 
 
 /** Swiper : 컬러 **/
+function slideColorTypeSlider2(){
+	var $target = $('.dryers_202107 .slide_color_type2 .swiper-container');
+	var slideOption = {
+		effect : 'fade', // 페이드 효과 사용
+		loop:false,
+		pagination:false,
+		navigation:false,
+		breakpoints:{
+
+		},
+		speed:500,
+		observer:true,
+		observeParents:true,
+	};
+	slideColorType2 = new Swiper($target.get(0), slideOption);
+}
+
 function slideColorTypeSlider(){
 	var $target = $('.dryers_202107 .slide_color_type .swiper-container');
 	var slideOption = {
-		effect : 'fade', // 페이드 효과 사용
+		//effect : 'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:{
 			el:'.scene02_3 .swiper-pagination',
@@ -98,17 +115,13 @@ function slideColorTypeSlider(){
 		breakpoints:{
 
 		},
-		speed:0,
+		speed:600,
 		observer:true,
 		observeParents:true,
 		on: {
-			slidePrevTransitionStart:function(){
-				$('.slide_color_type').removeClass('right');
-				$('.slide_color_type').addClass('left');
-			},
-			slideNextTransitionStart:function(){
-				$('.slide_color_type').removeClass('left');
-				$('.slide_color_type').addClass('right');
+			slideChange:function(){
+				var idx = this.realIndex
+				slideColorType2.slideTo(idx);
 			},
 		}
 	};
@@ -146,6 +159,7 @@ function countNumAni(countNum){
 $(function(){
 	/* Swiper */
 	slideColorTypeSlider();
+	slideColorTypeSlider2()
 	slideWeatherSlider();
 	slideSixMotionSlider();
 	
@@ -214,7 +228,7 @@ $.fn.feScrollGet = function() {
 				]
 				countNumAni(numbers);
 			}
-			if(!$('.slide_color_type').hasClass('active')){
+			if(!$('.scene02_3_ani').hasClass('active')){
 				slideColorType.slideTo(0);
 			}
         }else{

@@ -648,13 +648,16 @@
 
 
 /*** Scene01_2 : 뉴 심플 디자인 - slide_color_type / 컬러 ***/
-.dryers_202107 .slide_color_type {position:relative;margin:38px -25px -35px -25px;overflow:hidden;}
-.dryers_202107 .slide_color_type.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
-.dryers_202107 .slide_color_type.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
-.dryers_202107 .slide_color_type .swiper-slide {height:295px;background:none !important;overflow:hidden;}
-.dryers_202107 .slide_color_type .swiper-slide.swiper-slide-active {z-index:10;}
-.dryers_202107 .scene02_3 .swiper-arrow {top:75%;background:rgba(0,0,0,0.3);}
-
+.dryers_202107 .scene02_3 .scene02_3_ani {position:relative;margin:38px -25px -40px -25px;overflow:hidden;}
+.dryers_202107 .scene02_3 .scene02_3_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.dryers_202107 .scene02_3 .scene02_3_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before,
+.dryers_202107 .scene02_3 .scene02_3_ani:after {position:absolute;top:0;width:25px;height:100%;;content:"";z-index:2;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before {left:0;background:linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0));}
+.dryers_202107 .scene02_3 .scene02_3_ani:after {right:0;background:linear-gradient(to left,rgba(255,255,255,1), rgba(255,255,255,0));}
+.dryers_202107 .scene02_3 .swiper-slide {height:295px;background:none !important;overflow:hidden;}
+.dryers_202107 .scene02_3 .color_box_inner {position:absolute;left:calc(50% - 126px);top:0;width:260px;height:260px;}
+.dryers_202107 .scene02_3 .swiper-arrow {top:42%;background:rgba(0,0,0,0.3);}
 
 /* slide_color_type_pagn */
 .dryers_202107 .slide_color_type_pagn {position:relative;margin-top:18px;}
@@ -666,104 +669,73 @@
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(5) {background-color:#3c4a47 !important;border-color:#3c4a47 !important;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0;border-color:#da0f47 !important;}
 .dryers_202107 .animate .slide_color_type_pagn {opacity:0;}
-.dryers_202107 .active .slide_color_type_pagn {opacity:1;animation:fade both 0.6s 1s}
-
-/** color_box_wrap **/
-.dryers_202107 .slide_color_type .color_box_wrap {position:absolute;right:calc(50% - 134px);top:0;width:260px;height:260px;overflow:hidden;}
-.dryers_202107 .slide_color_type .color_box_inner {position:absolute;right:0;top:0;width:260px;height:260px;overflow:hidden;}
-.dryers_202107 .slide_color_type.left .color_box_wrap {right:inherit;left:calc(50% - 126px);}
-.dryers_202107 .slide_color_type.left .color_box_inner {right:inherit;left:0;}
-.dryers_202107 .slide_color_type.left .swiper-slide.swiper-slide-next,
-.dryers_202107 .slide_color_type.right .swiper-slide.swiper-slide-prev {opacity:1 !important;}
-
-/* color_bg */
-.dryers_202107 .slide_color_type .color_bg {position:absolute;left:0;top:0;width:220px;height:220px;overflow:hidden;}
-.dryers_202107 .slide_color_type .c1 .color_bg {background:#c9c9c9 url("./img_scene02_3_obj1_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type .c2 .color_bg {background:#3f3f3f url("./img_scene02_3_obj2_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type .c3 .color_bg {background:#efefef url("./img_scene02_3_obj3_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type .c4 .color_bg {background:#dbd4cc url("./img_scene02_3_obj4_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type .c5 .color_bg {background:#3c4a47 url("./img_scene02_3_obj5_sdw.png") right center/contain no-repeat;}
-
-/* color_name */
-.dryers_202107 .slide_color_type .color_name {position:absolute;left:14px;top:14px;color:#919191;font-size:21px;font-weight:bold;line-height:21px;}
-.dryers_202107 .slide_color_type .c4 .color_name {color:#948778;}
-.dryers_202107 .slide_color_type .c5 .color_name {color:#7a8885;}
+.dryers_202107 .active .slide_color_type_pagn {opacity:1;animation:fade both 0.6s 1s;}
 
 /* color_obj */
-.dryers_202107 .slide_color_type .color_obj {position:absolute;left:78px;top:40px;width:175px;height:220px;z-index:10;overflow:hidden;}
-.dryers_202107 .slide_color_type .color_obj_bg {position:absolute;left:calc(50% - 65px);top:137px;width:241px;height:165px;background:url("img_scene02_3_obj_m.png") center/contain no-repeat;z-index:0;overflow:hidden;}
+.dryers_202107 .slide_color_type {position:relative;}
+.dryers_202107 .slide_color_type .color_obj {position:absolute;left:60px;top:38px;width:245px;height:265px;z-index:10;overflow:hidden;}
 
-/* Active */
-.dryers_202107 .slide_color_type.right .swiper-slide.swiper-slide-active .color_box_wrap,
-.dryers_202107 .slide_color_type.left .swiper-slide.swiper-slide-active .color_box_wrap {animation:slide_color_type both linear 0.6s;}
-
-/* Animation */
-@keyframes slide_color_type {
-0% {width:0;height:0;}
-100% {width:100%;height:100%;}
-}
+/* color_bg */
+.dryers_202107 .slide_color_type2 {position:absolute;left:0;top:0;width:100%;height:100%;}
+.dryers_202107 .slide_color_type2 .color_bg {position:absolute;left:0;top:0;width:220px;height:220px;overflow:hidden;}
+.dryers_202107 .slide_color_type2 .c1 .color_bg {background:#c9c9c9 url("./img_scene02_3_obj1_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c2 .color_bg {background:#3f3f3f url("./img_scene02_3_obj2_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c3 .color_bg {background:#efefef url("./img_scene02_3_obj3_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c4 .color_bg {background:#dbd4cc url("./img_scene02_3_obj4_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c5 .color_bg {background:#3c4a47 url("./img_scene02_3_obj5_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .color_name {position:absolute;left:14px;top:14px;color:#919191;font-size:21px;font-weight:bold;line-height:21px;letter-spacing:-0.5px;}
+.dryers_202107 .slide_color_type2 .c4 .color_name {color:#948778;}
+.dryers_202107 .slide_color_type2 .c5 .color_name {color:#7a8885;}
 
 
 /** -Tablet UI- **/
 @media only screen and (min-width:768px) {
 .dryers_202107 .scene02_3 .title {padding-left:20px;}
-.dryers_202107 .scene02_3 .swiper-arrow {top:70%;}
-
+.dryers_202107 .swiper-arrow {width:44px;height:82px;}
+.dryers_202107 .swiper-arrow:after {right:16px;width:24px;height:24px;margin-top:-12px;}
 }
 
 
-/** -Tablet UI- **/
 @media only screen and (min-width:950px) {
 .dryers_202107 .scene02_3 {margin-bottom:-60px;overflow:hidden;}
 .dryers_202107 .scene02_3 .title {margin-top:20px;padding-left:40px;}
 .dryers_202107 .scene02_3 .eyebrow,
 .dryers_202107 .scene02_3 .tit,
 .dryers_202107 .scene02_3 .desc {max-width:550px;}
-.dryers_202107 .scene02_3 .swiper-arrow {top:56%;}
-.dryers_202107 .slide_color_type {margin:0 -40px 0 0;}
-.dryers_202107 .slide_color_type .swiper-slide {height:450px;}
+.dryers_202107 .scene02_3 .scene02_3_ani {margin:0;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before,
+.dryers_202107 .scene02_3 .scene02_3_ani:after {width:35px;}
+.dryers_202107 .scene02_3 .swiper-slide {height:450px;}
+.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 210px);width:390px;height:390px;}
 	
 /* slide_color_type_pagn */
 .dryers_202107 .slide_color_type_pagn {margin-top:23px;}
 
-	
-/** color_box_wrap **/
-.dryers_202107 .slide_color_type .color_box_wrap,
-.dryers_202107 .slide_color_type .color_box_inner {width:390px;height:390px;}
-.dryers_202107 .slide_color_type .color_box_wrap {right:calc(50% - 180px);}
-.dryers_202107 .slide_color_type.left .color_box_wrap {right:inherit;left:calc(50% - 210px);}
-.dryers_202107 .slide_color_type .color_obj_bg {left:calc(50% - 115px);top:204px;width:362px;height:248px;}
-.dryers_202107 .slide_color_type .color_bg {width:330px;height:330px;}
-.dryers_202107 .slide_color_type .color_name {left:20px;top:20px;font-size:32px;line-height:32px;}
-.dryers_202107 .slide_color_type .color_obj {left:122px;top:60px;width:263px;height:330px;}
-
+/* color_obj / color_bg */
+.dryers_202107 .slide_color_type .color_obj {left:122px;top:60px;width:368px;height:398px;}
+.dryers_202107 .slide_color_type2 .color_bg {width:330px;height:330px;}
+.dryers_202107 .slide_color_type2 .color_name {left:20px;top:20px;font-size:32px;line-height:32px;}
 }
+
 
 
 /** -PC UI- **/
 @media only screen and (min-width:1280px) {
 .dryers_202107 .scene02_3 {margin-bottom:-85px;}
 .dryers_202107 .scene02_3 .title {margin-top:40px;padding-left:50px;}
-.dryers_202107 .scene02_3 .swiper-arrow {top:50%;}
-.dryers_202107 .slide_color_type .swiper-slide {height:600px;}
-	
+.dryers_202107 .scene02_3 .swiper-slide {height:600px;}
+.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 260px);width:520px;height:520px;}
+
 /* slide_color_type_pagn */
 .dryers_202107 .slide_color_type_pagn {margin-top:28px;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination {height:20px;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {width:20px;height:20px;margin:0 16px 0 0;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {border-width:2px !important;}
 	
-
-/** color_box_wrap **/
-.dryers_202107 .slide_color_type .color_box_wrap,
-.dryers_202107 .slide_color_type .color_box_inner {width:520px;height:520px;}
-.dryers_202107 .slide_color_type .color_box_wrap {right:calc(50% - 260px);}
-.dryers_202107 .slide_color_type.left .color_box_wrap {right:inherit;left:calc(50% - 260px);}
-.dryers_202107 .slide_color_type .color_obj_bg {left:calc(50% - 130px);top:272px;width:482px;height:330px;}
-.dryers_202107 .slide_color_type .color_bg {width:440px;height:440px;}
-.dryers_202107 .slide_color_type .color_name {left:25px;top:25px;font-size:42px;line-height:42px;}
-.dryers_202107 .slide_color_type .color_obj {left:165px;top:78px;width:350px;height:440px;}
-
+/* color_obj / color_bg */
+.dryers_202107 .slide_color_type .color_obj {left:165px;top:78px;width:490px;height:530px;}
+.dryers_202107 .slide_color_type2 .color_bg {width:440px;height:440px;}
+.dryers_202107 .slide_color_type2 .color_name {left:25px;top:25px;font-size:42px;line-height:42px;}
 }
 
 
