@@ -39,7 +39,7 @@ $(function(){
 /* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function() {
-    var offset = $(window).scrollTop() + $(window).height() * 0.9;
+    var offset = $(window).scrollTop() + $(window).height() * 0.95;
 	var offset_half = $(window).scrollTop() + $(window).height() * 0.2;
 	var offset_half2 = $(window).scrollTop() + $(window).height() * 0.5;
   	
