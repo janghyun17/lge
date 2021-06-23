@@ -214,7 +214,7 @@
 	
 /* btn_anchor */
 .air-purifier_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
-.air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {width:70%;margin-top:177px;padding:0 75px;display:flex;flex-wrap:nowrap;}
+.air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:70%;margin-top:177px;padding:0 75px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor strong {font-size:32px;font-weight:bold;line-height:40px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor span {margin-top:14px;padding-right:36px;}

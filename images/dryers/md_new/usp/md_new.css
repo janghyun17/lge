@@ -122,7 +122,7 @@
 .dryers_202107 .img.not_round {border-radius:0;}
 .dryers_202107 .img_resp {position:relative;margin:38px -25px -20px -25px;background:#f7f7f7;overflow:hidden;}
 .dryers_202107 video {display:block;width:100%;}
-.dryers_202107 .box_area {min-height:300px;margin-top:38px;background:#000;color:#fff;text-align:center;line-height:300px;}
+.dryers_202107 .box_area {min-height:300px;margin-top:38px;background:#000;color:#fff;line-height:300px;text-align:center;}
 
 /* Active */
 .dryers_202107 .box.animate .img,
@@ -134,7 +134,7 @@
 
 .dryers_202107 .box.active .img,
 .dryers_202107 .box.active .img_video,
-.dryers_202107 .box.active .box_area {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+.dryers_202107 .box.active .box_area {transform:translateY(0);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
 .dryers_202107 .box.active .img_resp img,
 .dryers_202107 .box.active .img_resp video {opacity:1;transition-delay:0.2s;}
 .dryers_202107 .box.animate.active .ico_ani {display:block;}
@@ -214,7 +214,7 @@
 	
 /* btn_anchor */
 .dryers_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
-.dryers_202107 .section_cont.main .feature_cont .btn_anchor {width:70%;margin-top:177px;padding:0 75px;display:flex;flex-wrap:nowrap;}
+.dryers_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:70%;margin-top:177px;padding:0 75px;}
 .dryers_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
 .dryers_202107 .section_cont.main .feature_cont .btn_anchor strong {font-size:32px;font-weight:bold;line-height:40px;}
 .dryers_202107 .section_cont.main .feature_cont .btn_anchor span {margin-top:14px;padding-right:36px;}
@@ -318,7 +318,7 @@
 .dryers_202107 .slide_six_motion .swiper-pagination {bottom:60px;}
 .dryers_202107 .slide_six_motion .img {margin-top:0;}
 .dryers_202107 .slide_six_motion.animate {transform:translateY(10%);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
-.dryers_202107 .slide_six_motion.active {transform:translateY(0%);opacity:1;transition-delay:0.1s;}
+.dryers_202107 .slide_six_motion.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
 
 /* slide_six_motion_pagn */
 .dryers_202107 .slide_six_motion_pagn {position:relative;margin-bottom:20px;text-align:center;}
@@ -515,6 +515,101 @@
 
 
 
+/*** Scene02_3 : 뉴 심플 디자인 - slide_color_type / 컬러 ***/
+.dryers_202107 .scene02_3 .scene02_3_ani {position:relative;margin:38px -25px -40px -25px;overflow:hidden;}
+.dryers_202107 .scene02_3 .scene02_3_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.dryers_202107 .scene02_3 .scene02_3_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before,
+.dryers_202107 .scene02_3 .scene02_3_ani:after {position:absolute;top:0;width:25px;height:100%;;content:"";z-index:2;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before {left:0;background:linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0));}
+.dryers_202107 .scene02_3 .scene02_3_ani:after {right:0;background:linear-gradient(to left,rgba(255,255,255,1), rgba(255,255,255,0));}
+.dryers_202107 .scene02_3 .swiper-slide {height:295px;background:none !important;overflow:hidden;}
+.dryers_202107 .scene02_3 .color_box_inner {position:absolute;left:calc(50% - 126px);top:0;width:260px;height:260px;}
+.dryers_202107 .scene02_3 .swiper-arrow {top:42%;background:rgba(0,0,0,0.3);}
+
+/* slide_color_type_pagn */
+.dryers_202107 .slide_color_type_pagn {position:relative;margin-top:18px;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination {position:relative;height:16px;text-align:left;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {position:relative;width:16px;height:16px;margin:0 12px 0 0;background-color:#a4a4a4 !important;border:1px solid #a4a4a4 !important;border-radius:50%;transition:border-color 0.4s;;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(2) {background-color:#2b2b2b !important;border-color:#2b2b2b !important;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(3) {background-color:#fff !important;border-color:#a6a6a6 !important;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(4) {background-color:#dbd4cc !important;border-color:#dbd4cc !important;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(5) {background-color:#3c4a47 !important;border-color:#3c4a47 !important;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0;border-color:#da0f47 !important;}
+.dryers_202107 .animate .slide_color_type_pagn {opacity:0;}
+.dryers_202107 .active .slide_color_type_pagn {opacity:1;animation:fade both 0.6s 1s;}
+
+/* color_obj */
+.dryers_202107 .slide_color_type {position:relative;}
+.dryers_202107 .slide_color_type .color_obj {position:absolute;left:60px;top:38px;width:245px;height:265px;z-index:10;overflow:hidden;}
+
+/* color_bg */
+.dryers_202107 .slide_color_type2 {position:absolute;left:0;top:0;width:100%;height:100%;}
+.dryers_202107 .slide_color_type2 .color_bg {position:absolute;left:0;top:0;width:220px;height:220px;overflow:hidden;}
+.dryers_202107 .slide_color_type2 .c1 .color_bg {background:#c9c9c9 url("./img_scene02_3_obj1_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c2 .color_bg {background:#3f3f3f url("./img_scene02_3_obj2_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c3 .color_bg {background:#efefef url("./img_scene02_3_obj3_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c4 .color_bg {background:#dbd4cc url("./img_scene02_3_obj4_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .c5 .color_bg {background:#3c4a47 url("./img_scene02_3_obj5_sdw.png") right center/contain no-repeat;}
+.dryers_202107 .slide_color_type2 .color_name {position:absolute;left:14px;top:14px;color:#919191;font-size:21px;font-weight:bold;line-height:21px;letter-spacing:-0.5px;}
+.dryers_202107 .slide_color_type2 .c4 .color_name {color:#948778;}
+.dryers_202107 .slide_color_type2 .c5 .color_name {color:#7a8885;}
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+.dryers_202107 .scene02_3 .title {padding-left:20px;}
+.dryers_202107 .swiper-arrow {width:44px;height:82px;}
+.dryers_202107 .swiper-arrow:after {right:16px;width:24px;height:24px;margin-top:-12px;}
+}
+
+
+@media only screen and (min-width:950px) {
+.dryers_202107 .scene02_3 {margin-bottom:-60px;overflow:hidden;}
+.dryers_202107 .scene02_3 .title {margin-top:20px;padding-left:40px;}
+.dryers_202107 .scene02_3 .eyebrow,
+.dryers_202107 .scene02_3 .tit,
+.dryers_202107 .scene02_3 .desc {max-width:550px;}
+.dryers_202107 .scene02_3 .scene02_3_ani {margin:0;}
+.dryers_202107 .scene02_3 .scene02_3_ani:before,
+.dryers_202107 .scene02_3 .scene02_3_ani:after {width:35px;}
+.dryers_202107 .scene02_3 .swiper-slide {height:450px;}
+.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 210px);width:390px;height:390px;}
+	
+/* slide_color_type_pagn */
+.dryers_202107 .slide_color_type_pagn {margin-top:23px;}
+
+/* color_obj / color_bg */
+.dryers_202107 .slide_color_type .color_obj {left:122px;top:60px;width:368px;height:398px;}
+.dryers_202107 .slide_color_type2 .color_bg {width:330px;height:330px;}
+.dryers_202107 .slide_color_type2 .color_name {left:20px;top:20px;font-size:32px;line-height:32px;}
+}
+
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.dryers_202107 .scene02_3 {margin-bottom:-85px;}
+.dryers_202107 .scene02_3 .title {margin-top:40px;padding-left:50px;}
+.dryers_202107 .scene02_3 .swiper-slide {height:600px;}
+.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 260px);width:520px;height:520px;}
+
+/* slide_color_type_pagn */
+.dryers_202107 .slide_color_type_pagn {margin-top:28px;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination {height:20px;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {width:20px;height:20px;margin:0 16px 0 0;}
+.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {border-width:2px !important;}
+	
+/* color_obj / color_bg */
+.dryers_202107 .slide_color_type .color_obj {left:165px;top:78px;width:490px;height:530px;}
+.dryers_202107 .slide_color_type2 .color_bg {width:440px;height:440px;}
+.dryers_202107 .slide_color_type2 .color_name {left:25px;top:25px;font-size:42px;line-height:42px;}
+}
+
+
+
+
+
 /** Scene04_1 : 조용조용 코스 **/
 .dryers_202107 .scene04_1_ani {display:flex;flex-wrap:nowrap;position:relative;margin-top:10px;}
 .dryers_202107 .scene04_1_ani li {display:flex;width:100%;margin-top:0;align-items:center;justify-content:left;}
@@ -647,96 +742,7 @@
 
 
 
-/*** Scene01_2 : 뉴 심플 디자인 - slide_color_type / 컬러 ***/
-.dryers_202107 .scene02_3 .scene02_3_ani {position:relative;margin:38px -25px -40px -25px;overflow:hidden;}
-.dryers_202107 .scene02_3 .scene02_3_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
-.dryers_202107 .scene02_3 .scene02_3_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
-.dryers_202107 .scene02_3 .scene02_3_ani:before,
-.dryers_202107 .scene02_3 .scene02_3_ani:after {position:absolute;top:0;width:25px;height:100%;;content:"";z-index:2;}
-.dryers_202107 .scene02_3 .scene02_3_ani:before {left:0;background:linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0));}
-.dryers_202107 .scene02_3 .scene02_3_ani:after {right:0;background:linear-gradient(to left,rgba(255,255,255,1), rgba(255,255,255,0));}
-.dryers_202107 .scene02_3 .swiper-slide {height:295px;background:none !important;overflow:hidden;}
-.dryers_202107 .scene02_3 .color_box_inner {position:absolute;left:calc(50% - 126px);top:0;width:260px;height:260px;}
-.dryers_202107 .scene02_3 .swiper-arrow {top:42%;background:rgba(0,0,0,0.3);}
 
-/* slide_color_type_pagn */
-.dryers_202107 .slide_color_type_pagn {position:relative;margin-top:18px;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination {position:relative;height:16px;text-align:left;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {position:relative;width:16px;height:16px;margin:0 12px 0 0;background-color:#a4a4a4 !important;border:1px solid #a4a4a4 !important;border-radius:50%;transition:border-color 0.4s;;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(2) {background-color:#2b2b2b !important;border-color:#2b2b2b !important;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(3) {background-color:#fff !important;border-color:#a6a6a6 !important;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(4) {background-color:#dbd4cc !important;border-color:#dbd4cc !important;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(5) {background-color:#3c4a47 !important;border-color:#3c4a47 !important;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0;border-color:#da0f47 !important;}
-.dryers_202107 .animate .slide_color_type_pagn {opacity:0;}
-.dryers_202107 .active .slide_color_type_pagn {opacity:1;animation:fade both 0.6s 1s;}
-
-/* color_obj */
-.dryers_202107 .slide_color_type {position:relative;}
-.dryers_202107 .slide_color_type .color_obj {position:absolute;left:60px;top:38px;width:245px;height:265px;z-index:10;overflow:hidden;}
-
-/* color_bg */
-.dryers_202107 .slide_color_type2 {position:absolute;left:0;top:0;width:100%;height:100%;}
-.dryers_202107 .slide_color_type2 .color_bg {position:absolute;left:0;top:0;width:220px;height:220px;overflow:hidden;}
-.dryers_202107 .slide_color_type2 .c1 .color_bg {background:#c9c9c9 url("./img_scene02_3_obj1_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type2 .c2 .color_bg {background:#3f3f3f url("./img_scene02_3_obj2_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type2 .c3 .color_bg {background:#efefef url("./img_scene02_3_obj3_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type2 .c4 .color_bg {background:#dbd4cc url("./img_scene02_3_obj4_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type2 .c5 .color_bg {background:#3c4a47 url("./img_scene02_3_obj5_sdw.png") right center/contain no-repeat;}
-.dryers_202107 .slide_color_type2 .color_name {position:absolute;left:14px;top:14px;color:#919191;font-size:21px;font-weight:bold;line-height:21px;letter-spacing:-0.5px;}
-.dryers_202107 .slide_color_type2 .c4 .color_name {color:#948778;}
-.dryers_202107 .slide_color_type2 .c5 .color_name {color:#7a8885;}
-
-
-/** -Tablet UI- **/
-@media only screen and (min-width:768px) {
-.dryers_202107 .scene02_3 .title {padding-left:20px;}
-.dryers_202107 .swiper-arrow {width:44px;height:82px;}
-.dryers_202107 .swiper-arrow:after {right:16px;width:24px;height:24px;margin-top:-12px;}
-}
-
-
-@media only screen and (min-width:950px) {
-.dryers_202107 .scene02_3 {margin-bottom:-60px;overflow:hidden;}
-.dryers_202107 .scene02_3 .title {margin-top:20px;padding-left:40px;}
-.dryers_202107 .scene02_3 .eyebrow,
-.dryers_202107 .scene02_3 .tit,
-.dryers_202107 .scene02_3 .desc {max-width:550px;}
-.dryers_202107 .scene02_3 .scene02_3_ani {margin:0;}
-.dryers_202107 .scene02_3 .scene02_3_ani:before,
-.dryers_202107 .scene02_3 .scene02_3_ani:after {width:35px;}
-.dryers_202107 .scene02_3 .swiper-slide {height:450px;}
-.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 210px);width:390px;height:390px;}
-	
-/* slide_color_type_pagn */
-.dryers_202107 .slide_color_type_pagn {margin-top:23px;}
-
-/* color_obj / color_bg */
-.dryers_202107 .slide_color_type .color_obj {left:122px;top:60px;width:368px;height:398px;}
-.dryers_202107 .slide_color_type2 .color_bg {width:330px;height:330px;}
-.dryers_202107 .slide_color_type2 .color_name {left:20px;top:20px;font-size:32px;line-height:32px;}
-}
-
-
-
-/** -PC UI- **/
-@media only screen and (min-width:1280px) {
-.dryers_202107 .scene02_3 {margin-bottom:-85px;}
-.dryers_202107 .scene02_3 .title {margin-top:40px;padding-left:50px;}
-.dryers_202107 .scene02_3 .swiper-slide {height:600px;}
-.dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 260px);width:520px;height:520px;}
-
-/* slide_color_type_pagn */
-.dryers_202107 .slide_color_type_pagn {margin-top:28px;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination {height:20px;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {width:20px;height:20px;margin:0 16px 0 0;}
-.dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {border-width:2px !important;}
-	
-/* color_obj / color_bg */
-.dryers_202107 .slide_color_type .color_obj {left:165px;top:78px;width:490px;height:530px;}
-.dryers_202107 .slide_color_type2 .color_bg {width:440px;height:440px;}
-.dryers_202107 .slide_color_type2 .color_name {left:25px;top:25px;font-size:42px;line-height:42px;}
-}
 
 
 

@@ -1,5 +1,5 @@
 /*
-    건조기 : 21.06
+    건조기 : 21.07
 */
 
 
@@ -7,7 +7,7 @@
 function slideSixMotionSlider(){
 	var $target = $('.dryers_202107 .slide_six_motion .swiper-container');
 	var slideOption = {
-		effect :'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:true,
 		pagination:false,
 		navigation:false,
@@ -50,10 +50,10 @@ $(function(){
 
 
 /** Swiper : 날씨 **/
-function slideWeatherSlider() {
+function slideWeatherSlider(){
 	var $target = $('.dryers_202107 .slide_weather .swiper-container');
 	var slideOption = {
-		effect : 'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:{
 			el:'.slide_weather .swiper-pagination',
@@ -85,7 +85,7 @@ function slideWeatherSlider() {
 function slideColorTypeSlider2(){
 	var $target = $('.dryers_202107 .slide_color_type2 .swiper-container');
 	var slideOption = {
-		effect : 'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:false,
 		navigation:false,
@@ -102,7 +102,7 @@ function slideColorTypeSlider2(){
 function slideColorTypeSlider(){
 	var $target = $('.dryers_202107 .slide_color_type .swiper-container');
 	var slideOption = {
-		//effect : 'fade', // 페이드 효과 사용
+		//effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:{
 			el:'.scene02_3 .swiper-pagination',
@@ -118,7 +118,7 @@ function slideColorTypeSlider(){
 		speed:600,
 		observer:true,
 		observeParents:true,
-		on: {
+		on:{
 			slideChange:function(){
 				var idx = this.realIndex
 				slideColorType2.slideTo(idx);

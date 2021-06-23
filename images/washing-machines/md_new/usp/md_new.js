@@ -1,5 +1,5 @@
 /*
-    세탁기 : 21.06
+    세탁기 : 21.07
 */
 
 
@@ -26,7 +26,7 @@ function slideColorTypeSlider(){
 		speed:0,
 		observer:true,
 		observeParents:true,
-		on: {
+		on:{
 			slidePrevTransitionEnd:function(){
 				$('.slide_color_type').removeClass('right');
 				$('.slide_color_type').addClass('left');
@@ -43,10 +43,10 @@ function slideColorTypeSlider(){
 
 
 /** 인공지능 DD모터 x 6모션 **/
-function slideStepSlider() {
+function slideStepSlider(){
 	var $target = $('.washing_machines_202107 .slide_step .swiper-container')
 	var slideOption = {
-		effect :'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:{
 			el:'.slide_step .swiper-pagination',
@@ -95,7 +95,7 @@ function slideStepSlider() {
 function slideSixMotionSlider(){
 	var $target = $('.washing_machines_202107 .slide_six_motion .swiper-container');
 	var slideOption = {
-		effect :'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:false,
 		navigation:false,
@@ -132,7 +132,7 @@ function slideSixMotionSlider(){
 function slideWeatherSlider(){
 	var $target = $('.washing_machines_202107 .slide_weather .swiper-container');
 	var slideOption = {
-		effect : 'fade', // 페이드 효과 사용
+		effect:'fade', // 페이드 효과 사용
 		loop:false,
 		pagination:{
 			el:'.slide_weather .swiper-pagination',
@@ -148,7 +148,7 @@ function slideWeatherSlider(){
 		speed:500,
 		observer:true,
 		observeParents:true,
-		on: {
+		on:{
 			slideChange:function(){
 				var idx = this.realIndex + 1
 				$('.slide_weather .swiper-container').removeClass('s1').removeClass('s2').removeClass('s3');
@@ -199,8 +199,6 @@ $(function(){
 	}).trigger('resize');
 	
 	
-	
-
 	/* 페이지 내 스크롤 앵커  */
     $('.washing_machines_202107 .btn_go_info').click(function(e){
         e.preventDefault();
