@@ -167,14 +167,14 @@
 
 
 /***** Main *****/
-.air-purifier_202107 .section_cont.main {background:#141414 url("img_scene00_bg.jpg") right bottom /auto 100% no-repeat;}
+.air-purifier_202107 .section_cont.main {background:#141414 url("./img_scene00_bg.jpg") right bottom /auto 100% no-repeat;}
 .air-purifier_202107 .section_cont.main .feature_cont {min-height:465px;padding:70px 25px 20px 25px;color:#fff;overflow:hidden;}
 .air-purifier_202107 .section_cont.main .feature_cont .tit {margin-top:-8px;}
 .air-purifier_202107 .section_cont.main .feature_cont .tit strong {display:block;position:relative;overflow:hidden;}
 .air-purifier_202107 .section_cont.main .feature_cont .tit strong span {display:block;position:relative;}
 .air-purifier_202107 .section_cont.main .feature_cont .tit sup {display:inline-block;margin-top:6px;font-size:14px;font-weight:500;line-height:20px;vertical-align:top;}
 .air-purifier_202107 .section_cont.main .feature_cont .obj {position:absolute;right:0;bottom:0;width:220px;}
-.air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {position:relative;width:45%;margin-top:47px;}
+.air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {position:relative;/*width:45%;*/margin-top:47px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor li {margin-top:22px;color:#b0b3b8;font-size:16px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor li:first-child {margin-top:0;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor li a {display:block;}
@@ -186,6 +186,7 @@
 /* Active */
 .air-purifier_202107 .section_cont.main .feature_cont.active .tit strong span {animation:txtTop both 0.6s 0.2s;}
 .air-purifier_202107 .section_cont.main .feature_cont.active .tit strong:nth-child(2) span {animation-delay:0.4s;}
+.air-purifier_202107 .section_cont.main .feature_cont.active .tit strong:nth-child(3) span {animation-delay:0.6s;}
 .air-purifier_202107 .section_cont.main .feature_cont.active .btn_anchor li {animation:fade both 0.8s 0.8s;}
 .air-purifier_202107 .section_cont.main .feature_cont.active .btn_anchor li:nth-child(2) {animation-delay:1.1s;}
 .air-purifier_202107 .section_cont.main .feature_cont.active .btn_anchor li:nth-child(3) {animation-delay:1.4s;}
