@@ -120,7 +120,7 @@
 .water-purifiers_202107 .box + .title {margin-top:30px;}
 .water-purifiers_202107 .img {position:relative;margin-top:38px;border-radius:10px;overflow:hidden;}
 .water-purifiers_202107 .img.not_round {border-radius:0;}
-.water-purifiers_202107 .img_resp {position:relative;margin:38px -25px -20px -25px;background:#f7f7f7;overflow:hidden;}
+.water-purifiers_202107 .img_resp {position:relative;margin:38px -25px 0 -25px;background:#f7f7f7;overflow:hidden;}
 .water-purifiers_202107 video {display:block;width:100%;}
 .water-purifiers_202107 .box_area {min-height:300px;margin-top:38px;background:#000;color:#fff;text-align:center;line-height:300px;}
 
