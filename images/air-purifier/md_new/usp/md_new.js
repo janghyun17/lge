@@ -2,10 +2,40 @@
     공기청정기 : 21.07
 */
 
+/** Swiper : 컬러 **/
+function slideColorTypeSlider(){
+	var $target = $('.air-purifier_202107 .slide_color_type .swiper-container');
+	var slideOption = {
+		effect:'fade', // 페이드 효과 사용
+		fadeEffect: {
+			crossFade:true
+		},
+		loop:false,
+		pagination:{
+			el:'.scene01_2_ani .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.scene01_2_ani .swiper-button-next',
+			prevEl:'.scene01_2_ani .swiper-button-prev',
+		},
+		breakpoints:{
+
+		},
+		speed:700,
+		observer:true,
+		observeParents:true,
+		on:{
+		}
+	};
+	slideColorType = new Swiper($target.get(0), slideOption);
+}
 
 
 $(function(){
 	/* Swiper */
+	slideColorTypeSlider();
+
 
 	/* 페이지 내 스크롤 앵커  */
     $('.air-purifier_202107 .btn_go_info').click(function(e){
