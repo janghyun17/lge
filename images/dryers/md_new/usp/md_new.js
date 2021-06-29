@@ -159,7 +159,7 @@ function countNumAni(countNum){
 $(function(){
 	/* Swiper */
 	slideColorTypeSlider();
-	slideColorTypeSlider2()
+	slideColorTypeSlider2();
 	slideWeatherSlider();
 	slideSixMotionSlider();
 	
