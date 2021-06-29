@@ -329,7 +329,7 @@
 .air-purifier_202107 .scene03_2_ani dt span {display:block;width:154px;height:34px;background-color:#ca1346;border-radius:16px;font-size:17px;line-height:34px;text-align:center;letter-spacing:4px;transform:scale(0.5);transform-origin:left top;}
 .air-purifier_202107 .scene03_2_ani dd {margin-top:10px;}
 .air-purifier_202107 .scene03_2_ani dd li {position:relative;margin-top:6px;padding-left:7px;color:#555;font-size:12px;line-height:17px;letter-spacing:-0.8px;}
-.air-purifier_202107 .scene03_2_ani dd li:before {position:absolute;left:1px;top:9px;width:2px;height:2px;background-color:#ca1346;transform:rotate(45deg);content:"";}
+.air-purifier_202107 .scene03_2_ani dd li:before {position:absolute;left:1px;top:7px;width:2px;height:2px;background-color:#ca1346;transform:rotate(45deg);content:"";}
 .air-purifier_202107 .scene03_2_ani dd li:first-child {margin-top:0;}
 .air-purifier_202107 .scene03_2_ani > li:last-child dl {padding-right:0;}
 .air-purifier_202107 .scene03_2_ani > li:last-child dl:after {display:none;}
