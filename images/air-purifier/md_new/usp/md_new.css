@@ -321,6 +321,7 @@
 
 /* slide_color_type */
 .air-purifier_202107 .slide_color_type {position:relative;}
+.air-purifier_202107 .slide_color_type .swiper-arrow {top:calc(50% + 35px);}
 .air-purifier_202107 .slide_color_type .swiper-pagination {margin-top:20px;}
 .air-purifier_202107 .slide_color_type .color_obj {position:relative;margin-top:10px;border-radius:10px;overflow:hidden;}
 
@@ -346,8 +347,10 @@
 /** -Tablet UI- **/
 @media only screen and (min-width:768px) {
 .air-purifier_202107 .scene01_2_ani {margin-top:42px;}
-.air-purifier_202107 .scene01_2_ani .swiper-slide {padding-left:calc(26.5% + 20px);}
-.air-purifier_202107 .scene01_2_ani .color_obj {margin-top:0;}
+.air-purifier_202107 .slide_color_type .swiper-slide {padding-left:calc(26.5% + 20px);}
+.air-purifier_202107 .slide_color_type .swiper-arrow {top:calc(50% - 27px);}
+.air-purifier_202107 .slide_color_type .swiper-arrow.swiper-button-prev {left:calc(26.5% + 20px);}
+.air-purifier_202107 .slide_color_type .color_obj {margin-top:0;}
 	
 /* color_bg */
 .air-purifier_202107 .slide_color_type .color_bg {display:flex;flex-wrap:nowrap;position:absolute;left:0;top:0;width:26.5%;height:100%;padding:0 0 100px 0;box-sizing:border-box;text-align:center;align-items:center;}
@@ -362,8 +365,9 @@
 
 
 @media only screen and (min-width:950px) {
-.air-purifier_202107 .scene01_2_ani .swiper-slide {padding-left:calc(26.5% + 30px);}
-
+.air-purifier_202107 .slide_color_type .swiper-slide {padding-left:calc(26.5% + 30px);}
+.air-purifier_202107 .slide_color_type .swiper-arrow.swiper-button-prev {left:calc(26.5% + 30px);}
+	
 /* color_bg */
 .air-purifier_202107 .slide_color_type .color_bg {padding-bottom:170px;}
 .air-purifier_202107 .slide_color_type .color_bg:before {height:170px;}
@@ -378,7 +382,9 @@
 /** -PC UI- **/
 @media only screen and (min-width:1280px) {
 .air-purifier_202107 .scene01_2_ani {margin-top:45px;}
-.air-purifier_202107 .scene01_2_ani .swiper-slide {padding-left:calc(26.5% + 40px);}
+.air-purifier_202107 .slide_color_type .swiper-slide {padding-left:calc(26.5% + 40px);}
+.air-purifier_202107 .slide_color_type .swiper-arrow {top:calc(50% - 43px);}
+.air-purifier_202107 .slide_color_type .swiper-arrow.swiper-button-prev {left:calc(26.5% + 40px);}
 	
 /* color_bg */
 .air-purifier_202107 .slide_color_type .color_bg {padding-bottom:244px;}
