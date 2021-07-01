@@ -326,7 +326,7 @@
 
 /* color_bg */
 .air-purifier_202107 .slide_color_type .color_bg {position:relative;height:90px;padding-left:calc(50% + 14px);background:#fff;box-sizing:border-box;}
-.air-purifier_202107 .slide_color_type .color_bg:before {position:absolute;left:0;top:0;width:calc(50% - 20px);height:90px;background:url("img_scene01_2_obj_sdw.png") right top/contain no-repeat;border-radius:10px;overflow:hidden;content:"";}
+.air-purifier_202107 .slide_color_type .color_bg:before {position:absolute;left:0;top:0;width:calc(50% - 20px);height:90px;background:url("./img_scene01_2_obj_sdw.png") right top/contain no-repeat;border-radius:10px;overflow:hidden;content:"";}
 .air-purifier_202107 .slide_color_type .c1 .color_bg:before {background-color:#dbd7d0;}
 .air-purifier_202107 .slide_color_type .c2 .color_bg:before {background-color:#f4f4f4;}
 .air-purifier_202107 .slide_color_type .c3 .color_bg:before {background-color:#3c4e4e;}
