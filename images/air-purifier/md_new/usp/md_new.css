@@ -392,6 +392,17 @@
 
 
 
+/*** Scene02_1 : 바람모드 ***/
+.air-purifier_202107 .scene02_1 {margin-bottom:-15px;}
+.air-purifier_202107 .scene02_1_txt {position:absolute;left:9vw;bottom:7vw;padding-left:10px;color:#55504b;font-size:12px;font-weight:500;line-height:17px;}
+.air-purifier_202107 .scene02_1_txt:before {position:absolute;left:0;top:6px;width:7px;height:7px;background:#fff;border:2px solid #da0f47;border-radius:50%;box-sizing:border-box;content:"";}
+
+/* Active */
+.air-purifier_202107 .box.animate .scene02_1_txt {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
+.air-purifier_202107 .box.active .scene02_1_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+
+
+
 
 
 /*** Scene02_2 : 청정모드 ***/
@@ -407,9 +418,9 @@
 
 
 /*** Scene03_2 : 트루 토탈케어 필터 ***/
-.air-purifier_202107 .scene03_2_ani {display:flex;flex-wrap:nowrap;position:relative;margin:0 -25px;padding:0 0 40px 6.5vw;background:#f7f7f7;}
+.air-purifier_202107 .scene03_2_ani {display:flex;flex-wrap:nowrap;position:relative;margin:0 -25px;padding:0 2vw 40px 3.5vw;background:#f7f7f7;}
 .air-purifier_202107 .scene03_2_ani > li {position:relative;width:33.3%;vertical-align:top;}
-.air-purifier_202107 .scene03_2_ani dl {position:relative;padding:0 2.5vw;text-align:left;}
+.air-purifier_202107 .scene03_2_ani dl {position:relative;padding:0 4vw;text-align:left;}
 .air-purifier_202107 .scene03_2_ani dl:after {position:absolute;right:0;top:47px;width:1px;height:25px;background:#ca1346;opacity:0.2;content:"";}
 .air-purifier_202107 .scene03_2_ani dt {width:77px;height:17px;color:#fff;font-size:10px;font-weight:700;}
 .air-purifier_202107 .scene03_2_ani dt span {display:block;width:154px;height:34px;background-color:#ca1346;border-radius:16px;font-size:17px;line-height:34px;text-align:center;letter-spacing:4px;transform:scale(0.5);transform-origin:left top;}
