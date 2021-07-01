@@ -83,6 +83,10 @@ $.fn.feScrollGet = function() {
             if(!$ani.hasClass('active')){
                 $ani.addClass('active');	
             }
+			
+			if(!$('.scene01_2_ani').hasClass('active')){
+				slideColorType.slideTo(0);
+			}
         }else{
             if($ani.hasClass('active')){
                $ani.removeClass('active');
