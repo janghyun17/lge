@@ -405,20 +405,78 @@
 .air-purifier_202107 .scene02_1 {margin-bottom:-15px;}
 .air-purifier_202107 .scene02_1_txt {left:9vw;bottom:7vw;}
 
-/* Active */
-.air-purifier_202107 .box.animate .scene02_1_txt {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
-.air-purifier_202107 .box.active .scene02_1_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
-
 /* scene_info_txt */
 .air-purifier_202107 .scene_info_txt {position:absolute;padding-left:10px;color:#55504b;font-size:12px;font-weight:500;line-height:17px;}
 .air-purifier_202107 .scene_info_txt:before {position:absolute;left:0;top:6px;width:7px;height:7px;background:#fff;border:2px solid #da0f47;border-radius:50%;box-sizing:border-box;content:"";}
 
+/* scene02_1_ani */
+.air-purifier_202107 .scene02_1_ani {position:relative;}
+.air-purifier_202107 .scene02_1_ani li {position:absolute;left:0;top:0;width:100%;height:100%;}
+.air-purifier_202107 .scene02_1_ani .obj1 {position:relative;}
+.air-purifier_202107 .scene02_1_ani .obj3 {transform-origin:22.2% 71.5%;}
+.air-purifier_202107 .scene02_1_ani .obj4 {transform-origin:1.55% 67.3%;}
+.air-purifier_202107 .scene02_1_ani .obj5 {transform-origin:31.6% 77.4%;}
+
+/* Active */
+.air-purifier_202107 .box.animate .scene02_1_txt {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
+.air-purifier_202107 .box.active .scene02_1_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+
+.air-purifier_202107 .box.active .scene02_1_ani .obj21 {animation:fade both 0.6s 0.6s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj22 {animation:fade both 0.8s 0.9s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj23 {animation:fade both 0.8s 1.1s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj3 {animation:scene02_1_ani3 both 0.7s 0.4s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj4 {animation:scene02_1_ani4m both 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj5 {animation:scene02_1_ani5m both 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj7 {animation:fadeLoop both 4 0.8s 0.6s;}
+.air-purifier_202107 .box.active .scene_info_txt:before {animation:fadeLoop both 4 0.8s 0.6s;}
+
+/* Animation */
+@keyframes scene02_1_ani3  {
+0% {transform:rotateX(25deg) rotateY(40deg) rotateZ(-2deg) scale(0.8);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+@keyframes scene02_1_ani4m  {
+0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.9);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+@keyframes scene02_1_ani5m  {
+0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.9);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+
+@keyframes scene02_1_ani4  {
+0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.7);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+@keyframes scene02_1_ani5  {
+0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.7);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+@keyframes scene02_1_ani6  {
+0% {transform:rotateX(-20deg) rotateY(-40deg) rotateZ(5deg) scale(0.7);}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+}
+
+
+
 
 /** -Tablet UI- **/
 @media only screen and (min-width:600px) {
+/* scene_info_txt */
 .air-purifier_202107 .scene02_1_txt {left:11.2%;bottom:3%;}
 .air-purifier_202107 .scene_info_txt {padding-left:14px;font-size:14px;line-height:20px;}
 .air-purifier_202107 .scene_info_txt:before {top:7px;width:10px;height:10px;border-width:3px;}
+
+/* scene02_1_ani */
+.air-purifier_202107 .scene02_1_ani .obj3 {transform-origin:32.3% 75.5%;}
+.air-purifier_202107 .scene02_1_ani .obj4 {transform-origin:29.6% 67.5%;}
+.air-purifier_202107 .scene02_1_ani .obj5 {transform-origin:36% 80%;}
+.air-purifier_202107 .scene02_1_ani .obj6 {transform-origin:25.75% 12.4%;}
+
+/* Active */
+.air-purifier_202107 .box.active .scene02_1_ani .obj4 {animation:scene02_1_ani4 both 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj5 {animation:scene02_1_ani5 both 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj6 {animation:scene02_1_ani6 both 0.8s 0.3s;}
 }
 
 @media only screen and (min-width:950px) {
@@ -528,6 +586,11 @@
 /*** Animation ***/
 @keyframes fade {
 0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes fadeLoop {
+0% {opacity:1;}
+50% {opacity:0;}
 100% {opacity:1;}
 }
 @keyframes txtTop {
