@@ -665,7 +665,7 @@
 .washing_machines_202107 .scene02_4_ani .obj3 li:nth-child(1) {left:26.9%;top:45.5%;}
 .washing_machines_202107 .scene02_4_ani .obj3 li:nth-child(2) {left:50%;top:45.5%;}
 .washing_machines_202107 .scene02_4_ani .obj3 li:nth-child(3) {left:60.5%;top:29.9%;}
-.washing_machines_202107 .scene02_4_ani .obj4 {position: absolute;left:0;top:0;width:100%;height:100%;}
+.washing_machines_202107 .scene02_4_ani .obj4 {position:absolute;left:0;top:0;width:100%;height:100%;}
 
 /* Active */
 .washing_machines_202107 .animate.active .scene02_4_ani .obj1 {animation:fade both 0.8s 0.4s;}
