@@ -35,7 +35,10 @@ function slideColorTypeSlider(){
 $(function(){
 	/* Swiper */
 	slideColorTypeSlider();
-
+	
+	$(window).on("resize", function(){
+		$('.scene03_2 .obj img').css('width', $(window).innerWidth());
+	}).trigger('resize');
 
 	/* 페이지 내 스크롤 앵커  */
     $('.air-purifier_202107 .btn_go_info').click(function(e){
