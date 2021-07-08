@@ -201,8 +201,8 @@
 
 /** -Tablet UI- **/
 @media only screen and (min-width:768px) {
-/* btn_anchor */
 .air-purifier_202107 .section_cont.main .feature_cont .tit {padding:0 50px;}
+.air-purifier_202107 .section_cont.main .feature_cont .obj {width:109px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {padding:0 50px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor a {transition:color 0.4s;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor a:hover {color:#fa263e;}	
@@ -211,10 +211,9 @@
 
 /** -PC UI- **/
 @media only screen and (min-width:1280px) {
-.air-purifier_202107 .section_cont.main .feature_cont {min-height:720px;}
-	
-/* btn_anchor */
+.air-purifier_202107 .section_cont.main .feature_cont {min-height:750px;}
 .air-purifier_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
+.air-purifier_202107 .section_cont.main .feature_cont .obj {width:139px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:100%;margin-top:177px;padding:0 75px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
 .air-purifier_202107 .section_cont.main .feature_cont .btn_anchor strong {font-size:32px;font-weight:bold;line-height:40px;}
