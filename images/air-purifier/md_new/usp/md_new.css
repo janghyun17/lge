@@ -453,8 +453,8 @@
 100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
 }
 @keyframes scene02_1_ani6 {
-0% {transform:rotateX(-20deg) rotateY(-40deg) rotateZ(5deg) scale(0.7);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(-20deg) rotateY(-40deg) rotateZ(5deg) scale(0.7);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 
 
@@ -476,7 +476,7 @@
 /* Active */
 .air-purifier_202107 .box.active .scene02_1_ani .obj4 {animation:scene02_1_ani4 both 0.8s 0.3s;}
 .air-purifier_202107 .box.active .scene02_1_ani .obj5 {animation:scene02_1_ani5 both 0.8s 0.3s;}
-.air-purifier_202107 .box.active .scene02_1_ani .obj6 {animation:scene02_1_ani6 both 0.8s 0.4s;}
+.air-purifier_202107 .box.active .scene02_1_ani .obj6 {animation:scene02_1_ani6 both 0.8s 0.8s;}
 }
 
 @media only screen and (min-width:950px) {
@@ -518,7 +518,7 @@
 .air-purifier_202107 .box.active .scene02_2_ani .obj3 {animation:scene02_2_ani3 both 0.7s 0.4s;}
 .air-purifier_202107 .box.active .scene02_2_ani .obj4 {animation:scene02_2_ani4 both 0.8s 0.3s;}
 .air-purifier_202107 .box.active .scene02_2_ani .obj5 {animation:scene02_2_ani5 both 0.8s 0.3s;}
-.air-purifier_202107 .box.active .scene02_2_ani .obj6 {animation:scene02_2_ani6 both 0.6s 0.5s;}
+.air-purifier_202107 .box.active .scene02_2_ani .obj6 {animation:scene02_2_ani6 both 0.6s 0.8s;}
 .air-purifier_202107 .box.active .scene02_2_ani .obj7 {animation:fadeLoop both 4 0.8s 0.6s;}
 .air-purifier_202107 .box.active .scene_info_txt:before {animation:fadeLoop both 4 0.8s 0.6s;}
 
@@ -536,8 +536,8 @@
 100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
 }
 @keyframes scene02_2_ani6 {
-0% {transform:rotateX(10deg) rotateY(40deg) rotateZ(-2deg) scale(0.9);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(10deg) rotateY(40deg) rotateZ(-2deg) scale(0.9);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 
 /* Active */
