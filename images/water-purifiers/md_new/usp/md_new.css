@@ -120,7 +120,7 @@
 
 /***** Contents : Box Type *****/
 .water-purifiers_202107 .box + .title {margin-top:30px;}
-.water-purifiers_202107 .img {position:relative;margin-top:38px;border-radius:10px;overflow:hidden;}
+.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:10px;overflow:hidden;}
 .water-purifiers_202107 .img.not_round {border-radius:0;}
 .water-purifiers_202107 .img_resp {position:relative;margin:38px -25px 0 -25px;text-align:center;overflow:hidden;}
 .water-purifiers_202107 video {display:block;width:100%;}
@@ -145,7 +145,7 @@
 /** -Tablet UI- **/
 @media only screen and (min-width:768px) {
 .water-purifiers_202107 .box + .title {margin-top:42px;}
-.water-purifiers_202107 .img {margin-top:42px;border-radius:15px;}
+.water-purifiers_202107 .img {margin:42px 0 0 0;border-radius:15px;}
 .water-purifiers_202107 .img_resp {margin:42px -40px 0 -40px;}
 .water-purifiers_202107 .box_area {min-height:400px;margin-top:42px;line-height:400px;}
 }
