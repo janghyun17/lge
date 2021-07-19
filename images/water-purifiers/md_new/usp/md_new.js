@@ -4,8 +4,109 @@
 
 
 
+/** Swiper : 컬러 **/
+function slideColorTypeSlider(){
+	var $target = $('.water-purifiers_202107 .slide_color_type .swiper-container');
+	var slideOption = {
+		effect:'fade', // 페이드 효과 사용
+		fadeEffect: {
+			crossFade:true
+		},
+		loop:true,
+		pagination:{
+			el:'.scene01_1_ani .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.scene01_1_ani .swiper-button-next',
+			prevEl:'.scene01_1_ani .swiper-button-prev',
+		},
+        autoplay:{
+        	delay:3000,
+        	disableOnInteraction:false,
+        },
+		speed:700,
+		observer:true,
+		observeParents:true,
+		on:{
+		}
+	};
+	slideColorType = new Swiper($target.get(0), slideOption);
+	slideColorType.autoplay.stop();
+}
+
+
+/** 국내 최초 상하좌우 무빙 출수탭 **/
+function slideStepSlider(){
+	var $target = $('.water-purifiers_202107 .slide_step .swiper-container')
+	var slideOption = {
+		effect:'fade', // 페이드 효과 사용
+		loop:true,
+		pagination:{
+			el:'.slide_step .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.slide_step .swiper-button-next',
+			prevEl:'.slide_step .swiper-button-prev',
+		},
+        autoplay:{
+        	delay:5000,
+        	disableOnInteraction:false,
+        },
+		speed:500,
+		observer:true,
+		observeParents:true,
+		on:{
+			slideChange:function(){
+				var idx = this.realIndex + 1
+				if($(idx == 1)){
+					var numbers = [
+						{$el:$('.slide_step .c2 .obj5 .count'), first:0, last:180, duration:2000},
+					]
+					countNumAni(numbers);
+				}
+			},
+		},
+	};
+	slideStep = new Swiper($target.get(0), slideOption);
+	slideStep.autoplay.stop();
+}
+
+
+
+/* count */
+function countNumAni(countNum){
+	Number.isInteger = Number.isInteger || function(value){
+		return typeof value == "number" && isFinite(value) && Math.floor(value) == value;
+	}
+	countNum.map(function(num){
+		$({ val : num.first }).animate({ val : num.last }, {
+			duration:num.duration,
+			step:function(){
+				if(Number.isInteger(num.last) == false){
+					num.$el.html(this.val.toFixed(1));
+				}else{
+					num.$el.html(this.val.toFixed(0));
+				}
+			},
+			complete:function(){
+				if(Number.isInteger(num.last) == false){
+					num.$el.html(this.val.toFixed(1));
+				}else{
+					num.$el.html(this.val.toFixed(0));
+				}
+			}
+		});
+	});
+}
+
+
+
 $(function(){
 	/* Swiper */
+	slideColorTypeSlider();
+	slideStepSlider();
 	
 	$(window).on("resize", function(){
 		$('.scene03_3_ani .obj img').css('width', $(window).innerWidth());
@@ -45,7 +146,7 @@ $(function(){
 /* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function() {
-    var offset = $(window).scrollTop() + $(window).height() * 0.95;
+    var offset = $(window).scrollTop() + $(window).height() * 0.85;
 	var offset_half = $(window).scrollTop() + $(window).height() * 0.2;
 	var offset_half2 = $(window).scrollTop() + $(window).height() * 0.5;
   	
@@ -59,9 +160,10 @@ $.fn.feScrollGet = function() {
             if(!$ani.hasClass('active')){
                 $ani.addClass('active');	
             }
+			
         }else{
             if($ani.hasClass('active')){
-               $ani.removeClass('active');
+                $ani.removeClass('active');	
             }
         }
     });
@@ -86,6 +188,45 @@ $.fn.feScrollGet = function() {
         }	
     });
 	
+    $('.slide_color_type').each(function(i){
+        var $video2 = $(this),
+            video2 = $video2,
+            item_top = $video2.offset().top,
+            item_h = $video2.height();
+		
+		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
+			if (!$video2.hasClass('mot_on')) {
+				slideColorType.slideTo(1);
+				slideColorType.autoplay.start();
+				$video2.addClass('mot_on');
+			}
+		}else{
+			if($video2.hasClass('mot_on')) {
+				slideColorType.autoplay.stop();
+				$video2.removeClass('mot_on');
+			}
+		}	
+    });
+
+    $('.slide_step').each(function(i){
+        var $video2 = $(this),
+            video2 = $video2,
+            item_top = $video2.offset().top,
+            item_h = $video2.height();
+		
+		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
+			if (!$video2.hasClass('mot_on')) {
+				slideStep.slideTo(1);
+				slideStep.autoplay.start();
+				$video2.addClass('mot_on');
+			}
+		}else{
+			if($video2.hasClass('mot_on')) {
+				slideStep.autoplay.stop();
+				$video2.removeClass('mot_on');
+			}
+		}	
+    });
 };
 
 // Scroll Event Function 
