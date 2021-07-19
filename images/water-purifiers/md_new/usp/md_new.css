@@ -414,7 +414,7 @@
 /* Active */
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(1) {animation:fade both 0.6s 0.6s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(2) {animation:scene03_2_ani both 0.5s 0.6s;}
-.water-purifiers_202107 .animate.active .scene03_2_ani li.obj {animation:scene03_2_ani2 both 3.2s 0.6s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li.obj {animation:scene03_2_ani2 both 3.2s 0.3s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(4) {animation:fade both 0.6s 1.2s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(5) {animation:fade both 0.6s 1.5s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(6) {animation:fade both 0.6s 1.8s;}
