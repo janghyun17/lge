@@ -369,9 +369,9 @@
 .water-purifiers_202107 .slide_step .c2 .info_obj .obj5 span {display:inline-block;}
 
 /* Active */
-.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj2 {animation:scene02_1_13_ani both 0.4s 0.6s;}
-.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj3 {animation:scene02_1_12_ani both 0.4s 0.6s;}
-.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj4 {animation:scene02_1_11_ani both 0.6s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj2 {animation:scene02_1_13_ani both 0.5s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj3 {animation:scene02_1_12_ani both 0.5s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj4 {animation:scene02_1_11_ani both 0.7s 0.6s;}
 .water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj2 {animation:fade both 0.6s 0.6s;}
 .water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj3 {animation:scene02_1_21_ani both 0.8s 0.6s;}
 .water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj4 {animation:scene02_1_22_ani both 0.8s 0.6s;}
@@ -453,14 +453,14 @@
 .water-purifiers_202107 .scene04_1_ani li {position:absolute;left:0;top:0;width:100%;}
 
 /* Active */
-.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani both 2s 0.6s;}
-.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 both 0.5s 2.2s;}
+.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani both 2.5s 0.6s;}
+.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 both 0.5s 2.7s;}
 
 /* Animation */
 @keyframes scene04_1_ani {
 0% {opacity:0;transform:scale(0.85) translateY(0%);}
-24% {opacity:1;transform:scale(1) translateY(0%);}
-70% {opacity:1;transform:scale(1) translateY(0%);}
+20% {opacity:1;transform:scale(1) translateY(0%);}
+80% {opacity:1;transform:scale(1) translateY(0%);}
 100% {opacity:0.6;transform:scale(0.79) translateY(15%);}
 }
 @keyframes scene04_1_ani2 {
