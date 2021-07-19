@@ -12,7 +12,7 @@ function slideColorTypeSlider(){
 		fadeEffect: {
 			crossFade:true
 		},
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.scene01_1_ani .swiper-pagination',
 			clickable:true,
@@ -41,7 +41,7 @@ function slideStepSlider(){
 	var $target = $('.water-purifiers_202107 .slide_step .swiper-container')
 	var slideOption = {
 		effect:'fade', // 페이드 효과 사용
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.slide_step .swiper-pagination',
 			clickable:true,
@@ -196,7 +196,7 @@ $.fn.feScrollGet = function() {
 		
 		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
 			if (!$video2.hasClass('mot_on')) {
-				slideColorType.slideTo(1);
+				slideColorType.slideTo(0);
 				slideColorType.autoplay.start();
 				$video2.addClass('mot_on');
 			}
@@ -216,7 +216,7 @@ $.fn.feScrollGet = function() {
 		
 		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
 			if (!$video2.hasClass('mot_on')) {
-				slideStep.slideTo(1);
+				slideStep.slideTo(0);
 				slideStep.autoplay.start();
 				$video2.addClass('mot_on');
 			}
