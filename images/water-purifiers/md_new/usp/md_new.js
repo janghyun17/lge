@@ -109,6 +109,7 @@ $(function(){
 	slideStepSlider();
 	
 	$(window).on("resize", function(){
+		$('.scene03_2_ani li.obj img').css('height', $(window).innerWidth());
 		$('.scene03_3_ani .obj img').css('width', $(window).innerWidth());
 	}).trigger('resize');
 
