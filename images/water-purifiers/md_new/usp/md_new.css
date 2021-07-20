@@ -458,7 +458,7 @@
 .water-purifiers_202107 .scene03_1_ani.animate .step_bg,
 .water-purifiers_202107 .scene03_1_ani.animate .swiper-pagination,
 .water-purifiers_202107 .scene03_1_ani.animate .swiper-arrow {opacity:0;transition:opacity 0.6s 0s;}
-.water-purifiers_202107 .scene03_1_ani.active .step_obj {opacity:1;transition-delay:0.6s;}
+.water-purifiers_202107 .scene03_1_ani.active .step_obj {opacity:1;transition-delay:0.3s;}
 .water-purifiers_202107 .scene03_1_ani.active .step_bg,
 .water-purifiers_202107 .scene03_1_ani.active .swiper-pagination,
 .water-purifiers_202107 .scene03_1_ani.active .swiper-arrow {opacity:1;transition-delay:0.1s;}

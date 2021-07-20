@@ -269,10 +269,12 @@ $.fn.feScrollGet = function() {
 			if (!$video2.hasClass('mot_on')) {
 				slideColorType.slideTo(0);
 				slideColorType.autoplay.start();
+				$('.water-purifiers_202107 .slide_color_type').addClass('s1');
 				$video2.addClass('mot_on');
 			}
 		}else{
 			if($video2.hasClass('mot_on')) {
+				$('.water-purifiers_202107 .slide_color_type').removeClass('s1').removeClass('s2').removeClass('s3');
 				$('.scene01_1_ani .slide_time_pagn').removeClass('chk');
 				slideColorType.autoplay.stop();
 				$video2.removeClass('mot_on');
