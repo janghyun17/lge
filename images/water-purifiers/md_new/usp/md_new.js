@@ -41,11 +41,11 @@ function slideColorTypeSlider(){
 	
 	$('.water-purifiers_202107 .slide_color_type').addClass('s1');
 	$('.scene01_1_ani .btn_swiper_pause').click(function(){
-		$('.scene01_1_ani .slide_color_type_time_pagn').addClass('chk');
+		$('.scene01_1_ani .slide_time_pagn').addClass('chk');
 		slideColorType.autoplay.stop();
 	});
 	$('.scene01_1_ani .btn_swiper_play').click(function(){
-		$('.scene01_1_ani .slide_color_type_time_pagn').removeClass('chk');
+		$('.scene01_1_ani .slide_time_pagn').removeClass('chk');
 		slideColorType.autoplay.start();
 	});
 }
@@ -89,6 +89,15 @@ function slideStepSlider(){
 	};
 	slideStep = new Swiper($target.get(0), slideOption);
 	slideStep.autoplay.stop();
+	
+	$('.scene02_1_ani .btn_swiper_pause').click(function(){
+		$('.scene02_1_ani .slide_time_pagn').addClass('chk');
+		slideStep.autoplay.stop();
+	});
+	$('.scene02_1_ani .btn_swiper_play').click(function(){
+		$('.scene02_1_ani .slide_time_pagn').removeClass('chk');
+		slideStep.autoplay.start();
+	});
 }
 
 /** Swiper : 고온 살균 &amp; 스테인리스 직수관 **/
@@ -120,6 +129,15 @@ function slideStepSlider2(){
 	};
 	slideStep2 = new Swiper($target.get(0), slideOption);
 	slideStep2.autoplay.stop();
+	
+	$('.scene03_1_ani .btn_swiper_pause').click(function(){
+		$('.scene03_1_ani .slide_time_pagn').addClass('chk');
+		slideStep2.autoplay.stop();
+	});
+	$('.scene03_1_ani .btn_swiper_play').click(function(){
+		$('.scene03_1_ani .slide_time_pagn').removeClass('chk');
+		slideStep2.autoplay.start();
+	});
 }
 
 
@@ -255,6 +273,7 @@ $.fn.feScrollGet = function() {
 			}
 		}else{
 			if($video2.hasClass('mot_on')) {
+				$('.scene01_1_ani .slide_time_pagn').removeClass('chk');
 				slideColorType.autoplay.stop();
 				$video2.removeClass('mot_on');
 			}
@@ -275,6 +294,7 @@ $.fn.feScrollGet = function() {
 			}
 		}else{
 			if($video2.hasClass('mot_on')) {
+				$('.scene02_1_ani .slide_time_pagn').removeClass('chk');
 				slideStep.autoplay.stop();
 				$video2.removeClass('mot_on');
 			}
@@ -295,6 +315,7 @@ $.fn.feScrollGet = function() {
 			}
 		}else{
 			if($video2.hasClass('mot_on')) {
+				$('.scene03_1_ani .slide_time_pagn').removeClass('chk');
 				slideStep2.autoplay.stop();
 				$video2.removeClass('mot_on');
 			}
