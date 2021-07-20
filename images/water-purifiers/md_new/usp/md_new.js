@@ -36,11 +36,14 @@ function slideColorTypeSlider(){
 }
 
 
-/** 국내 최초 상하좌우 무빙 출수탭 **/
+/** Swiper : 국내 최초 상하좌우 무빙 출수탭 **/
 function slideStepSlider(){
 	var $target = $('.water-purifiers_202107 .slide_step .swiper-container')
 	var slideOption = {
 		effect:'fade', // 페이드 효과 사용
+		fadeEffect: {
+			//crossFade:true
+		},
 		loop:false,
 		pagination:{
 			el:'.slide_step .swiper-pagination',
@@ -54,7 +57,7 @@ function slideStepSlider(){
         	delay:5000,
         	disableOnInteraction:false,
         },
-		speed:500,
+		speed:400,
 		observer:true,
 		observeParents:true,
 		on:{
@@ -72,6 +75,38 @@ function slideStepSlider(){
 	slideStep = new Swiper($target.get(0), slideOption);
 	slideStep.autoplay.stop();
 }
+
+/** Swiper : 고온 살균 &amp; 스테인리스 직수관 **/
+function slideStepSlider2(){
+	var $target = $('.water-purifiers_202107 .slide_step2 .swiper-container');
+	var slideOption = {
+		effect:'fade', // 페이드 효과 사용
+		fadeEffect: {
+			//crossFade:true
+		},
+		loop:false,
+		pagination:{
+			el:'.scene03_1_ani .swiper-pagination',
+			clickable:true,
+		},
+		navigation:{
+			nextEl:'.scene03_1_ani .swiper-button-next',
+			prevEl:'.scene03_1_ani .swiper-button-prev',
+		},
+        autoplay:{
+        	delay:5000,
+        	disableOnInteraction:false,
+        },
+		speed:400,
+		observer:true,
+		observeParents:true,
+		on:{
+		}
+	};
+	slideStep2 = new Swiper($target.get(0), slideOption);
+	slideStep2.autoplay.stop();
+}
+
 
 
 
@@ -107,10 +142,12 @@ $(function(){
 	/* Swiper */
 	slideColorTypeSlider();
 	slideStepSlider();
+	slideStepSlider2();
 	
 	$(window).on("resize", function(){
-		$('.scene03_2_ani li.obj img').css('height', $(window).innerWidth());
+		$('.scene03_2_ani .obj img').css('height', $(window).innerWidth());
 		$('.scene03_3_ani .obj img').css('width', $(window).innerWidth());
+		$('.scene04_2_ani .obj img').css('width', $(window).innerWidth());
 	}).trigger('resize');
 
 	
@@ -224,6 +261,26 @@ $.fn.feScrollGet = function() {
 		}else{
 			if($video2.hasClass('mot_on')) {
 				slideStep.autoplay.stop();
+				$video2.removeClass('mot_on');
+			}
+		}	
+    });
+
+    $('.slide_step2').each(function(i){
+        var $video2 = $(this),
+            video2 = $video2,
+            item_top = $video2.offset().top,
+            item_h = $video2.height();
+		
+		if(($video2.offset().top) < (offset) && (item_top + item_h) > (offset_half)){
+			if (!$video2.hasClass('mot_on')) {
+				slideStep2.slideTo(0);
+				slideStep2.autoplay.start();
+				$video2.addClass('mot_on');
+			}
+		}else{
+			if($video2.hasClass('mot_on')) {
+				slideStep2.autoplay.stop();
 				$video2.removeClass('mot_on');
 			}
 		}	
