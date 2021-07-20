@@ -29,10 +29,25 @@ function slideColorTypeSlider(){
 		observer:true,
 		observeParents:true,
 		on:{
+			slideChange:function(){
+				var idx = this.realIndex + 1
+				$('.water-purifiers_202107 .slide_color_type').removeClass('s1').removeClass('s2').removeClass('s3');
+				$('.water-purifiers_202107 .slide_color_type').addClass('s'+idx+'');
+			},
 		}
 	};
 	slideColorType = new Swiper($target.get(0), slideOption);
 	slideColorType.autoplay.stop();
+	
+	$('.water-purifiers_202107 .slide_color_type').addClass('s1');
+	$('.scene01_1_ani .btn_swiper_pause').click(function(){
+		$('.scene01_1_ani .slide_color_type_time_pagn').addClass('chk');
+		slideColorType.autoplay.stop();
+	});
+	$('.scene01_1_ani .btn_swiper_play').click(function(){
+		$('.scene01_1_ani .slide_color_type_time_pagn').removeClass('chk');
+		slideColorType.autoplay.start();
+	});
 }
 
 
