@@ -39,7 +39,7 @@ function slideColorTypeSlider(){
 	slideColorType = new Swiper($target.get(0), slideOption);
 	slideColorType.autoplay.stop();
 	
-	$('.water-purifiers_202107 .slide_color_type').addClass('s1');
+	//$('.water-purifiers_202107 .slide_color_type').addClass('s1');
 	$('.scene01_1_ani .btn_swiper_pause').click(function(){
 		$('.scene01_1_ani .slide_time_pagn').addClass('chk');
 		slideColorType.autoplay.stop();
