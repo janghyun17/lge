@@ -12,7 +12,7 @@ function slideColorTypeSlider(){
 		fadeEffect: {
 			crossFade:true
 		},
-		loop:false,
+		loop:true,
 		pagination:{
 			el:'.scene01_1_ani .swiper-pagination',
 			clickable:true,
@@ -22,7 +22,7 @@ function slideColorTypeSlider(){
 			prevEl:'.scene01_1_ani .swiper-button-prev',
 		},
         autoplay:{
-        	delay:3000,
+        	//delay:3000,
         	disableOnInteraction:false,
         },
 		speed:500,
@@ -58,7 +58,7 @@ function slideStepSlider(){
 		fadeEffect: {
 			//crossFade:true
 		},
-		loop:false,
+		loop:true,
 		pagination:{
 			el:'.slide_step .swiper-pagination',
 			clickable:true,
@@ -68,7 +68,7 @@ function slideStepSlider(){
 			prevEl:'.slide_step .swiper-button-prev',
 		},
         autoplay:{
-        	delay:5000,
+        	//delay:5000,
         	disableOnInteraction:false,
         },
 		speed:500,
@@ -98,7 +98,7 @@ function slideStepSlider2(){
 		fadeEffect: {
 			//crossFade:true
 		},
-		loop:false,
+		loop:true,
 		pagination:{
 			el:'.scene03_1_ani .swiper-pagination',
 			clickable:true,
@@ -108,10 +108,10 @@ function slideStepSlider2(){
 			prevEl:'.scene03_1_ani .swiper-button-prev',
 		},
         autoplay:{
-        	delay:5000,
+        	//delay:5000,
         	disableOnInteraction:false,
         },
-		speed:500,
+		//speed:500,
 		observer:true,
 		observeParents:true,
 		on:{

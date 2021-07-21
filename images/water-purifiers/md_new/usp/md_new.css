@@ -70,7 +70,7 @@
 
 
 /**** Title ****/
-.water-purifiers_202107 .title {position:relative;}
+.water-purifiers_202107 .title {position:relative;text-align:center;}
 .water-purifiers_202107 .eyebrow {position:relative;margin:-5px 0 10px 0;color:#767676;font-size:16px;font-weight:700;line-height:24px;overflow:hidden;}
 .water-purifiers_202107 .eyebrow span {display:block;position:relative;}
 .water-purifiers_202107 .tit {position:relative;left:-2px;font-size:31px;font-weight:bold;line-height:42px;letter-spacing:-0.8px;overflow:hidden;}
@@ -242,6 +242,7 @@
 /* slide_color_type */
 .water-purifiers_202107 .slide_color_type {position:relative;}
 .water-purifiers_202107 .slide_color_type .swiper-arrow {top:31%;}
+.water-purifiers_202107 .slide_color_type .swiper-pagination {margin-top:10px;}
 
 .water-purifiers_202107 .slide_time_pagn .btn_swiper_pause,
 .water-purifiers_202107 .slide_time_pagn .btn_swiper_play {display:none;width:20px;height:20px;margin-top:-10px;background:url("./btn_swiper_play.png") center/100% no-repeat;vertical-align:top;}
