@@ -25,7 +25,7 @@ function slideColorTypeSlider(){
         	delay:3000,
         	disableOnInteraction:false,
         },
-		speed:700,
+		speed:500,
 		observer:true,
 		observeParents:true,
 		on:{
@@ -71,7 +71,7 @@ function slideStepSlider(){
         	delay:5000,
         	disableOnInteraction:false,
         },
-		speed:400,
+		speed:500,
 		observer:true,
 		observeParents:true,
 		on:{
@@ -111,7 +111,7 @@ function slideStepSlider2(){
         	delay:5000,
         	disableOnInteraction:false,
         },
-		speed:400,
+		speed:500,
 		observer:true,
 		observeParents:true,
 		on:{
