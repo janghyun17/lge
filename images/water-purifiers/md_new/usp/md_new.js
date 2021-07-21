@@ -21,10 +21,10 @@ function slideColorTypeSlider(){
 			nextEl:'.scene01_1_ani .swiper-button-next',
 			prevEl:'.scene01_1_ani .swiper-button-prev',
 		},
-        autoplay:{
-        	//delay:3000,
+        /*autoplay:{
+        	delay:3000,
         	disableOnInteraction:false,
-        },
+        },*/
 		speed:500,
 		observer:true,
 		observeParents:true,
@@ -67,10 +67,11 @@ function slideStepSlider(){
 			nextEl:'.slide_step .swiper-button-next',
 			prevEl:'.slide_step .swiper-button-prev',
 		},
+		/*
         autoplay:{
-        	//delay:5000,
+        	delay:5000,
         	disableOnInteraction:false,
-        },
+        },*/
 		speed:500,
 		observer:true,
 		observeParents:true,
@@ -107,11 +108,11 @@ function slideStepSlider2(){
 			nextEl:'.scene03_1_ani .swiper-button-next',
 			prevEl:'.scene03_1_ani .swiper-button-prev',
 		},
-        autoplay:{
-        	//delay:5000,
+        /*autoplay:{
+        	delay:5000,
         	disableOnInteraction:false,
-        },
-		//speed:500,
+        },*/
+		speed:500,
 		observer:true,
 		observeParents:true,
 		on:{
