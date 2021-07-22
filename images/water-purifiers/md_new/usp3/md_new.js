@@ -12,7 +12,7 @@ function slideColorTypeSlider(){
 		fadeEffect: {
 			crossFade:true
 		},
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.scene01_1_ani .swiper-pagination',
 			clickable:true,
@@ -58,7 +58,7 @@ function slideStepSlider(){
 		fadeEffect: {
 			//crossFade:true
 		},
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.slide_step .swiper-pagination',
 			clickable:true,
@@ -98,7 +98,7 @@ function slideStepSlider2(){
 		fadeEffect: {
 			//crossFade:true
 		},
-		loop:true,
+		loop:false,
 		pagination:{
 			el:'.scene03_1_ani .swiper-pagination',
 			clickable:true,
