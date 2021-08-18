@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* Common */
+.visual-area img {border-radius:20px;overflow:hidden;}
+.visual-area video,
+.animation-area video {background:#fff !important;border-radius:20px;overflow:hidden;}
+
+
+/* KRC0004 */
+.KRC0004 .align-left {text-align:center;}
+.KRC0004 .align-left + .visual-area {border-radius:0;padding:0 40px;}
+
+
+/* KRC0025 */
+.KRC0025 .bullet-list .b-txt {margin-top:24px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
+
+/* KRC0032 */
+.KRC0032.stage-medium {margin-top:56px !important;}
+.KRC0032.stage-wide .animation-area video {border-radius:0;}
+.KRC0032 .usp-banner-wrap {padding-bottom:40px;}
+.KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
+
+
+/* KRC0035 */
+.KRC0035 .animation-box .animation-area {max-width:640px !important;}
+.KRC0035 .visual-area img {width:100% !important;max-width:640px !important;}
+.KRC0035 .visual-wrap.image-align-left .visual-area {text-align:left;}
+.KRC0035 .visual-wrap.image-align-left .controller-wrap {right:inherit;left:calc(100% - 40px);}
+.KRC0035 .visual-wrap.image-align-right .visual-area {text-align:right;}
+.KRC0035.align-center {text-align:left;}
+.KRC0035.align-center .text-wrap .title h2 {font-size:32px;line-height:46px;}
+.KRC0035.align-center .text-wrap .text {font-size:16px;line-height:26px;}
+
+
+/* KRC0039 */
+.KRC0039 .inner .tbl-layout.standard .visual-area {max-width:640px;}
+.KRC0039 .inner .text-area .text-inner .title h2 {font-size:32px;line-height:46px;}
+.KRC0039 .inner .text-area .text-inner .text {font-size:16px;line-height:26px;}
+
+
+/* waterpurifiers_more_area */
+.waterpurifiers_more_area {display:none;}
+.btn_waterpurifiers_more {margin:40px 0 80px 0;text-align:center;}
+.btn_waterpurifiers_more a {display:inline-block;position:relative;min-width:80px;padding:7px 15px 7px 35px;box-sizing:border-box;border:1px solid #222;border-radius:20px;font-size:14px;line-height:24px;transition:all 0.4s;}
+.btn_waterpurifiers_more a:before,
+.btn_waterpurifiers_more a:after {position:absolute;top:50%;background:#222;border-radius:2px;content:'';transition:all 0.4s;}
+.btn_waterpurifiers_more a:before {left:16px;width:10px;height:2px;margin-top:-1px;}
+.btn_waterpurifiers_more a:after {left:20px;width:2px;height:10px;margin-top:-5px;}
+.btn_waterpurifiers_more a.on:before,
+.btn_waterpurifiers_more a.on:after {transform:rotate(45deg);}
+.btn_waterpurifiers_more a:hover,
+.btn_waterpurifiers_more a:focus {background-image:linear-gradient(280deg, #fb5a72, #fa263e) !important;border-color:#fa263e !important;color:#fff !important;}
+.btn_waterpurifiers_more a:hover:before,
+.btn_waterpurifiers_more a:focus:before,
+.btn_waterpurifiers_more a:hover:after,
+.btn_waterpurifiers_more a:focus:after {background:#fff !important;}
+
+
+
+
+@media only screen and (min-width:1400px) {
+/* KRC0035 */
+.KRC0035 .visual-wrap.image-align-left .controller-wrap {left:600px;}
+}
+
+@media only screen and (min-width:1460px) {
+/* KRC0004 */
+.KRC0004 .align-left + .visual-area {padding:0;}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+/* Common */
+.visual-area img {border-radius:10px;}
+.visual-area video,
+.animation-area video {border-radius:10px;}
+	
+	
+/* KRC0004 */
+.KRC0004 .align-left + .visual-area {padding:0;}
+	
+	
+/* KRC0025 */
+.KRC0025 .bullet-list .b-txt {margin-top:21px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:0;}
+
+	
+/* KRC0032 */
+.KRC0032.stage-medium {margin-top:28px !important;}
+.component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
+	
+	
+/* KRC0035 */
+.KRC0035 .inner {display:flex;flex-direction:column-reverse;}
+.KRC0035.standard .text-wrap.side-left-text,
+.KRC0035.standard .text-wrap.side-right-text {margin:0 0 27px 0;text-align:center;}
+.KRC0035.standard .text-wrap .bullet-list {margin-top:0 !important;}
+.KRC0035 .animation-box .animation-area {max-width:100% !important;}
+.KRC0035 .visual-area img {max-width:100% !important;}
+.KRC0035.align-center .text-wrap .title h2 {font-size:24px;line-height:34px;}
+.KRC0035.align-center .text-wrap .text {font-size:14px;line-height:22px;}
+	
+	
+/* KRC0039 */
+.KRC0039 .inner .tbl-layout.standard .visual-area {max-width:100%;}
+.KRC0039 .inner .tbl-layout .text-area {text-align:center;}
+.KRC0039 .inner .text-area .text-inner .title h2 {font-size:24px;line-height:34px;}
+.KRC0039 .inner .text-area .text-inner .text {font-size:14px;line-height:22px;}
+	
+	
+/* waterpurifiers_more_area */
+.btn_waterpurifiers_more {margin:20px 0 0 0;}
+}
+	
+
+
+
