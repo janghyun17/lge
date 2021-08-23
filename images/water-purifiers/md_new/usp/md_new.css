@@ -111,7 +111,7 @@
 /* KRC0039 */
 .KRC0039 .inner .tbl-layout {display:flex;flex-direction:column-reverse;}
 .KRC0039 .inner .tbl-layout.standard .visual-area {max-width:100%;}
-.KRC0039 .inner .tbl-layout.visual-left .text-area {margin:0 0 20px 0;}
+.KRC0039 .inner .tbl-layout.visual-left .text-area {margin:0 0 22px 0;}
 .KRC0039 .inner .tbl-layout .text-area {text-align:center;}
 .KRC0039 .inner .text-area .text-inner .title h2 {font-size:24px;line-height:34px;}
 .KRC0039 .inner .text-area .text-inner .text {font-size:14px;line-height:22px;}
