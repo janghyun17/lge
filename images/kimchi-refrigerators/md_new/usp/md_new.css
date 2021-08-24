@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 /* Common */
-.visual-area img {border-radius:20px;overflow:hidden;}
+/*
+.visual-area img {border-radius:0px;overflow:hidden;}
 .visual-area video,
 .animation-area video {background:#fff !important;border-radius:20px;overflow:hidden;}
-
+*/
 
 /* KRC0004 */
 .KRC0004 .align-left {margin-top:80px !important;text-align:center;}
@@ -44,7 +45,7 @@
 /* waterpurifiers_more_area */
 .waterpurifiers_more_area {display:none;}
 .btn_waterpurifiers_more {margin:40px 0 80px 0;text-align:center;}
-.btn_waterpurifiers_more a {display:inline-block;position:relative;min-width:80px;padding:7px 15px 7px 35px;box-sizing:border-box;border:1px solid #222;border-radius:20px;font-size:14px;line-height:24px;transition:all 0.4s;}
+.btn_waterpurifiers_more a {display:inline-block;position:relative;min-width:80px;padding:7px 15px 7px 35px;box-sizing:border-box;border:1px solid #222;border-radius:0px;font-size:14px;line-height:24px;transition:all 0.4s;}
 .btn_waterpurifiers_more a:before,
 .btn_waterpurifiers_more a:after {position:absolute;top:50%;background:#222;border-radius:2px;content:'';transition:all 0.4s;}
 .btn_waterpurifiers_more a:before {left:16px;width:10px;height:2px;margin-top:-1px;}
@@ -79,9 +80,9 @@
 
 @media only screen and (max-width:768px) {
 /* Common */
-.visual-area img {border-radius:10px;}
+.visual-area img {border-radius:0px;}
 .visual-area video,
-.animation-area video {border-radius:10px;}
+.animation-area video {border-radius:0px;}
 	
 	
 /* KRC0004 */
