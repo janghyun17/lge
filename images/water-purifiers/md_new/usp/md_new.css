@@ -15,6 +15,7 @@
 /* KRC0025 */
 .KRC0025 .bullet-list .b-txt {margin-top:24px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
+.KRC0025 .align-right {margin-top:80px;text-align:center;}
 
 /* KRC0032 */
 .KRC0032.stage-medium {margin-top:56px !important;}
@@ -84,10 +85,12 @@
 	
 	
 /* KRC0004 */
+.KRC0004 .align-left {margin-top:-60px !important;}
 .KRC0004 .align-left + .visual-area {padding:0;}
 	
 	
 /* KRC0025 */
+.KRC0025 .align-right {margin-top:0px;}
 .KRC0025 .bullet-list .b-txt {margin-top:21px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:0;}
 
