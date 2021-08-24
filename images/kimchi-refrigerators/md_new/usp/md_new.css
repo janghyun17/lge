@@ -84,6 +84,8 @@
 .visual-area video,
 .animation-area video {border-radius:0px;}
 	
+	.component-wrap {padding-top:0;}
+	
 	
 /* KRC0004 */
 .KRC0004 .align-left {margin-top:0px !important;}
