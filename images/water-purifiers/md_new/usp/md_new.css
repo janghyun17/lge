@@ -7,7 +7,7 @@
 
 
 /* KRC0004 */
-.KRC0004 .align-left {text-align:center;}
+.KRC0004 .align-left {margin-top:80px !important;text-align:center;}
 .KRC0004 .align-left + .visual-area {border-radius:0;padding:0 40px;}
 .KRC0004 .align-left + .visual-area img {border-radius:0;}
 
@@ -85,7 +85,7 @@
 	
 	
 /* KRC0004 */
-.KRC0004 .align-left {margin-top:-60px !important;}
+.KRC0004 .align-left {margin-top:0px !important;}
 .KRC0004 .align-left + .visual-area {padding:0;}
 	
 	
