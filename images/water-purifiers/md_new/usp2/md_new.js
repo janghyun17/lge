@@ -179,6 +179,7 @@ $(function(){
 	
 	$(window).on("resize", function(){
 		$('.scene03_3_ani .obj img').css('width', $(window).innerWidth());
+		$('.scene03_3_ani2 img').css('width', $(window).innerWidth());
 		$('.scene04_2_ani .obj img').css('width', $(window).innerWidth());
 	}).trigger('resize');
 

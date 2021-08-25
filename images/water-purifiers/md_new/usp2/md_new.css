@@ -28,7 +28,7 @@
 
 
 /*** -Tablet UI- ***/
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:768px) {
 .water-purifiers_202107 .only_pc {display:block;}
 .water-purifiers_202107 .only_m {display:none;}
 }
@@ -72,7 +72,7 @@
 
 
 /**** Title ****/
-.water-purifiers_202107 .title {position:relative;}
+.water-purifiers_202107 .title {position:relative;text-align:center;}
 .water-purifiers_202107 .title.animate {opacity:0;transition:opacity 0.4s;}
 .water-purifiers_202107 .eyebrow {position:relative;margin:-5px 0 10px 0;color:#767676;font-size:16px;font-weight:700;line-height:24px;overflow:hidden;}
 .water-purifiers_202107 .eyebrow span {display:block;position:relative;}
@@ -92,7 +92,7 @@
 
 /** -Tablet UI- **/
 @media only screen and (min-width:768px) {
-.water-purifiers_202107 .title {margin:0 auto;text-align:center;}
+.water-purifiers_202107 .title {margin:0 auto;}
 .water-purifiers_202107 .eyebrow {margin-bottom:10px;font-size:20px;line-height:28px;}
 .water-purifiers_202107 .tit {left:0;font-size:40px;line-height:56px;}
 .water-purifiers_202107 .desc {margin-top:20px;}
@@ -120,7 +120,7 @@
 
 /***** Contents : Box Type *****/
 .water-purifiers_202107 .box + .title {margin-top:30px;}
-.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:10px;overflow:hidden;}
+.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:0px;overflow:hidden;}
 .water-purifiers_202107 .img.not_round {border-radius:0;}
 .water-purifiers_202107 .img_resp {position:relative;margin:38px -25px 0 -25px;text-align:center;overflow:hidden;}
 .water-purifiers_202107 video {display:block;width:100%;}
@@ -156,7 +156,7 @@
 /** -PC UI- **/
 @media only screen and (min-width:1280px) {
 .water-purifiers_202107 .box + .title {margin-top:45px;}
-.water-purifiers_202107 .img {margin-top:45px;border-radius:20px;}
+.water-purifiers_202107 .img {margin-top:45px;border-radius:0px;}
 .water-purifiers_202107 .img_resp {margin-top:45px;}
 .water-purifiers_202107 .box_area {min-height:500px;margin-top:45px;line-height:500px;}
 }
@@ -510,10 +510,10 @@
 /* Active */
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(1) {animation:fade both 0.6s 0.6s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(2) {animation:scene03_2_ani both 0.5s 0.6s;}
-.water-purifiers_202107 .animate.active .scene03_2_ani li.obj {animation:scene03_1_ani both 1.7s 1s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li.obj {animation:scene03_1_ani both 1.3s 0.8s;}
 .water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(4) {animation:fade both 0.6s 1.5s;}
-.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(5) {animation:fade both 0.6s 1.8s;}
-.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(6) {animation:fade both 0.6s 2.1s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(4) {animation:fade both 0.6s 1.8s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(4) {animation:fade both 0.5s 2.2s;}
 
 /* Animation */
 @keyframes scene03_2_ani {
@@ -536,7 +536,7 @@
 .water-purifiers_202107 .scene03_3_ani .obj img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
 
 /* Active */
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj {animation:scene03_3_ani both ease-out 4s 0.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj {animation:scene03_3_ani both ease-out 6s 0.4s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj11 {animation:fade both 0.8s 1.0s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj12 {animation:fade both 0.8s 1.6s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj12 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:40% center;}
@@ -549,27 +549,28 @@
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj23 {animation:fade both 0.6s 3.1s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj23 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:61% 36%;}
 
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj31 {animation:fade both 0.6s 3.0s;}
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj32 {animation:fade both 0.6s 3.2s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj31 {animation:fade both 0.6s 3.7s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj32 {animation:fade both 0.6s 3.9s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj32 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:60% 55%;}
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj33 {animation:fade both 0.6s 3.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj33 {animation:fade both 0.6s 4.1s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj33 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:60% 55%;}
 
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj41 {animation:fade both 0.6s 3.3s;}
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj42 {animation:fade both 0.6s 3.5s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj41 {animation:fade both 0.6s 4.7s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj42 {animation:fade both 0.6s 4.9s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj42 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:61% 79%;}
-.water-purifiers_202107 .animate.active .scene03_3_ani .obj43 {animation:fade both 0.6s 3.7s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj43 {animation:fade both 0.6s 5.1s;}
 .water-purifiers_202107 .animate.active .scene03_3_ani .obj43 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:61% 79%;}
 
 /* Animation */
 @keyframes scene03_3_ani {
 0% {width:0%;}
-16% {width:39.3%;}
-38% {width:39.3%;}
-54% {width:61%;}
-84% {width:61%;}
+13% {width:39.3%;}
+30% {width:39.3%;}
+42% {width:61%;}
+83% {width:61%;}
 100% {width:100%;}
 }
+
 @keyframes scene03_3_ani2 {
 0% {transform:scale(0.8);}
 20% {transform:scale(0.9);}
@@ -581,28 +582,137 @@
 
 
 
+/*** Scene03_3 : 4단계 올 퓨리 필터 시스템 ***/
+.water-purifiers_202107 .scene03_3_ani2 {position:relative;}
+.water-purifiers_202107 .scene03_3_ani2 li {position:absolute;left:0;top:0;width:100%;opacity:0;}
+.water-purifiers_202107 .scene03_3_ani2 img {width:100%;max-width:1380px !important;}
+.water-purifiers_202107 .scene03_3_ani2 .obj {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.water-purifiers_202107 .scene03_3_ani2 .obj img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
+
+.water-purifiers_202107 .scene03_3_ani2 .obj9 {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.water-purifiers_202107 .scene03_3_ani2 .obj9 img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj9 {animation:scene03_3_ani13 both ease-out 6.8s 0.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj {animation:scene03_3_ani11 both ease-out 6s 0.6s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj11 {animation:fade both 0.8s 1.2s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj12 {animation:fade both 0.8s 1.8s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj12 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 1.8s;transform-origin:34% center;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj13 {animation:fade both 0.8s 1.5s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj13 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 0.7s;transform-origin:34% center;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj21 {animation:fade both 0.6s 2.9s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj22 {animation:fade both 0.6s 3.3s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj22 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 0.7s;transform-origin:46% 40%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj23 {animation:fade both 0.6s 3.5s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj23 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 1.8s;transform-origin:46% 38%;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj31 {animation:fade both 0.6s 3.9s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj32 {animation:fade both 0.6s 4.1s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj32 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 1.8s;transform-origin:46% 59%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj33 {animation:fade both 0.6s 4.3s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj33 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 0.7s;transform-origin:46% 59%;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj41 {animation:fade both 0.6s 4.9s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj42 {animation:fade both 0.6s 5.1s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj42 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 0.7s;transform-origin:46% 79%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj43 {animation:fade both 0.6s 5.3s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj43 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 1.8s;transform-origin:46% 79%;}
+
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj51 {display:block;opacity:1;z-index:5}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj52 {position:absolute;left:0;top:inherit;bottom:0;width:100%;height:100%;overflow:hidden;opacity:1;animation:scene03_3_ani14 both ease-out 1.8s 6.6s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj52 img {position:absolute;left:0;bottom:0;width:100vw;max-width:1660px;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj61 {animation:fade both 0.6s 7.0s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj62 {animation:fade both 0.6s 7.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj63 {animation:fade both 0.6s 7.6s;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj61 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 0.7s;transform-origin:78% 74%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj62 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 2.5s;transform-origin:78% 74%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani2 .obj63 img {position:relative;animation:scene03_3_ani12 linear both infinite 5.8s 1.8s;transform-origin:78% 74%;}
+
+/* Animation */
+@keyframes scene03_3_ani11 {
+0% {width:15%;}
+13% {width:35.1%;}
+30% {width:35.1%;}
+42% {width:45.3%;}
+83% {width:45.3%;}
+100% {width:77.5%;}
+}
+
+@keyframes scene03_3_ani12 {
+0% {transform:scale(0.8);}
+20% {transform:scale(0.9);}
+50% {transform:scale(0.75);}
+70% {transform:scale(1);}
+100% {transform:scale(0.8);}
+}
+@keyframes scene03_3_ani13 {
+0% {height:0}
+4% {height:11.6%;}
+89% {height:11.6%;}
+100% {height:42%;}
+}
+@keyframes scene03_3_ani14 {
+0% {height:0}
+100% {height:42%;}
+}
+
 
 /*** Scene04_1 : 음성 안내 ***/
 .water-purifiers_202107 .scene04_1_ani {position:relative;}
 .water-purifiers_202107 .scene04_1_ani li {position:absolute;left:0;top:0;width:100%;}
 
+.water-purifiers_202107 .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani infinite both 6.0s 0s;}
+.water-purifiers_202107 .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 infinite both 6.0s 0s;}
+
+
+@keyframes scene04_1_ani {
+0% {transform:scale(1) translate(0,0);opacity:1;}
+42% {transform:scale(1) translate(0,0);opacity:1;}
+50% {transform:scale(0.755) translate(2.5%,-10.8%);opacity:0.6;}
+92% {transform:scale(0.755) translate(2.5%,-10.8%);opacity:0.6;}
+100% {transform:scale(1) translate(0,0);opacity:1;}
+}
+@keyframes scene04_1_ani2 {
+0% {transform:scale(0.755) translate(2.5%,-9.8%);opacity:0.6;}
+42% {transform:scale(0.755) translate(2.5%,-9.8%);opacity:0.6;}
+50% {transform:scale(1) translate(0,0);opacity:1;}
+92% {transform:scale(1) translate(0,0);opacity:1;}
+100% {transform:scale(0.755) translate(2.5%,-9.8%);opacity:0.6;}
+}
+
+
+
+
+
+/*
+.water-purifiers_202107 .scene04_1_ani li:nth-child(1) {transform:scale(0.755) translate(2.5%,-10.8%);opacity:0.6;}
+.water-purifiers_202107 .scene04_1_ani li:nth-child(2) {transform:scale(0.755) translate(2.5%,-9.8%);opacity:0.6;}
+*/
+
 /* Active */
+/*
 .water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani both 2.0s 0.6s;}
 .water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 both 0.5s 2.2s;}
-
+*/
 /* Animation */
+/*
 @keyframes scene04_1_ani {
-0% {opacity:0;transform:scale(0.85) translateY(0%);}
-22% {opacity:1;transform:scale(1) translateY(0%);}
-75% {opacity:1;transform:scale(1) translateY(0%);}
-100% {opacity:0.6;transform:scale(0.79) translateY(15%);}
+0% {opacity:0;transform:scale(0.85) translate(0,0);}
+22% {opacity:1;transform:scale(1) translate(0,0);}
+75% {opacity:1;transform:scale(1) translate(0%,0);}
+100% {opacity:0.6;transform:scale(0.755) translate(2.5%,5.8%)}
 }
 @keyframes scene04_1_ani2 {
 0% {opacity:0;transform:scale(0.85);}
 100% {opacity:1;transform:scale(1);}
 }
 
-
+*/
 
 
 
@@ -671,7 +781,7 @@
 .water-purifiers_202107 .scene04_3_ani .obj2:before,
 .water-purifiers_202107 .scene04_3_ani .obj2 :before,
 .water-purifiers_202107 .scene04_3_ani .obj2:after,
-.water-purifiers_202107 .scene04_3_ani .obj2 :after {width:4px;height:4px;}
+.water-purifiers_202107 .scene04_3_ani .obj2 :after {width:6px;height:6px;}
 }
 
 /* Animation */
