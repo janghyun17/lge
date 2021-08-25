@@ -17,6 +17,7 @@
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
 .KRC0025 .align-right {margin-top:80px;text-align:center;}
 
+
 /* KRC0032 */
 .KRC0032.stage-medium {margin-top:56px !important;}
 .KRC0032.stage-wide .animation-area video {border-radius:0;}
@@ -59,8 +60,6 @@
 .btn_waterpurifiers_more a:focus:after {background:#fff !important;}
 
 
-
-
 @media only screen and (min-width:1400px) {
 /* KRC0035 */
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {left:600px;}
@@ -76,7 +75,7 @@
 
 
 
-
+/*** - Mobile UI - ***/
 @media only screen and (max-width:768px) {
 /* Common */
 .visual-area img {border-radius:10px;}
