@@ -13,6 +13,8 @@
 .KRC0032 .usp-banner-wrap {padding-bottom:40px;}
 .KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
 .KRC0032.stage-full {max-width:1460px;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .title h2 {font-size:36px;line-height:46px;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {font-size:16px;line-height:26px;}
 
 
 /* KRC0035 */
@@ -52,6 +54,9 @@
 .component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box {display:flex;flex-direction:column-reverse;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area {margin-bottom:27px !important;padding-top:0 !important;text-align:center;}
+	
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .title h2 {font-size:32px;line-height:42px;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {font-size:15px;line-height:23px;}
 
 	
 	
