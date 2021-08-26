@@ -23,6 +23,7 @@
 .KRC0032.stage-wide .animation-area video {border-radius:0;}
 .KRC0032 .usp-banner-wrap {padding-bottom:40px;}
 .KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
+.KRC0032 .bullet-list {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}
 
 
 /* KRC0035 */
