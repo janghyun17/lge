@@ -3,6 +3,9 @@
 /* Common */
 
 
+
+
+
 /* KRC0025 */
 .KRC0025 .bullet-list .b-txt {margin-top:24px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
@@ -42,7 +45,7 @@
 /*** - Mobile UI - ***/
 @media only screen and (max-width:768px) {
 /* Common */
-.component-wrap {padding-top:0;}
+.component-wrap {padding-bottom:0;}
 	
 	
 /* KRC0025 */
