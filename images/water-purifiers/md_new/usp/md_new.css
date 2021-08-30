@@ -32,6 +32,7 @@
 .KRC0035 .visual-wrap.image-align-left .visual-area {text-align:left;}
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {right:inherit;left:calc(100% - 40px);}
 .KRC0035 .visual-wrap.image-align-right .visual-area {text-align:right;}
+.KRC0035 .visual-wrap.image-align-right .visual-area.animation-box .animation-area {float:right;}
 .KRC0035.align-center {text-align:left;}
 .KRC0035.align-center .text-wrap .title h2 {font-size:32px;line-height:46px;}
 .KRC0035.align-center .text-wrap .text {font-size:16px;line-height:26px;}
