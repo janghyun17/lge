@@ -3,7 +3,11 @@
 /* Common */
 
 
+.KRC0021 {margin-top:40px !important;}
+.KRC0021 .unit-list .ui_carousel_slide {padding:0 30px;}
 
+.KRC0021 .ui_carousel_track {margin:0 -18px;}
+.KRC0021 img {width:100%;}
 
 
 /* KRC0025 */
@@ -46,6 +50,14 @@
 @media only screen and (max-width:768px) {
 /* Common */
 .component-wrap {padding-bottom:0;}
+	
+	
+.KRC0021 {margin-top:40px !important;}
+.KRC0021 .unit-list .ui_carousel_slide {padding:0;}
+
+.KRC0021 .ui_carousel_track {margin:0;}
+.KRC0021 img {width:100%;}
+
 	
 	
 /* KRC0025 */
