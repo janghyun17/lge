@@ -947,46 +947,88 @@
 				<li><img src="./ico_scene07_2.png" alt="종가집 로고"></li>
 				<li><img src="./ico_scene07_3.png" alt="비비고 로고"></li>
 			</ul>
-			<a href="javascript:void(0);" class="popupBtn" data-popup-id="popup02">인공지능쿡 적용 제품 보기</a>
+			<a href="#md_popup" class="btn_md_popup">인공지능쿡 적용 제품 보기</a>
 		</div>
 	</div>
 	<!-- //brand_list -->
-	
-	
+
 	<!-- md_popup -->
-	<div class="md_popup open" id="popup02">
+	<div class="md_popup" id="md_popup">
 		<div class="dim"></div>
 		<!-- inner -->
 		<div class="inner">
-			<a href="javascript:void(0);" class="close"><span>팝업 닫기</span></a>
-			<div class="content scroll">
-				<strong class="name">제휴 브랜드 제품</strong>
-종가집
-
-종가집 포기배추김치
-종가집 총각김치
-종가집 파김치
-종가집 갓김치
-
-비비고
-
-비비고 포기배추김치
-비비고 총각김치
-비비고 열무김치
-비비고 썰은배추김치
-
-풀무원
-
-풀무원 포기배추김치
-	
+			<p class="md_popup_name">제휴 브랜드 제품</p>
+			<!-- md_popup_cont -->
+			<div class="md_popup_cont">
+				<dl>
+					<dt>종가집</dt>
+					<dd>
+						<ul>
+							<li>종가집 포기배추김치</li>
+							<li>종가집 총각김치</li>
+							<li>종가집 파김치</li>
+							<li>종가집 갓김치</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>비비고</dt>
+					<dd>
+						<ul>
+							<li>비비고 포기배추김치</li>
+							<li>비비고 총각김치</li>
+							<li>비비고 열무김치</li>
+							<li>비비고 썰은배추김치</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>풀무원</dt>
+					<dd>
+						<ul>
+							<li>풀무원 포기배추김치</li>
+						</ul>
+					</dd>
+				</dl>
 			</div>
-			
+			<!-- //md_popup_cont -->
+			<a href="javascript:void(0);" class="md_pop_close"><span><em>팝업 닫기</em></span></a>
 		</div>
 		<!-- //inner -->
-
 	</div>
 	<!-- //md_popup -->
 	
+<script>
+$(function(){
+	$('.btn_md_popup').click(function(e){
+		e.preventDefault();
+		var s = $(this).attr("href");
+		$(s).addClass('on');
+		$('.md_popup .inner').attr("tabindex", 0).focus();
+	});
+	$('.md_pop_close, .md_popup .dim').click(function(e){
+		e.preventDefault();
+		$('.md_popup').addClass('off');
+		setTimeout(function(){
+			$('.md_popup').removeClass('on').removeClass('off');
+		}, 400);
+	});
+	
+	$('.md_pop_close').keydown(function(e){
+		if(event.keyCode == 9){
+			$('.md_popup .inner').focus();
+			return false;
+		}
+	});
+	$('.md_popup .inner').keydown(function(e){
+		var isShift = window.event.shiftKey ? true : false;
+		if(isShift && (e.keyCode == 9)){
+			$('.md_pop_close').focus();
+			return false;
+		}
+	});
+});
+</script>
 </div>
 <!-- //iw_component : KRC0099 HTML -->	
 	
