@@ -1222,10 +1222,17 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<div class="visual-area">
-								<img src="./img_scene10_pc.jpg" alt="" class="pc-only">
-								<img src="./img_scene10_mo.jpg" alt="" class="mo-only">
-                            </div>
+							<div class="animation-area">
+								<video autoplay muted loop class="pc">
+									<source src="./img_scene10_pc.mp4" type="video/mp4">
+								</video>
+								<video autoplay muted loop class="mobile">
+									<source src="./img_scene10_mo.mp4" type="video/mp4">
+								</video>
+								<div class="controller-wrap wa-btn">
+									<button class="pause active" aria-label="동영상 재생" aria-describedby="title36" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="usp_0103.mp4">동영상 멈춤</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -1248,65 +1255,6 @@
 	<!-- //component-wrap -->
 </div>
 <!-- //iw_component : KRC0032 -->
-	
-<!-- iw_component : KRC0021 / -->
-<div class="iw_component" id="">
-	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
-		<!-- KRC0021 -->									   
-		<div class="component KRC0021 bg-white">
-			<!-- component-inner -->
-			<div class="component-inner">
-				<!-- unit-list -->
-				<div class="unit-list align-left ui_carousel_slider">
-					<div class="indi-wrap">
-						<ul class="ui_carousel_dots">
-							<li><button type="button" class="btn-indi"><span class="blind">{{no}}번 내용 보기</span></button></li>
-						</ul>
-					</div>
-					<div class="ui_carousel_track">
-						<div class="ui_carousel_slide">
-							<div class="unit-box">
-								<div class="visual-area image">
-									<img src="./img_scene10_1_pc.jpg" alt="" class="pc-only">
-									<img src="./img_scene10_1_mo.jpg" alt="" class="mo-only">
-									<p class="hidden">No-Folding : 서랍과 선반에 따로 따로</p>
-								</div>
-							</div>
-						</div>
-						<div class="ui_carousel_slide">
-							<div class="unit-box">
-								<div class="visual-area image">
-									<img src="./img_scene10_2_pc.jpg" alt="" class="pc-only">
-									<img src="./img_scene10_2_mo.jpg" alt="" class="mo-only">
-									<p class="hidden">Step1-Folding : 다양한 식재료 동시 보관</p>
-								</div>
-							</div>
-						</div>
-						<div class="ui_carousel_slide">
-							<div class="unit-box">
-								<div class="visual-area image">
-									<img src="./img_scene10_3_pc.jpg" alt="" class="pc-only">
-									<img src="./img_scene10_3_mo.jpg" alt="" class="mo-only">
-									<p class="hidden">Step2-Folding : 부피 큰 과일을 보관할 때</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide-controls">
-						<button type="button" class="btn-arrow prev ui_carousel_prev"><span class="blind">이전</span></button>
-						<button type="button" class="btn-arrow next ui_carousel_next"><span class="blind">다음</span></button>
-					</div>
-				</div>
-				<!-- //unit-list -->		   
-			</div>
-			<!-- //component-inner -->
-		</div>
-		<!-- //KRC0021 -->
-	</div>
-	<!-- //component-wrap -->
-</div>
-<!-- //iw_component : KRC0021  -->
 <!-- #### Scene10 : 멀티보관실 -->
 
 	
