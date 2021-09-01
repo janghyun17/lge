@@ -23,7 +23,6 @@
 <!--[if IE 9]>
 <![endif]-->
 
-<link href="https://www.lge.co.kr/lg5-common/css/components/KRC0021.min.css" type="text/css" rel="stylesheet">
 <link href="https://www.lge.co.kr/lg5-common/css/components/KRC0025.min.css" type="text/css" rel="stylesheet">
 <link href="https://www.lge.co.kr/lg5-common/css/components/KRC0032.min.css" type="text/css" rel="stylesheet">
 <link href="https://www.lge.co.kr/lg5-common/css/components/KRC0035.min.css" type="text/css" rel="stylesheet">
@@ -39,7 +38,6 @@
 <script src="https://www.lge.co.kr/lg5-common/js/vcui.common-ui.min.js"></script>
 <script src="https://www.lge.co.kr/lg5-common/js/lg.common.min.js"></script>
 
-<script src="https://www.lge.co.kr/lg5-common/js/components/KRC0021.min.js"></script>
 <script src="https://www.lge.co.kr/lg5-common/js/components/KRC0025.min.js"></script>
 <script src="https://www.lge.co.kr/lg5-common/js/components/KRC0032.min.js"></script>
 <script src="https://www.lge.co.kr/lg5-common/js/components/KRC0035.min.js"></script>
@@ -82,7 +80,7 @@
 			
 <!-- ############################## 섹션별 관리자 등록하는 영역 ############################## -->
 <div class="feature_usp">
-	
+
 	
 	
 	
@@ -169,8 +167,6 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box animation-box ui_carousel_slide">
-							<!--<div class="animation-area">
-							</div>-->
 							<div class="visual-area">
 								<img src="./img_scene00_2_pc.jpg" alt="" class="pc-only">
 								<img src="./img_scene00_2_mo.jpg" alt="" class="mo-only">
@@ -361,20 +357,12 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<!--<div class="animation-area">
-								<video autoplay muted loop class="pc">
-									<source src="./img_scene02_pc.mp4" type="video/mp4">
-								</video>
-								<video autoplay muted loop class="mobile">
-									<source src="./img_scene02_mo.mp4" type="video/mp4">
-								</video>
-								<div class="controller-wrap wa-btn">
-									<button class="pause active" aria-label="동영상 재생" aria-describedby="title36" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="usp_0103.mp4">동영상 멈춤</button>
-								</div>
-							</div>-->
 							<div class="visual-area">
 								<img src="./img_scene02_pc.jpg" alt="" class="pc-only">
 								<img src="./img_scene02_mo.jpg" alt="" class="mo-only">
+								<p class="hidden">
+									깔끔한 도어라인, 플랫 도어, 모던 핸들
+								</p>
                             </div>
 						</div>
 					</div>
@@ -700,10 +688,17 @@
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="title36" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="usp_0103.mp4">동영상 멈춤</button>
 								</div>
 							</div>
-							<!--<div class="visual-area">
-								<p style="height:400px;background:#000;" class="mo-only"></p>
-								<img src="./img_scene05.jpg" alt="" class="pc-only">
-                            </div>-->
+							<!-- 영상 대체 텍스트 -->
+                            <div class="text-area type-narrow box-align-center align-middle text-align-center">
+                                <div class="inner">
+                					<ul class="bullet-list">
+							            <li class="b-txt">
+											±0.3℃ 24시간 자동 정온으로 김치를 오래오래 신선하게
+										</li>
+								    </ul>
+								</div>
+                            </div>
+							<!-- //영상 대체 텍스트 -->   
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -822,6 +817,9 @@
 							<div class="visual-area">
 								<img src="./img_scene06_pc.jpg" alt="" class="pc-only">
 								<img src="./img_scene06_mo.jpg" alt="" class="mo-only">
+								<p class="hidden">
+									익힘 모드 - 김치의 숙성 속도를 높여 입맛에 맞게 빠르게 익혀주는 모드
+								</p>
                             </div>
 						</div>
 					</div>
@@ -938,10 +936,10 @@
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- brand_list -->
-	<div class="brand_list">
+	<!-- md_brand_list -->
+	<div class="md_brand_list">
 		<span>인공지능 맞춤보관 제휴 브랜드</span>
-		<div class="brand">
+		<div class="md_brand">
 			<ul>
 				<li><img src="./ico_scene07_1.png" alt="풀무원 로고"></li>
 				<li><img src="./ico_scene07_2.png" alt="종가집 로고"></li>
@@ -950,7 +948,7 @@
 			<a href="#md_popup" class="btn_md_popup">인공지능 맞춤보관 적용 제품 보기</a>
 		</div>
 	</div>
-	<!-- //brand_list -->
+	<!-- //md_brand_list -->
 
 	<!-- md_popup -->
 	<div class="md_popup" id="md_popup">
@@ -1239,6 +1237,17 @@ $(function(){
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="title36" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="usp_0103.mp4">동영상 멈춤</button>
 								</div>
 							</div>
+							<!-- 영상 대체 텍스트 -->
+                            <div class="text-area type-narrow box-align-center align-middle text-align-center">
+                                <div class="inner">
+                					<ul class="bullet-list">
+							            <li class="b-txt">
+											김장김치 가듣 채운 겨울, 신선한 봄나물을 담아 봄, 고기/생선을 싱싱하게 여름, 햇곡식을 넉넉하게 가을
+										</li>
+								    </ul>
+								</div>
+                            </div>
+							<!-- //영상 대체 텍스트 --> 
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -1329,6 +1338,17 @@ $(function(){
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="title36" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="usp_0103.mp4">동영상 멈춤</button>
 								</div>
 							</div>
+							<!-- 영상 대체 텍스트 -->
+                            <div class="text-area type-narrow box-align-center align-middle text-align-center">
+                                <div class="inner">
+                					<ul class="bullet-list">
+							            <li class="b-txt">
+											서랍과 선반에 따로 따로 No-Folding / 다양한 식재료 동시 보관 Step1-Folding / 키가 큰 병을 보관할 떼 Step2-Folding
+										</li>
+								    </ul>
+								</div>
+                            </div>
+							<!-- //영상 대체 텍스트 --> 
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -1401,9 +1421,6 @@ $(function(){
 									<p class="banner-txt fc-white">
 										모던한 디자인의 항균핸들은 뛰어난 그립감은 <br class="mo-only">물론 위생까지 철저합니다 <br class="pc-only">항균 소재가 적용돼 <br class="mo-only">있어 자주 열고 닫아도 안심하고 쓸 수 있죠
 									</p>
-									<!--<ul class="bullet-list">
-										<li class="b-txt">디스클레이머 최대 80자까지 입력가능합니다.</li>
-									</ul>-->
 								</div>
 								<!-- //inner -->
 							</div>
