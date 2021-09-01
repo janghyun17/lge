@@ -170,7 +170,7 @@ video {background:#fff !important;}
 /* md_popup */
 .md_popup .inner {width:calc(100% - 50px);padding:30px 24px;border-radius:10px;}
 .md_popup .md_popup_name {font-size:20px;line-height:48px;}
-.md_popup .md_popup_cont {padding:25px;border-radius:10px; font-size:13px;line-height:20px;}
+.md_popup .md_popup_cont {padding:25px;border-radius:10px;font-size:13px;line-height:20px;}
 .md_popup .md_popup_cont dt {font-size:16px;}
 .md_popup .md_popup_cont dl {margin-top:20px;}
 .md_popup .md_pop_close {width:30px;height:30px;}
