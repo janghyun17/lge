@@ -31,14 +31,6 @@ video {background:#fff !important;}
 .KRC0035.align-center .text-wrap .text {font-size:16px;line-height:26px;}
 
 
-@media only screen and (max-width:1400px) {
-/* KRC0021 */	
-.KRC0021 {margin-top:40px !important;}
-.KRC0021 .unit-list .ui_carousel_slide {padding:0 20px;}
-.KRC0021 .ui_carousel_track {margin:0px;}
-}
-
-
 @media only screen and (min-width:1400px) {
 /* KRC0035 */
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {left:600px;}
