@@ -13,6 +13,7 @@ video {background:#fff !important;}
 .KRC0032.stage-medium {margin-top:56px !important;}
 .KRC0032.stage-medium video {width:auto !important;max-width:100%;margin:0 auto;}
 .KRC0032.stage-wide .animation-area video {border-radius:0;}
+.KRC0032.stage-full {max-width:100%;background:#dbd6d2;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-tit-sup {margin-bottom:12px;color:#767676 !important;opacity:0.7;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .title h2 {font-size:32px;line-height:42px;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {margin-top:20px;font-size:18px;line-height:28px;}
@@ -36,9 +37,6 @@ video {background:#fff !important;}
 /* KRC0035 */
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {left:600px;}
 }
-
-
-
 
 
 
