@@ -63,9 +63,9 @@ video {background:#fff !important;}
 .KRC0032.stage-medium video {width:100% !important;}
 .KRC0032.stage-full {margin-top:60px;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area {position:absolute !important;left:0 !important;top:55px !important;padding-top:0 !important;text-align:center;}
-.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-tit-sup {margin-bottom:5px;}
-.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .title h2 {font-size:24px;line-height:34px;}
-.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {margin-top:14px;font-size:15px;line-height:23px;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-tit-sup {margin-bottom:5px;color:#fff !important;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .title h2 {color:#fff !important;font-size:24px;line-height:34px;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {margin-top:14px;color:#fff !important;font-size:15px;line-height:23px;}
 .component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
 	
 	
