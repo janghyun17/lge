@@ -81,7 +81,9 @@ video {background:#fff !important;}
 	
 	
 /*.component-wrap .KRC0035.align-left {padding-bottom:60px;}*/
-	.KRC0025 .mo-only {padding-bottom:60px;}
+/*.KRC0025 .mo-only {padding-bottom:60px;}*/
+
+.KRC0025 .mo-only.bm {padding-bottom:60px;}
 }
 
 
