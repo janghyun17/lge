@@ -1129,7 +1129,7 @@ $(function(){
 <!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
+	<div class="component-wrap bg-white zero-top zero-btm">
 		<!-- KRC0032 -->
 		<section class="component KRC0032 stage-medium">
 			<!-- component-box -->
@@ -1148,12 +1148,64 @@ $(function(){
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
+							<div class="visual-area">
+								<img src="./img_scene08_pc.jpg" alt="" class="pc-only">
+								<img src="./img_scene08_mo.jpg" alt="" class="mo-only">
+								<p class="hidden">
+									선판을 폈을 때 - 선반+서랍으로 사용 / 선반을 반만 접었을 때 - 선반에는 낮은 병이나 반찬통, 서랍에는 긴 병이나 식품팩 / 선반을 완전히 접었을 때 - 높이가 높은 병이나 간편 식품 등을 수납
+								</p>
+                            </div>
+						</div>
+					</div>
+					<!-- //ui_carousel_track -->
+					<!-- controls-wrap -->
+					<div class="controls-wrap">
+						<div class="inner">
+							<div class="row">
+								<button type="button" class="btn-arrow prev">이전</button>
+								<button type="button" class="btn-arrow next">다음</button>
+							</div>
+						</div>
+					</div>
+					<!-- //controls-wrap -->
+				</div>
+			</div>
+			<!-- //component-box -->
+		</section>
+		<!-- //KRC0032 -->
+	</div>
+	<!-- //component-wrap -->
+</div>
+<!-- //iw_component (Contents) : KRC0032 -->
+	
+<!-- iw_component (Contents) : KRC0032 / stage-full / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
+<div class="iw_component" id="">
+	<!-- component-wrap -->
+	<div class="component-wrap bg-white zero-top">
+		<!-- KRC0032 -->
+		<section class="component KRC0032 stage-full">
+			<!-- component-box -->
+			<div class="component-box">
+				<div class="usp-banner-wrap ui_carousel_slider">
+					<!-- indi-wrap -->
+					<div class="indi-wrap">
+						<ul class="ui_carousel_dots indi-conts">
+							<li><button type="button" class="btn-indi"><span class="blind">{{no}}번 내용 보기</span></button></li>
+						</ul>
+						<span class="ui_carousel_play play">
+							<button type="button" class="btn-play"><span class="blind">슬라이드 일시정지</span></button>
+						</span>
+					</div>
+					<!-- //indi-wrap -->
+					<!-- ui_carousel_track -->
+					<div class="ui_carousel_track">
+						<div class="carousel-box ui_carousel_slide animation-box">
 							<div class="animation-area">
-								<video autoplay muted loop class="pc">
+								<!--<video autoplay muted loop class="pc">
 									<source src="./img_scene08_pc.mp4" type="video/mp4">
-								</video>
+								</video>-->
 								<video autoplay muted loop class="mobile">
-									<source src="./img_scene08_mo.mp4" type="video/mp4">
+									<source src="./img_scene08_2_mo.mp4" type="video/mp4">
 								</video>
 								<div class="controller-wrap wa-btn">
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="">동영상 멈춤</button>
