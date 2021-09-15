@@ -24,7 +24,7 @@ video {background:#fff !important;}
 .KRC0032 .align-center {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
 
 .KRC0032.stage-full .animation-area {display:none;}
-
+.KRC0032.stage-wide .visual-area {margin-top:40px;}
 
 
 
@@ -72,6 +72,7 @@ video {background:#fff !important;}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area .banner-txt {margin-top:14px;color:#fff !important;font-size:15px;line-height:23px;}
 .component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
 .KRC0032.stage-full .animation-area {display:block;}
+.KRC0032.stage-wide .visual-area {margin-top:30px;}
 	
 	
 /* KRC0035 */
