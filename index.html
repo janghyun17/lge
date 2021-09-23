@@ -44,6 +44,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list li a strong {display:block;margin-top:10px;font-size:15px;line-height:20px;text-transform:uppercase;}
 .gate_list li a span {display:block;margin-top:50px;font-size:15px;font-weight:300;line-height:20px;font-style:normal;}
 .gate_list li a span u {display:inline-block;margin-top:10px;padding:0 7px;background:#fb5b72;border-radius:4px;color:#fff;font-size:12px;vertical-align:top;text-decoration:none;}
+
 .gate_list li a img {width:100%;}
 .gate_list li a em {position:absolute;left:50%;top:50%;display:block;width:60px;height:60px;margin:0 0 0 -30px;opacity:0;transition:all 0.4s;z-index:10;}
 .gate_list li a em:before {position:absolute;left:50%;top:50%;width:60px;height:3px;margin:-2px 0 0 -30px;background:#fff;content:"";}
@@ -54,8 +55,34 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list li a.link:hover .txt {opacity:0;transform:translateY(10px);}
 .gate_list li a.link:hover em {margin-top:-30px;opacity:0.95;}
 .gate_list li a.link .txt {opacity:1;}
+/*
+.gate_list li a.link:hover i {opacity:0.8;}
+.gate_list li a.link:hover .img:before {opacity:0.3;}
+.gate_list li a.link:hover .txt {opacity:0;transform:translateY(10px);}
+.gate_list li a.link:hover em {margin-top:-30px;opacity:0.95;}
+.gate_list li a.link .txt {opacity:1;}
+*/
+	
+.gate_list li a .marker {position:absolute;left:0;top:0;transition:all 0.3s;}
+.gate_list li a .marker:before {position:absolute;left:0;top:0;width:0;height:0;border-bottom:27px solid transparent;border-left:25px solid rgba(255,255,255,0.7);content:"";}
+.gate_list li a .marker:after {position:absolute;left:0;top:0;width:0;height:0;border-bottom:25px solid transparent;border-left:23px solid #fb5b72;content:"";}
+.gate_list li a:hover .marker {opacity:0;transform:translateY(-30px);}
+
+.gate_list li.ing a .txt {color:rgba(255,255,255,0.2);}
+.gate_list li.ing a .img:before {opacity:0.4;}
+.gate_list li.end a .txt {color:rgba(255,255,255,0.6);}
+.gate_list li.end a i {background:#fb5b72;}
+/*
+.gate_list li.end a i {background:#24b6b1;}
+.gate_list li.end a span u {background:#24b6b1;}
+*/
 	
 .fade {animation:fade both infinite 1.4s;}
+	
+@media all and (max-width:760px) {
+.gate_list li a .txt {transform:scale(0.85);}
+
+}
 	
 @media all and (min-width:580px) and (max-width:760px) {
 .gate_list li {width:calc(100%/3 - 11px);}
@@ -68,6 +95,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list {padding:0 40px;}
 .gate_list li {width:calc(100%/4 - 11px);}
 .gate_list li a {height:calc((100vw - 80px) / 4 + 40px);}
+.gate_list li a .txt {transform:scale(0.95);}
 }
 
 @media all and (min-width:1001px) and (max-width:1200px) {
@@ -76,6 +104,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list {padding:0 50px;}
 .gate_list li {width:calc(100%/5 - 11px);}
 .gate_list li a {height:calc((100vw - 100px) / 5 + 40px);}
+.gate_list li a .txt {transform:scale(1);}
 }
 
 @media all and (min-width:1201px) and (max-width:1425px) {
@@ -84,6 +113,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list {padding:0 50px;}
 .gate_list li {width:calc(100%/6 - 17px);margin:8px;}
 .gate_list li a {height:calc((100vw - 100px) / 6 + 36px);max-height:280px;}
+.gate_list li a .txt {transform:scale(1);}
 }
 	
 @media all and (min-width:1426px) {
@@ -91,7 +121,8 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 #wrap h1 {padding:70px;font-size:29px;line-height:37px;}
 .gate_list {max-width:1426px;}
 .gate_list li {width:calc(100%/6 - 17px);margin:8px;}
-.gate_list li a {height:calc((100vw - 100px) / 6 + 36px);max-height:280px;}
+.gate_list li a {height:calc((100vw - 100px) / 6 + 36px);max-height:280px;}7
+.gate_list li a .txt {transform:scale(1);}
 }
 	
 @keyframes fade {
@@ -107,80 +138,25 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 <div id="wrap">
 	<h1>LGE USP - Publishing List</h1>
 	<ul class="gate_list">
+		<li class="end">
+			<a href="./images/kimchi-refrigerators/md_new/usp/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<p class="marker"></p>
+				<i></i>
+				<p class="txt">김치냉장고
+					<strong>DIOS 김치톡톡<br>오브제 컬렉션</strong>
+					<span>2021.09.17 오픈</span>
+				</p>
+				<em></em>
+			</a>
+		</li>
 		<li>
 			<a href="./images/water-purifiers/md_new/usp/md_new_local.html" target="_blank" class="link">
 				<p class="img"></p>
 				<i></i>
 				<p class="txt">정수기
 					<strong>상하좌우<br>오브제 컬렉션</strong>
-					<span>2021.09.17 예정<br><u class="fade">진행중</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>
-		<li>
-			<a href="./images/kimchi-refrigerators/md_new/usp/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i></i>
-				<p class="txt">김치냉장고
-					<strong>DIOS 김치톡톡<br>오브제 컬렉션</strong>
-					<span>2021.09.17 예정<br><u class="fade">진행중</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>
-		<!--<li>
-			<a href="./images/water-purifiers/md_new/usp2/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i></i>
-				<p class="txt">정수기
-					<strong>상하좌우 오브제 컬렉션</strong>
-					<span>모션버전<br><u>작업중</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>-->
-
-		<li>
-			<a href="./images/washing-machines/md_new/usp/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i style="background:#ccdd58;"></i>
-				<p class="txt">세탁기 
-					<strong>New Tromm</strong>
-					<span>2021.10.14 예정<br><u style="background:#ccdd58;color:#333;">모션Ver.</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>
-		<li>
-			<a href="./images/washing-machines/md_new/usp2/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i style="background:#fdd23f;"></i>
-				<p class="txt">세탁기 
-					<strong>New Tromm</strong>
-					<span>컨퍼넌트 작업<br><u style="background:#fdd23f;color:#333;">작업중</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>
-		<li>
-			<a href="./images/dryers/md_new/usp/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i style="background:#ccdd58;"></i>
-				<p class="txt">건조기
-					<strong>New Tromm</strong>
-					<span>2021.10.14 예정<br><u style="background:#ccdd58;color:#333;">모션Ver.</u></span>
-				</p>
-				<em></em>
-			</a>
-		</li>
-		<li>
-			<a href="./images/dryers/md_new/usp2/md_new_local.html" target="_blank" class="link">
-				<p class="img"></p>
-				<i style="background:#fdd23f;"></i>
-				<p class="txt">건조기
-					<strong>New Tromm</strong>
-					<span>컨퍼넌트 작업<br><u style="background:#fdd23f;color:#333;">작업중</u></span>
+					<span>2021.09.30 예정<br><u class="fade">진행중</u></span>
 				</p>
 				<em></em>
 			</a>
@@ -191,7 +167,51 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 				<i></i>
 				<p class="txt">공기청정기
 					<strong>Glen Tower<br></strong>
-					<!--<span>모션버전<br><u>작업중</u></span>-->
+					<span>2021.00.00 예정</span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+		<li class="ing">
+			<a href="./images/washing-machines/md_new/usp/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<i style="background:#ccdd58;"></i>
+				<p class="txt">세탁기 
+					<strong>New Tromm</strong>
+					<span>2021.12 예정<br><u style="background:#ccdd58;color:#333;">모션Ver.</u></span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+		<li class="ing">
+			<a href="./images/washing-machines/md_new/usp2/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<i style="background:#fdd23f;"></i>
+				<p class="txt">세탁기 
+					<strong>New Tromm</strong>
+					<span>컨퍼넌트 작업<br><u style="background:#fdd23f;color:#333;">작업중</u></span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+		<li class="ing">
+			<a href="./images/dryers/md_new/usp/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<i style="background:#ccdd58;"></i>
+				<p class="txt">건조기
+					<strong>New Tromm</strong>
+					<span>2021.12 예정<br><u style="background:#ccdd58;color:#333;">모션Ver.</u></span>
+				</p>
+				<em></em>
+			</a>
+		</li>
+		<li class="ing">
+			<a href="./images/dryers/md_new/usp2/md_new_local.html" target="_blank" class="link">
+				<p class="img"></p>
+				<i style="background:#fdd23f;"></i>
+				<p class="txt">건조기
+					<strong>New Tromm</strong>
+					<span>컨퍼넌트 작업<br><u style="background:#fdd23f;color:#333;">작업중</u></span>
 				</p>
 				<em></em>
 			</a>
