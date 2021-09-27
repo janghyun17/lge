@@ -1527,59 +1527,6 @@ $(function(){
 	</div>
 	<!-- //usp-qna-wrap -->
 	
-	
-	
-	
-	
-	
-<script>
-/* 자주묻는질문 */
-$(window).ready(function(){
-	/* tab */
-	(function setTab() {
-		var tabList = $(".faq-wrap .faq-tab-list li");
-		var tabContents = $(".faq-wrap .faq-tab-conts .tab-contents");
-
-		tabList.on("click", function(e) {
-			e.preventDefault();
-			var idx = $(this).index();
-
-			$(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
-			$(this).addClass("active").siblings().removeClass("active");
-			tabContents.eq(idx).addClass("active").siblings().removeClass("active");
-		});
-	})();
-
-	/* usp-qna-wrap */ 
-	$('.usp-qna-tit a').click(function(e){
-		var currentAttrvalue = $(this).attr('href');
-		if($(e.target).is('.active')){
-			$(this).removeClass('active');
-			$('.qna-section:visible').slideUp(300);
-		}else{
-		$('.usp-qna-tit a').removeClass('active').filter(this).addClass('active');
-		 $(currentAttrvalue).slideDown(300);
-		}
-		return false;
-	});
-
-	(function setQnaTab() {
-		var tabList = $(".usp-qna-wrap .qna-tab-list li");
-		var tabContents = $(".usp-qna-wrap .usp-qna-list");
-
-		if(tabList.length) $(".usp-qna-wrap").addClass("has-tab");
-
-		tabList.on("click", function(e) {
-			e.preventDefault();
-			var idx = $(this).index();
-
-			$(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
-			$(this).addClass("active").siblings().removeClass("active");
-			tabContents.eq(idx).addClass("active").siblings().removeClass("active");
-		});
-	})();
-});	
-</script>
 </div>
 <!-- //iw_component : KRC0099 -->	
 	
@@ -1587,8 +1534,8 @@ $(window).ready(function(){
 	
 	
 	
-	
-<link href="./md_new.css" type="text/css" rel="stylesheet"><!-- 정수기 추가 css : 모델 넘버 미정 -->
+<script src="./md09003826.js"></script>
+<link href="./md09003826.css" type="text/css" rel="stylesheet"><!-- 정수기 추가 css : 모델 넘버 미정 -->
 </div>
 <!-- ############################## 섹션별 관리자 등록하는 영역 ############################## -->
 
