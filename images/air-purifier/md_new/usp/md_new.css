@@ -44,6 +44,7 @@ video {background:#fff !important;}
 .KRC0035 .visual-wrap.image-align-left .visual-area {text-align:left;}
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {right:inherit;left:calc(100% - 40px);}
 .KRC0035 .visual-wrap.image-align-right .visual-area {text-align:right;}
+.KRC0035 .visual-wrap .visual-area img {border-radius:20px;overflow:hidden;}
 .KRC0035.align-center {text-align:left;}
 .KRC0035.align-center .text-wrap .title h2 {font-size:32px;line-height:46px;}
 .KRC0035.align-center .text-wrap .text {font-size:16px;line-height:26px;}
@@ -74,6 +75,7 @@ video {background:#fff !important;}
 .KRC0025 .align-right {margin-top:0px;}
 .KRC0025 .bullet-list .b-txt {margin-top:21px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:0;}
+.KRC0025 .mo-only.bm {padding-bottom:60px;}
 
 	
 /* KRC0032 */
@@ -95,6 +97,7 @@ video {background:#fff !important;}
 .KRC0035.standard .text-wrap.side-right-text {margin:0 0 27px 0;text-align:center;}
 .KRC0035.standard .text-wrap .bullet-list {margin-top:0 !important;}
 .KRC0035 .animation-box .animation-area {max-width:100% !important;}
+.KRC0035 .visual-area {margin:0 16px;}
 .KRC0035 .visual-area img {max-width:100% !important;}
 .KRC0035.align-center .text-wrap .title h2 {font-size:24px;line-height:34px;}
 .KRC0035.align-center .text-wrap .text {font-size:14px;line-height:22px;}
