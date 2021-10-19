@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* Common */
+video {background:#fff !important;}
+
+
+/* KRC0004 */
+.KRC0004 .bullet-list .b-txt {margin-top:24px;}
+.KRC0004 .bullet-list .b-txt .mo-only {margin-top:-24px;}
+
+/*
+.KRC0004.stage-medium .component-inner,
+.KRC0004.stage-medium .cpt-wrap .list-btn-area,
+.KRC0004.stage-medium .cpt-wrap>.visual-area,
+.KRC0004 .cpt-wrap .visual-area .bullet-list {max-width:1460px !important;}
+*/
+
+
+/* KRC0025 */
+/*
+.KRC0025 .bullet-list .b-txt {margin-top:24px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
+*/
+
+/* KRC0032 */
+.KRC0032.stage-medium {margin-top:56px !important;max-width:1380px;}
+.KRC0032.stage-medium .usp-banner-wrap .ui_carousel_list {max-width:100%;}
+.KRC0032.stage-medium video {width:auto !important;max-width:100%;margin:0 auto;overflow:hidden;}
+.KRC0032.stage-medium img {overflow:hidden;}
+.KRC0032.stage-medium p.pc-only {overflow:hidden;}
+
+/*.KRC0032.stage-wide {margin-top:56px !important;}*/
+
+.KRC0032.stage-full {margin-top:56px !important;}
+.KRC0032.stage-full .visual-area {max-width:1460px;margin:0 auto;padding:0 40px;}
+.KRC0032.stage-full .visual-area img {border-radius:20px;}
+
+.KRC0032 .usp-banner-wrap {padding-bottom:40px;}
+.KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
+.KRC0032 .text-align-center {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
+
+
+/* KRC0035 */
+.KRC0035 .animation-box .animation-area {max-width:640px !important;}
+.KRC0035 .visual-area img {width:100% !important;max-width:640px !important;}
+.KRC0035 .visual-wrap.image-align-left .visual-area {text-align:left;}
+.KRC0035 .visual-wrap.image-align-left .controller-wrap {right:inherit;left:calc(100% - 40px);}
+.KRC0035 .visual-wrap.image-align-right .visual-area {text-align:right;}
+.KRC0035 .visual-wrap .visual-area img {border-radius:20px;overflow:hidden;}
+.KRC0035.align-center {text-align:left;}
+.KRC0035.align-center .text-wrap .title h2 {font-size:32px;line-height:46px;}
+.KRC0035.align-center .text-wrap .text {font-size:16px;line-height:26px;}
+
+
+/* KRC0039 */
+.KRC0039 .inner .tbl-layout.standard .visual-area {max-width:640px;}
+.KRC0039 .inner .text-area .text-inner .title h2 {font-size:32px;line-height:46px;}
+.KRC0039 .inner .text-area .text-inner .text {font-size:16px;line-height:26px;}
+
+
+
+
+
+
+
+/*** - Mobile UI - ***/
+@media only screen and (max-width:768px) {
+/* Common */
+.component-wrap {padding-bottom:0;}
+	
+	
+.KRC0004 .bullet-list .b-txt {margin-top:21px;padding:0 17px;}
+.KRC0004 .bullet-list .b-txt .mo-only {margin-top:0;}
+.KRC0004 .mo-only.bm {padding-bottom:60px;}
+	
+
+/* KRC0025 */
+	/*
+.KRC0025 .bullet-list .b-txt {margin-top:21px;padding:0 17px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:0;}
+.KRC0025 .mo-only.bm {padding-bottom:60px;}
+*/
+	
+/* KRC0032 */
+.KRC0032.stage-medium {margin-top:28px !important;padding:0;}
+.KRC0032.stage-medium img {width:100% !important;}
+.KRC0032.stage-medium video {width:100% !important;}
+.KRC0032.stage-wide {margin-top:28px !important;}
+	
+.KRC0032.stage-full {margin-top:28px !important;}
+.KRC0032.stage-full .visual-area {padding:0 18px;}
+.KRC0032.stage-full .visual-area img {border-radius:10px;}
+
+.component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
+	
+	
+/* KRC0035 */
+.KRC0035 .inner {display:flex;flex-direction:column-reverse;}
+.KRC0035.standard .text-wrap.side-left-text,
+.KRC0035.standard .text-wrap.side-right-text {margin:0 0 27px 0;text-align:center;}
+.KRC0035.standard .text-wrap .bullet-list {margin-top:0 !important;}
+.KRC0035 .animation-box .animation-area {max-width:100% !important;}
+.KRC0035 .visual-area {margin:0 16px;}
+.KRC0035 .visual-area img {max-width:100% !important;}
+.KRC0035.align-center .text-wrap .title h2 {font-size:24px;line-height:34px;}
+.KRC0035.align-center .text-wrap .text {font-size:14px;line-height:22px;}
+	
+	
+/* KRC0039 */
+.KRC0039 .inner .tbl-layout {display:flex;flex-direction:column-reverse;}
+.KRC0039 .inner .tbl-layout.standard .visual-area {max-width:100%;}
+.KRC0039 .inner .tbl-layout.visual-left .text-area {margin:0 0 27px 0;}
+.KRC0039 .inner .tbl-layout .text-area {text-align:center;}
+.KRC0039 .inner .text-area .text-inner .title h2 {font-size:24px;line-height:34px;}
+.KRC0039 .inner .text-area .text-inner .text {font-size:14px;line-height:22px;}
+}
+
+
+
+
+
+
+
+
+
+
