@@ -126,6 +126,9 @@ video {background:#fff !important;}
 .KRC0035.standard  .text-wrap.side-left-text {padding-left:0;}
 .KRC0035 .animation-box .animation-area {max-width:100% !important;}
 	
+	
+	.KRC0035 .text-wrap .thumbs {margin-top:0;}
+	
 /*.KRC0035 .visual-area {margin:0 16px;}*/
 .KRC0035 .visual-area img {max-width:100% !important;}
 /*
