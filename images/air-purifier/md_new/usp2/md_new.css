@@ -416,8 +416,9 @@
 .air-purifier_202107 .scene02_1_ani .obj33 {transform-origin:31.6% 77.4%;}
 
 /* Active */
+/*
 .air-purifier_202107 .box.animate .scene02_1_txt {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
-.air-purifier_202107 .box.active .scene02_1_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_1_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}*/
 .air-purifier_202107 .box.active .scene02_1_ani .obj21 {animation:fade both 0.9s 0.6s;}
 .air-purifier_202107 .box.active .scene02_1_ani .obj22 {animation:fade both 0.9s 0.8s;}
 .air-purifier_202107 .box.active .scene02_1_ani .obj23 {animation:fade both 0.9s 1.0s;}
@@ -429,24 +430,24 @@
 
 /* Animation */
 @keyframes scene02_1_ani31 {
-0% {transform:rotateX(25deg) rotateY(40deg) rotateZ(-2deg) scale(0.8);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(25deg) rotateY(40deg) rotateZ(-2deg) scale(0.8);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_1_ani32m {
-0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.9);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.9);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_1_ani33m {
-0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.9);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.9);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_1_ani32 {
-0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.7);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.7);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_1_ani33 {
-0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.7);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.7);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_1_ani34 {
 0% {transform:rotateX(-20deg) rotateY(-40deg) rotateZ(5deg) scale(0.7);opacity:0;}
@@ -499,12 +500,13 @@
 .air-purifier_202107 .scene02_2_ani .obj1 {position:relative;}
 .air-purifier_202107 .scene02_2_ani .obj31,
 .air-purifier_202107 .scene02_2_ani .obj32,
-.air-purifier_202107 .scene02_2_ani .obj33 {transform-origin:70% 27.5%;}
+.air-purifier_202107 .scene02_2_ani .obj33 {transform-origin:73.9% 27.5%;}
 .air-purifier_202107 .scene02_2_ani .obj34 {transform-origin:71.8% 42.6%;}
 
 /* Active */
+/*
 .air-purifier_202107 .box.animate .scene02_2_txt {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
-.air-purifier_202107 .box.active .scene02_2_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+.air-purifier_202107 .box.active .scene02_2_txt {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}*/
 .air-purifier_202107 .box.active .scene02_2_ani .obj21 {animation:fade both 0.9s 0.6s;}
 .air-purifier_202107 .box.active .scene02_2_ani .obj22 {animation:fade both 0.9s 0.8s;}
 .air-purifier_202107 .box.active .scene02_2_ani .obj23 {animation:fade both 0.9s 0.9s;}
@@ -517,16 +519,16 @@
 
 /* Animation */
 @keyframes scene02_2_ani31 {
-0% {transform:rotateX(25deg) rotateY(40deg) rotateZ(-2deg) scale(0.6);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(25deg) rotateY(40deg) rotateZ(-2deg) scale(0.6);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_2_ani32 {
-0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.6);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(35deg) rotateY(0deg) rotateZ(10deg) scale(0.6);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_2_ani33 {
-0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.6);}
-100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);}
+0% {transform:rotateX(10deg) rotateY(45deg) rotateZ(-10deg) scale(0.6);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
 }
 @keyframes scene02_2_ani34 {
 0% {transform:rotateX(10deg) rotateY(40deg) rotateZ(-2deg) scale(0.9);opacity:0;}
@@ -539,7 +541,7 @@
 .air-purifier_202107 .scene02_2_txt {right:11%;bottom:6%;}
 .air-purifier_202107 .scene02_2_ani .obj31,
 .air-purifier_202107 .scene02_2_ani .obj32,
-.air-purifier_202107 .scene02_2_ani .obj33 {transform-origin:70% 33%;}
+.air-purifier_202107 .scene02_2_ani .obj33 {transform-origin:66.43% 33%;}
 }
 @media only screen and (min-width:768px) {
 .air-purifier_202107 .scene02_2_txt {right:11.2%;bottom:5.5%;}
