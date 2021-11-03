@@ -27,8 +27,9 @@ video {background:#fff !important;}
 .KRC0032.stage-medium p.pc-only {overflow:hidden;}
 
 .KRC0032.stage-wide {max-width:1920px;margin-top:0px !important;}
+/*
 .KRC0032.stage-wide .animation-area {margin-top:40px;}
-
+*/
 .KRC0032.stage-full {max-width:1380px;margin-top:56px !important;}
 
 .KRC0032 .usp-banner-wrap {padding-bottom:40px;}
@@ -79,8 +80,9 @@ video {background:#fff !important;}
 .KRC0032.stage-medium {margin-top:28px !important;padding:0;}
 .KRC0032.stage-medium img {width:100% !important;}
 .KRC0032.stage-medium video {width:100% !important;}
-	
-.KRC0032.stage-wide .animation-area {margin-top:30px;}
+
+	/*
+.KRC0032.stage-wide .animation-area {margin-top:30px;}*/
 .KRC0032.stage-full {margin-top:28px !important;}
 	
 .component-wrap.zero-btm .component.KRC0032 .component-box {padding-bottom:0;}
