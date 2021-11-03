@@ -1329,6 +1329,135 @@
 	<!-- //component-wrap -->
 </div>
 <!-- //iw_component (Contents) : KRC0004 -->
+	
+<!-- ##   ## -->
+<!-- iw_component : KRC0099 HTML -->
+<div class="iw_component" id="">
+	<!-- airpurifier_more_area -->
+	<div class="airpurifier_more_area">
+		<!-- iw_component : KRC0035 / align-left / 우측이미지 -->
+		<div class="iw_component" id="">
+			<!-- component-wrap -->
+			<div class="component-wrap bg-white zero-btm">
+				<!-- KRC0035 -->
+				<section class="component KRC0035 align-right standard">
+					<!-- component-inner -->
+					<div class="component-inner">
+						<div class="inner">
+							<!-- text-wrap -->
+							<div class="text-wrap side-left-text">
+								<strong class="small-title fc-dark-gray">트루 토탈케어 필터</strong>
+								<div class="title" id=""><h2>우리 가족 건강 지키는 <br>사계절 청정 능력</h2></div>
+								<div class="text font-regular">
+									떠다니는 먼지는 물론 눈에 보이지 않는 <br class="mo-only">초미세먼지와 냄새, <br class="pc-only">유해가스 제거 성능을 <br class="mo-only">한국 공기청정 협회에서 인증받았습니다.<br>기분 좋은 바람과 함께 365일 청정 생활하세요.
+								</div>
+								<ul class="bullet-list">
+									<li class="b-txt">
+										<!-- 디스클라이머 PC전용 -->
+										<div class="pc-only">
+											* 디스클레이머 텍스트 영역입니다.
+										</div>
+										<!-- //디스클라이머 PC전용 -->
+									</li>
+								</ul>
+							</div>
+							<!-- //text-wrap -->
+							<!-- visual-wrap -->
+							<div class="visual-wrap image-align-right">
+								<div class="slide-wrap ui_carousel_slider">
+									<!-- indi-wrap -->
+									<div class="indi-wrap">
+										<ul class="indi-conts ui_carousel_dots">
+											<li><button type="button" class="btn-indi"><span class="blind">{{no}}번 내용 보기</span></button></li>
+										</ul>
+										<span class="ui_carousel_play play">
+											<button type="button" class="btn-play"><span class="blind">슬라이드 일시정지</span></button>
+										</span>
+									</div>
+									<!-- //indi-wrap -->
+									<!-- slide-content -->
+									<div class="slide-content ui_carousel_list">
+										<ul class="slide-track ui_carousel_track">
+											<li class="slide-conts ui_carousel_slide">
+												<div class="visual-area image">
+													<img src="./img_scene09_2_pc.jpg" alt="" class="pc-only">
+													<img src="./img_scene09_2_mo.jpg" alt="" class="mo-only">
+													<p class="hidden"></p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="slide-controls">
+										<button type="button" class="btn-arrow prev ui_carousel_prev"><span class="blind">이전</span></button>
+										<button type="button" class="btn-arrow next ui_carousel_next"><span class="blind">다음</span></button>
+									</div>
+								</div>
+							</div>
+							<!-- //visual-wrap -->
+						</div>
+					</div>
+					<!-- //component-inner -->
+				</section>
+				<!-- //KRC0035 -->
+			</div>
+			<!-- //component-wrap -->
+		</div>
+		<!-- //iw_component : KRC0035 -->
+
+		<!-- iw_component (Disclaimer) : KRC0004 / align-left / 상단여백없음 -->
+		<div class="iw_component" id="">
+			<!-- component-wrap -->
+			<div class="component-wrap bg-white zero-top">
+				<!-- KRC0004 -->
+				<section class="component KRC0004 stage-medium txt-img bg-white">
+					<!-- component-inner -->
+					<div class="component-inner">
+						<!-- cpt-wrap -->
+						<div class="cpt-wrap">
+							<!-- visual-area -->
+							<div class="visual-area">
+								<ul class="bullet-list align-left">
+									<li class="b-txt">
+										<!-- 디스클라이머 모바일전용 -->
+										<div class="mo-only">* 디스클레이머 텍스트 영역입니다.</div>
+										<!-- //디스클라이머 모바일전용 -->
+									</li>
+								</ul>
+							</div>
+							<!-- //visual-area -->
+						</div>
+						<!-- //cpt-wrap -->
+					</div>
+					<!-- //component-inner -->
+				</section>
+				<!-- //KRC0004 -->
+			</div>
+			<!-- //component-wrap -->
+		</div>
+		<!-- //iw_component (Contents) : KRC0004 -->
+	</div>
+	<!-- //airpurifier_more_area -->
+	
+	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
+	
+<script>
+$(function(){
+	$('.btn_airpurifier_more a').click(function(e){
+		e.preventDefault();
+		if($(this).hasClass('on')){
+			$('.airpurifier_more_area').hide();
+			$(this).removeClass('on').text('더보기');
+		}else{
+			$('.airpurifier_more_area').fadeIn();
+			$(this).addClass('on').text('닫기');
+			
+		}		
+	});
+});
+</script>
+</div>
+<!-- //iw_component : KRC0099 HTML -->
+<!-- ##   ## -->
 <!-- #### Scene09 : 트루 토탈케어 필터 ### -->
 
 

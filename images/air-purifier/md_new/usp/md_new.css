@@ -54,7 +54,22 @@ video {background:#fff !important;}
 
 
 
-
+/* airpurifier_more_area */
+.airpurifier_more_area {display:none;}
+.btn_airpurifier_more {margin:-40px 0 80px 0;text-align:center;}
+.btn_airpurifier_more a {display:inline-block;position:relative;min-width:80px;padding:7px 15px 7px 35px;box-sizing:border-box;border:1px solid #222;border-radius:20px;font-size:14px;line-height:24px;transition:all 0.4s;}
+.btn_airpurifier_more a:before,
+.btn_airpurifier_more a:after {position:absolute;top:50%;background:#222;border-radius:2px;content:'';transition:all 0.4s;}
+.btn_airpurifier_more a:before {left:16px;width:10px;height:2px;margin-top:-1px;}
+.btn_airpurifier_more a:after {left:20px;width:2px;height:10px;margin-top:-5px;}
+.btn_airpurifier_more a.on:before,
+.btn_airpurifier_more a.on:after {transform:rotate(45deg);}
+.btn_airpurifier_more a:hover,
+.btn_airpurifier_more a:focus {background-image:linear-gradient(280deg, #fb5a72, #fa263e) !important;border-color:#fa263e !important;color:#fff !important;}
+.btn_airpurifier_more a:hover:before,
+.btn_airpurifier_more a:focus:before,
+.btn_airpurifier_more a:hover:after,
+.btn_airpurifier_more a:focus:after {background:#fff !important;}
 
 
 
@@ -110,6 +125,12 @@ video {background:#fff !important;}
 .KRC0039 .inner .tbl-layout .text-area {text-align:center;}
 .KRC0039 .inner .text-area .text-inner .title h2 {font-size:24px;line-height:34px;}
 .KRC0039 .inner .text-area .text-inner .text {font-size:14px;line-height:22px;}
+	
+	
+	
+	
+/* airpurifier_more_area */
+.btn_airpurifier_more {margin:20px 0 0 0;}
 }
 
 
