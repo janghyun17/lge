@@ -90,7 +90,7 @@
 <!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top zero-btm">
+	<div class="component-wrap bg-white zero-top">
 		<!-- KRC0032 -->
 		<section class="component KRC0032 stage-wide">
 			<!-- component-box -->
@@ -168,7 +168,7 @@
 <!-- iw_component (Title) : KRC0004 / align-center / 하단여백없음 -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-btm">
+	<div class="component-wrap bg-white">
 		<!-- KRC0004 -->
 		<section class="component KRC0004 stage-medium txt-img bg-white">
 			<!-- component-inner -->
@@ -258,7 +258,7 @@
 	<!-- component-wrap -->
 	<div class="component-wrap bg-white">
 		<!-- KRC0032 -->
-		<section class="component KRC0032 stage-medium">
+		<section class="component KRC0032 stage-medium" style="margin-top:0 !important;">
 			<!-- component-box -->
 			<div class="component-box">
 				<div class="usp-banner-wrap ui_carousel_slider">
@@ -510,13 +510,28 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<div class="visual-area">
-								<img src="./img_scene03_pc.jpg" alt="" class="pc-only">
-								<img src="./img_scene03_mo.jpg" alt="" class="mo-only">
-								<p class="hidden">
-									자동차 경적 소음 : 120dB / 조용한 승용차 실내 : 60dB / 도서관 : 50dB / LG퓨리케어 공기청정팬 : 46dB
-								</p>
-                            </div>    
+							<div class="animation-area">
+								<video autoplay muted loop class="pc">
+									<source src="./img_scene03_pc.mp4" type="video/mp4">
+								</video>
+								<video autoplay muted loop class="mobile">
+									<source src="./img_scene03_mo.mp4" type="video/mp4">
+								</video>
+								<div class="controller-wrap wa-btn">
+									<button class="pause active" aria-label="동영상 재생" aria-describedby="" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="">동영상 멈춤</button>
+								</div>
+							</div>
+							<!-- 영상 대체 텍스트 -->
+                            <div class="text-area type-narrow box-align-center align-middle text-align-center">
+                                <div class="inner">
+                					<ul class="bullet-list">
+							            <li class="b-txt">
+											자동차 경적 소음 : 120dB / 조용한 승용차 실내 : 60dB / 도서관 : 50dB / LG퓨리케어 공기청정팬 : 46dB
+										</li>
+								    </ul>
+								</div>
+                            </div>
+							<!-- // 영상 대체 텍스트 -->         
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -635,7 +650,7 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<!--<div class="animation-area">
+							<div class="animation-area">
 								<video autoplay muted loop class="pc">
 									<source src="./img_scene04_pc.mp4" type="video/mp4">
 								</video>
@@ -645,8 +660,8 @@
 								<div class="controller-wrap wa-btn">
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="">동영상 멈춤</button>
 								</div>
-							</div>-->
-							<!-- 영상 대체 텍스트
+							</div>
+							<!-- 영상 대체 텍스트 -->
                             <div class="text-area type-narrow box-align-center align-middle text-align-center">
                                 <div class="inner">
                 					<ul class="bullet-list">
@@ -656,15 +671,7 @@
 								    </ul>
 								</div>
                             </div>
-							//영상 대체 텍스트 -->       
-
-							<div class="visual-area">
-								<img src="./img_scene04_pc.jpg" alt="" class="pc-only">
-								<img src="./img_scene04_mo.jpg" alt="" class="mo-only">
-								<p class="hidden">
-
-								</p>
-                            </div>    
+							<!-- //영상 대체 텍스트 -->         
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
@@ -783,7 +790,7 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<!--<div class="animation-area">
+							<div class="animation-area">
 								<video autoplay muted loop class="pc">
 									<source src="./img_scene05_pc.mp4" type="video/mp4">
 								</video>
@@ -793,8 +800,8 @@
 								<div class="controller-wrap wa-btn">
 									<button class="pause active" aria-label="동영상 재생" aria-describedby="" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="">동영상 멈춤</button>
 								</div>
-							</div>-->
-							<!-- 영상 대체 텍스트 
+							</div>
+							<!-- 영상 대체 텍스트 -->
                             <div class="text-area type-narrow box-align-center align-middle text-align-center">
                                 <div class="inner">
                 					<ul class="bullet-list">
@@ -804,15 +811,7 @@
 								    </ul>
 								</div>
                             </div>
-							<//영상 대체 텍스트 -->      
-
-							<div class="visual-area">
-								<img src="./img_scene05_pc.jpg" alt="" class="pc-only">
-								<img src="./img_scene05_mo.jpg" alt="" class="mo-only">
-								<p class="hidden">
-
-								</p>
-                            </div>    
+							<!-- //영상 대체 텍스트 -->
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
