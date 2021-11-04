@@ -11,7 +11,7 @@ video {background:#fff !important;}
 .KRC0004 .cpt-wrap .visual-area .bullet-list {max-width:1460px !important;}
 .KRC0004 .bullet-list .b-txt {margin-top:24px;}
 .KRC0004 .bullet-list .b-txt .mo-only {margin-top:-24px;}
-
+.KRC0004 .align-right {position:relative; margin:-46px 0 !important;text-align:center;}
 
 /* KRC0025 */
 /*
@@ -82,7 +82,7 @@ video {background:#fff !important;}
 .KRC0004 .bullet-list .b-txt {margin-top:21px;padding:0 4.5%;}
 .KRC0004 .bullet-list .b-txt .mo-only {margin-top:0;}
 .KRC0004 .mo-only.bm {padding-bottom:60px;}
-	
+.KRC0004 .align-right {margin:0 !important;}
 
 /* KRC0025 */
 /*
