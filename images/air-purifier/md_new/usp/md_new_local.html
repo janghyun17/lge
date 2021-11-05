@@ -930,12 +930,28 @@
 					<!-- ui_carousel_track -->
 					<div class="ui_carousel_track">
 						<div class="carousel-box ui_carousel_slide animation-box">
-							<div class="visual-area">
-								<img src="./img_scene06_pc.jpg" alt="" class="pc-only">
-								<img src="./img_scene06_mo.jpg" alt="" class="mo-only">
-								<p class="hidden">
-								</p>
-                            </div>    
+							<div class="animation-area">
+								<video autoplay muted loop class="pc">
+									<source src="./img_scene06_pc.mp4" type="video/mp4">
+								</video>
+								<video autoplay muted loop class="mobile">
+									<source src="./img_scene06_mo.mp4" type="video/mp4">
+								</video>
+								<div class="controller-wrap wa-btn">
+									<button class="pause active" aria-label="동영상 재생" aria-describedby="" name="pause" data-play-text="동영상 재생" data-pause-text="동영상 멈춤" data-adobe-link-area="side_image_text-animation_play" data-adobe-link-name="">동영상 멈춤</button>
+								</div>
+							</div>
+							<!-- 영상 대체 텍스트 -->
+                            <div class="text-area type-narrow box-align-center align-middle text-align-center">
+                                <div class="inner">
+                					<ul class="bullet-list">
+							            <li class="b-txt">
+											
+										</li>
+								    </ul>
+								</div>
+                            </div>
+							<!-- //영상 대체 텍스트 -->
 						</div>
 					</div>
 					<!-- //ui_carousel_track -->
