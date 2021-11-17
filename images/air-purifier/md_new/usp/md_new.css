@@ -11,7 +11,17 @@ video {background:#fff !important;}
 .KRC0004 .cpt-wrap .visual-area .bullet-list {max-width:1460px !important;}
 .KRC0004 .bullet-list .b-txt {margin-top:24px;}
 .KRC0004 .bullet-list .b-txt .mo-only {margin-top:-24px;}
-.KRC0004 .align-right {position:relative; margin:-46px 0 !important;text-align:center;}
+
+/*
+.KRC0004 .align-right {position:relative;margin:-46px 0 !important;text-align:center;}
+*/
+.KRC0004.stage-wide .component-inner {max-width:1460px !important;}
+
+.KRC0004.stage-wide .component-inner .text-area {padding:80px 0;border-bottom:1px solid #ddd;}
+.KRC0004.stage-wide .component-inner .align-right .text-area {border:0;text-align:center;}
+.KRC0004.stage-wide .component-inner .align-left .text-area {padding-bottom:0;border:0;text-align:center;}
+
+.KRC0004.stage-wide .title * {font-size:58px;line-height:76px;}
 
 /* KRC0025 */
 /*
@@ -26,11 +36,10 @@ video {background:#fff !important;}
 .KRC0032.stage-medium img {overflow:hidden;}
 .KRC0032.stage-medium p.pc-only {overflow:hidden;}
 
-.KRC0032.stage-wide {max-width:1920px;margin-top:0px !important;}
-/*
-.KRC0032.stage-wide .animation-area {margin-top:40px;}
-*/
+.KRC0032.stage-wide {max-width:1600px;margin-top:0px !important;}
 .KRC0032.stage-full {max-width:1380px;margin-top:56px !important;}
+
+
 
 .KRC0032 .usp-banner-wrap {padding-bottom:40px;}
 .KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
@@ -83,6 +92,9 @@ video {background:#fff !important;}
 .KRC0004 .bullet-list .b-txt .mo-only {margin-top:0;}
 .KRC0004 .mo-only.bm {padding-bottom:60px;}
 .KRC0004 .align-right {margin:0 !important;}
+	
+.KRC0004.stage-wide .component-inner .text-area {padding:60px 0;}
+.KRC0004.stage-wide .title * {font-size:38px;line-height:48px;}
 
 /* KRC0025 */
 /*
