@@ -25,6 +25,9 @@ video {background:#fff !important;}
 .KRC0004.stage-full .text-area .text {float:left;width:calc(100% - 380px);margin-top:0 !important;box-sizing:border-box;text-align:left;}
 .KRC0004.stage-full .text-area:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
 
+/* KRC0025 */
+.KRC0025 .bullet-list .b-txt {margin-top:24px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
 
 
 /* KRC0032 */
@@ -83,6 +86,11 @@ video {background:#fff !important;}
 .KRC0004.stage-full .text-area .title {float:none;width:100%;padding-right:0;}
 .KRC0004.stage-full .text-area .title * {font-size:20px;line-height:28px;text-align:center;}
 .KRC0004.stage-full .text-area .text {float:none;width:100%;margin-top:12px !important;font-size:15px;line-height:23px;text-align:center;}
+	
+/* KRC0025 */
+.KRC0025 .bullet-list .b-txt {margin-top:21px;padding:0 17px;}
+.KRC0025 .bullet-list .b-txt .mo-only {margin-top:0;}
+.KRC0025 .mo-only.bm {padding-bottom:60px;}
 
 
 /* KRC0032 */
