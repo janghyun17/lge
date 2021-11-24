@@ -1,0 +1,770 @@
+@charset "utf-8";
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+
+/***** common *****/
+/*** -Mobile UI- ***/
+.water-purifiers_202107 {font-family:'Noto Sans KR','Source Sans Pro',Arial,sans-serif;color:#222;font-size:16px;line-height:24px;letter-spacing:-0.2px;}
+.water-purifiers_202107 * {word-wrap:break-word;word-break:keep-all;white-space:normal;}
+.water-purifiers_202107 .hidden {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}
+.water-purifiers_202107 .only_pc {display:none;}
+.water-purifiers_202107 .only_pc_txt {display:none;}
+.water-purifiers_202107 .only_m {display:block;}
+.water-purifiers_202107 img {max-width:100%;margin:0 auto;}
+.water-purifiers_202107 .ico_ani {display:block;position:absolute;left:0;top:0;width:100%;height:100%;}
+.water-purifiers_202107 .ico_ani img {display:none;position:absolute;left:0;top:0;width:100%;height:100%;}
+.water-purifiers_202107 .animate.active .ico_ani img {display:block;}
+
+/* feature_cont */
+.water-purifiers_202107 .section_cont {position:relative;}
+.water-purifiers_202107 .section_cont.bg {background:#f7f7f7;}
+.water-purifiers_202107 .feature_cont {position:relative;padding:70px 25px 20px 25px;box-sizing:border-box;}
+
+/* btn_go_info */
+.water-purifiers_202107 sup {display:inline-block;vertical-align:top;}
+.water-purifiers_202107 a.btn_go_info {display:inline-block;position:relative;height:22px;margin-left:4px;color:#999;font-size:10px;line-height:19px;vertical-align:top;}
+
+
+/*** -Tablet UI- ***/
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 .only_pc {display:block;}
+.water-purifiers_202107 .only_m {display:none;}
+}
+
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 {font-size:18px;line-height:26px;}
+	
+/* feature_cont */
+.water-purifiers_202107 .feature_cont {padding:140px 40px 0 40px;}
+	
+/* btn_go_info */
+.water-purifiers_202107 a.btn_go_info {height:25px;font-size:11px;line-height:20px;transition:color 0.4s;}
+.water-purifiers_202107 a.btn_go_info:hover {color:#da0f47;}
+}
+
+@media only screen and (min-width:950px) {
+.water-purifiers_202107 .only_pc_txt {display:block;}
+}
+
+
+/*** -PC UI- ***/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 {font-size:20px;line-height:30px;}
+.water-purifiers_202107 .section_cont {margin:0 auto;}
+.water-purifiers_202107 .feature_cont {max-width:1460px;margin:0 auto;}
+.water-purifiers_202107 .feature_cont.resp {max-width:100%;padding-right:0;padding-left:0;}
+.water-purifiers_202107 .feature_cont.resp .img_resp {margin-right:0;margin-left:0;}
+
+/* btn_go_info */
+.water-purifiers_202107 a.btn_go_info {height:28px;font-size:12px;line-height:20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+/**** Title ****/
+.water-purifiers_202107 .title {position:relative;}
+.water-purifiers_202107 .title.animate {opacity:0;transition:opacity 0.4s;}
+.water-purifiers_202107 .eyebrow {position:relative;margin:-5px 0 10px 0;color:#767676;font-size:16px;font-weight:700;line-height:24px;overflow:hidden;}
+.water-purifiers_202107 .eyebrow span {display:block;position:relative;}
+.water-purifiers_202107 .tit {position:relative;left:-2px;font-size:31px;font-weight:bold;line-height:42px;letter-spacing:-0.8px;overflow:hidden;}
+.water-purifiers_202107 .tit span {display:block;position:relative;}
+.water-purifiers_202107 .desc {position:relative;margin-top:15px;}
+.water-purifiers_202107 .btn_cat {margin-top:17px;}
+.water-purifiers_202107 .btn_cat a {display:inline-block;padding:6px 15px 7px 15px;border:1px solid #222;border-radius:50px;box-sizing:border-box;color:#222;font-size:13px;line-height:20px;}
+
+/* Active */
+.water-purifiers_202107 .title.active {opacity:1}
+.water-purifiers_202107 .title.active .eyebrow span {animation:txtTop both 0.4s 0.2s;}
+.water-purifiers_202107 .title.active .tit span {animation:txtTop both 0.6s 0.3s;}
+.water-purifiers_202107 .title.active .desc {animation:fade both 0.8s 0.8s;}
+.water-purifiers_202107 .title.active .btn_cat {animation:fade both 0.6s 1s;}
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 .title {margin:0 auto;text-align:center;}
+.water-purifiers_202107 .eyebrow {margin-bottom:10px;font-size:20px;line-height:28px;}
+.water-purifiers_202107 .tit {left:0;font-size:40px;line-height:56px;}
+.water-purifiers_202107 .desc {margin-top:20px;}
+.water-purifiers_202107 .btn_cat {margin-top:40px;text-align:center;}
+.water-purifiers_202107 .btn_cat a {padding:10px 40px;border-radius:50px;transition:background 0.4s, color 0.4s;}
+.water-purifiers_202107 .btn_cat a:hover {background-color:#222;color:#fff;}
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 .eyebrow {margin-bottom:14px;font-size:24px;line-height:32px;}
+.water-purifiers_202107 .tit {font-size:52px;line-height:70px;}
+.water-purifiers_202107 .desc {margin-top:28px;}
+}
+
+
+
+
+
+
+
+
+
+
+/***** Contents : Box Type *****/
+.water-purifiers_202107 .box + .title {margin-top:30px;}
+.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:10px;overflow:hidden;}
+.water-purifiers_202107 .img.not_round {border-radius:0;}
+.water-purifiers_202107 .img_resp {position:relative;margin:38px -25px 0 -25px;text-align:center;overflow:hidden;}
+.water-purifiers_202107 video {display:block;width:100%;}
+.water-purifiers_202107 .box_area {min-height:300px;margin-top:38px;background:#000;color:#fff;text-align:center;line-height:300px;}
+
+/* Active */
+.water-purifiers_202107 .box2.animate,
+.water-purifiers_202107 .box.animate .img,
+.water-purifiers_202107 .box.animate .img_video,
+.water-purifiers_202107 .box.animate .box_area,
+.water-purifiers_202107 .box.animate .img_resp,
+.water-purifiers_202107 .box.animate .table_ty {transform:translateY(50px);opacity:0;transition:transform 0.3s 0s, opacity 0.3s 0s;}
+.water-purifiers_202107 .box.animate .ico_ani {display:none;}
+
+.water-purifiers_202107 .box2.active,
+.water-purifiers_202107 .box.active .img,
+.water-purifiers_202107 .box.active .img_video,
+.water-purifiers_202107 .box.active .box_area,
+.water-purifiers_202107 .box.active .img_resp,
+.water-purifiers_202107 .box.active .table_ty {transform:translateY(0%);opacity:1;transition:transform 0.4s 0.3s, opacity 0.8s 0.3s;}
+.water-purifiers_202107 .box.animate.active .ico_ani {display:block;}
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 .box + .title {margin-top:42px;}
+.water-purifiers_202107 .img {margin:42px 0 0 0;border-radius:15px;}
+.water-purifiers_202107 .img_resp {margin:42px -40px 0 -40px;}
+.water-purifiers_202107 .box_area {min-height:400px;margin-top:42px;line-height:400px;}
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 .box + .title {margin-top:45px;}
+.water-purifiers_202107 .img {margin-top:45px;border-radius:20px;}
+.water-purifiers_202107 .img_resp {margin-top:45px;}
+.water-purifiers_202107 .box_area {min-height:500px;margin-top:45px;line-height:500px;}
+}
+
+
+
+
+
+
+
+
+/***** Main *****/
+.water-purifiers_202107 .section_cont.main {background:#fdfaf4 url("./img_scene00_bg.jpg") left bottom /auto 100% repeat-x;}
+.water-purifiers_202107 .section_cont.main .feature_cont {min-height:465px;padding:50px 25px 20px 25px;color:#222;overflow:hidden;}
+.water-purifiers_202107 .section_cont.main .feature_cont .tit {margin-top:-8px;font-size:25px;line-height:37px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .tit strong {display:block;position:relative;overflow:hidden;}
+.water-purifiers_202107 .section_cont.main .feature_cont .tit strong span {display:block;position:relative;}
+.water-purifiers_202107 .section_cont.main .feature_cont .tit sup {display:inline-block;margin-top:6px;font-size:14px;font-weight:500;line-height:20px;vertical-align:top;}
+.water-purifiers_202107 .section_cont.main .feature_cont .obj {position:absolute;right:0;bottom:0;width:200px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor {position:relative;margin-top:85px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor li {margin-top:27px;color:#222;font-size:15px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor li:first-child {margin-top:0;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor li a {display:block;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor strong {display:block;color:#222;font-size:20px;font-weight:900;line-height:30px;letter-spacing:-0.5px;overflow:hidden;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor strong em {display:block;position:relative;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor span {display:inline-block;position:relative;margin-top:-2px;padding-right:19px;vertical-align:top;}
+/*.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor span:after {position:absolute;right:0;top:6px;width:13px;height:13px;background:url("./ico_arrow.svg") center/100% no-repeat;border:1px solid #656565;border-radius:50%;box-sizing:border-box;content:"";}*/
+
+/* Active */
+.water-purifiers_202107 .section_cont.main .feature_cont.active .tit strong span {animation:txtTop both 0.6s 0.2s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .tit strong:nth-child(2) span {animation-delay:0.4s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .tit strong:nth-child(3) span {animation-delay:0.6s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .btn_anchor li {animation:fade both 0.8s 0.8s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .btn_anchor li:nth-child(2) {animation-delay:1.1s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .btn_anchor li:nth-child(3) {animation-delay:1.4s;}
+.water-purifiers_202107 .section_cont.main .feature_cont.active .obj {animation:main_obj both 0.8s 0.2s;}
+
+/* Animation */
+@keyframes main_obj {
+0% {transform:translateX(25px);opacity:0;}
+100% {transform:translateX(0);opacity:1}
+}
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+/* btn_anchor */
+.water-purifiers_202107 .section_cont.main .feature_cont .tit {padding:0 50px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor {padding:0 50px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor a {transition:color 0.4s;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor a:hover {color:#fa263e;}	
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 .section_cont.main .feature_cont {min-height:720px;}
+	
+/* btn_anchor */
+.water-purifiers_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:100%;margin-top:177px;padding:0 75px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor strong {font-size:32px;font-weight:bold;line-height:40px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor span {margin-top:14px;padding-right:36px;}
+.water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor span:after {top:4px;width:24px;height:24px;border-width:2px;}
+}
+
+
+
+
+
+
+
+
+
+
+/***** Disclaimer *****/
+.water-purifiers_202107 .disclaimer_info {position:relative;padding-bottom:46px;color:#888;font-size:13px;line-height:21px;}
+.water-purifiers_202107 .disclaimer_info .li {position:relative;margin-top:24px;}
+.water-purifiers_202107 .disclaimer_info .li:first-child {margin-top:0;}
+.water-purifiers_202107 .disclaimer_info .li > strong {display:block;padding-left:13px;font-weight:normal;} 
+.water-purifiers_202107 .disclaimer_info .li > strong em {position:absolute;left:0;top:0;}
+.water-purifiers_202107 .disclaimer_info .li:nth-child(n + 10) > strong {padding-left:19px;} 
+.water-purifiers_202107 .disclaimer_info .li ul {margin-top:4px;}
+.water-purifiers_202107 .disclaimer_info .li li {position:relative;margin-top:4px;padding-left:12px;}
+.water-purifiers_202107 .disclaimer_info .li li:first-child {margin-top:0;}
+.water-purifiers_202107 .disclaimer_info .li li:before {position:absolute;left:5px;top:11px;width:4px;height:1px;background:#888;content:"";}
+.water-purifiers_202107 .disclaimer_info .li p {position:relative;padding-left:16px;}
+.water-purifiers_202107 .disclaimer_info .li p em {position:absolute;left:0;top:0;}
+.water-purifiers_202107 .disclaimer_info.animate {opacity:0;transition:opacity 0.6s 0s;}
+.water-purifiers_202107 .disclaimer_info.active {opacity:1;transition-delay:0.1s;}
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+}
+
+
+
+
+
+
+
+
+
+
+/***** Swiper *****/
+/** Common **/
+.water-purifiers_202107 .slide {position:relative;}
+.water-purifiers_202107 .slide .swiper-notification {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}
+.water-purifiers_202107 .swiper-container {position:relative;overflow:hidden;}
+.water-purifiers_202107 .swiper-wrapper {display:flex;position:relative;width:100%;height:100%;background:#fff;transition-property:transform;box-sizing:content-box;cursor:grab;z-index:1;}
+.water-purifiers_202107 .swiper-container-autoheight .swiper-wrapper {align-items:flex-start;transition-property:transform,height;height:auto !important;}
+.water-purifiers_202107 .swiper-slide {flex-shrink:0;position:relative;width:100%;height:100%;transition-property:transform;box-sizing:border-box;}
+.water-purifiers_202107 .swiper-container-fade .swiper-slide {pointer-events:none;transition-property:opacity;}
+.water-purifiers_202107 .swiper-container.swiper-container-initialized .swiper-page-wrap {display:block;}
+
+.water-purifiers_202107 .swiper-pagination {position:relative;display:block;width:100%;height:8px;font-size:0;text-align:center;overflow:hidden;z-index:4;}
+.water-purifiers_202107 .swiper-pagination-bullet {display:inline-block;position:relative;width:8px;height:8px;margin:0 4px;background-color:#aaa !important;border-radius:4px;vertical-align:top;overflow:hidden;transition:padding 0.4s;}
+.water-purifiers_202107 .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0 9px;background:#da0f47 !important;}
+.water-purifiers_202107 .swiper-arrow {position:absolute;left:0;top:50%;width:30px;height:55px;margin-top:-28px;background:rgba(0,0,0,0.5);border-radius:4px 0 0 4px;z-index:10;cursor:pointer;}
+.water-purifiers_202107 .swiper-arrow:after {position:absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;border:solid #fff;border-width:1px 1px 0 0;transform:rotate(45deg);transform-origin:center;content:'';}
+.water-purifiers_202107 .swiper-arrow.swiper-button-next {left:auto;right:0;}
+.water-purifiers_202107 .swiper-arrow.swiper-button-prev {transform:rotate(180deg);}
+.water-purifiers_202107 .swiper-arrow.swiper-button-disabled {display:none;}
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 .swiper-arrow {width:44px;height:82px;opacity:0;transition:opacity 0.4s;}
+.water-purifiers_202107 .swiper-arrow:after {right:16px;width:24px;height:24px;margin-top:-12px;}
+.water-purifiers_202107 .swiper-arrow:focus,
+.water-purifiers_202107 .section_cont:hover .swiper-arrow {opacity:1;}
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 .swiper-arrow {width:58px;height:110px;}
+.water-purifiers_202107 .swiper-arrow:after {right:23px;width:32px;height:32px;margin-top:-16px;border-width:2px 2px 0 0;}
+.water-purifiers_202107 .swiper-pagination {height:12px;}
+.water-purifiers_202107 .swiper-pagination-bullet {width:12px;height:12px;margin:0 6px;border-radius:6px;}
+.water-purifiers_202107 .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0 14px;background:#da0f47 !important;}
+}
+
+
+
+
+
+
+
+
+/***** Contents *****/
+/*** scene01_1 : 뉴트럴 디자인 - slide_color_type / 컬러 ***/
+.water-purifiers_202107 .scene01_1_ani {position:relative;margin-top:38px;overflow:hidden;}
+/*
+.water-purifiers_202107 .scene01_1_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.water-purifiers_202107 .scene01_1_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+*/
+.water-purifiers_202107 .scene01_1_ani.animate .color_obj {opacity:0;transition:opacity 0.8s 0s;}
+.water-purifiers_202107 .scene01_1_ani.animate .color_bg,
+.water-purifiers_202107 .scene01_1_ani.animate .swiper-pagination,
+.water-purifiers_202107 .scene01_1_ani.animate .swiper-arrow {opacity:0;transition:opacity 0.4s 0s;}
+.water-purifiers_202107 .scene01_1_ani.active .color_obj {opacity:1;transition-delay:0.1s;}
+.water-purifiers_202107 .scene01_1_ani.active .color_bg,
+.water-purifiers_202107 .scene01_1_ani.active .swiper-pagination,
+.water-purifiers_202107 .scene01_1_ani.active .swiper-arrow {opacity:1;transition-delay:0.6s;}
+
+
+/* slide_color_type */
+.water-purifiers_202107 .slide_color_type {position:relative;}
+.water-purifiers_202107 .slide_color_type .swiper-arrow {top:calc(50% - 55px);}
+.water-purifiers_202107 .slide_color_type .color_obj {position:relative;border-radius:10px;overflow:hidden;}
+
+/* color_bg */
+.water-purifiers_202107 .slide_color_type .color_bg {position:relative;height:104px;margin:10px 25px 0 25px;padding-right:calc(50% - 25px);background:#fff;box-sizing:border-box;}
+.water-purifiers_202107 .slide_color_type .color_bg:before {position:absolute;right:0;top:0;width:50%;height:104px;background:right center/contain no-repeat;border-radius:10px;overflow:hidden;content:"";}
+.water-purifiers_202107 .slide_color_type .c1 .color_bg:before {background-color:#ece2d7;background-image:url("./img_scene01_1_1c_m.jpg");}
+.water-purifiers_202107 .slide_color_type .c2 .color_bg:before {background-color:#dbd7d0;background-image:url("./img_scene01_1_2c_m.jpg");}
+.water-purifiers_202107 .slide_color_type .c3 .color_bg:before {background-color:#687878;background-image:url("./img_scene01_1_3c_m.jpg");}
+
+/* color_name */
+.water-purifiers_202107 .slide_color_type .color_name {padding-top:17px;}
+.water-purifiers_202107 .slide_color_type .color_name dt {font-size:18px;font-weight:bold;line-height:24px;}
+.water-purifiers_202107 .slide_color_type .color_name dd {display:block;margin-top:-1px;color:#7e7a74;font-size:11px;font-weight:300;line-height:16px;}
+
+/* slide_color_type_pagn */
+.water-purifiers_202107 .slide_color_type_pagn {position:absolute;left:25px;bottom:22px;width:calc(50% - 25px);}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination {position:relative;height:14px;text-align:center;overflow:inherit;}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination-bullet {position:relative;width:14px;height:14px;margin:0 5px;border:2px solid #fff !important;border-radius:50%;transition:border-color 0.4s;;}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(1) {background-color:#d1c3b2 !important;}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(2) {background-color:#e3e0db !important;}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination-bullet:nth-child(3) {background-color:#5b7b86 !important;}
+.water-purifiers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {padding:0;box-shadow:1px 2px 5px rgba(0,0,0,0.3);}
+
+
+
+
+
+.water-purifiers_202107 .slide_time_pagn .btn_swiper_pause,
+.water-purifiers_202107 .slide_time_pagn .btn_swiper_play {display:none;width:20px;height:20px;margin-top:-10px;background:url("./btn_swiper_play.png") center/100% no-repeat;vertical-align:top;}
+.water-purifiers_202107 .slide_time_pagn .btn_swiper_pause {display:inline-block;background:url("./btn_swiper_pause.png") center/100% no-repeat;}
+.water-purifiers_202107 .slide_time_pagn.chk .btn_swiper_play {display:inline-block;}
+.water-purifiers_202107 .slide_time_pagn.chk .btn_swiper_pause {display:none;}
+
+.water-purifiers_202107 .slide_color_type .slide_time_pagn {position:absolute;right:inherit;left:0;bottom:101px;width:100%;z-index:5;}
+.water-purifiers_202107 .slide_color_type .slide_time_pagn ul {display:inline-block;vertical-align:top;}
+.water-purifiers_202107 .slide_color_type .slide_time_pagn li {display:inline-block;position:relative;width:40px;height:1px;margin:0 1px;background:rgba(255,255,255,0.4);vertical-align:top;overflow:hidden;}
+.water-purifiers_202107 .slide_color_type .slide_time_pagn li:after {position:absolute;left:0;top:0;width:0;height:1px;background:#fff;content:"";}
+
+.water-purifiers_202107 .slide_color_type.s1 .slide_time_pagn li:nth-child(1):after {animation:timePagn both linear 3s;}
+.water-purifiers_202107 .slide_color_type.s1 .slide_time_pagn li:nth-child(2):after,
+.water-purifiers_202107 .slide_color_type.s1 .slide_time_pagn li:nth-child(3):after {width:0;}
+
+.water-purifiers_202107 .slide_color_type.s2 .slide_time_pagn li:nth-child(1):after {width:100%;}
+.water-purifiers_202107 .slide_color_type.s2 .slide_time_pagn li:nth-child(2):after {animation:timePagn both linear 3s;}
+.water-purifiers_202107 .slide_color_type.s1 .slide_time_pagn li:nth-child(3):after {width:0%;}
+.water-purifiers_202107 .slide_color_type.s3 .slide_time_pagn li:nth-child(1):after,
+.water-purifiers_202107 .slide_color_type.s3 .slide_time_pagn li:nth-child(2):after {width:100%;}
+.water-purifiers_202107 .slide_color_type.s3 .slide_time_pagn li:nth-child(3):after {animation:timePagn both linear 3s;}
+
+@keyframes timePagn {
+0% {width:0;}
+100% {width:100%;}
+}
+
+
+
+
+
+/*** Scene02_1 : 국내 최초 상하좌우 무빙 출수탭 - slide_step ***/
+.water-purifiers_202107 .scene02_1_ani {position:relative;margin:38px -25px 0 -25px;overflow:hidden;}
+.water-purifiers_202107 .scene02_1_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.water-purifiers_202107 .scene02_1_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+.water-purifiers_202107 .slide_step {position:relative;overflow:hidden;}
+.water-purifiers_202107 .slide_step .swiper-slide {background:#fff;border-radius:10px;overflow:hidden;}
+.water-purifiers_202107 .slide_step .swiper-arrow {background:rgba(0,0,0,0.3);}
+.water-purifiers_202107 .slide_step.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.water-purifiers_202107 .slide_step.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+.water-purifiers_202107 .slide_step .swiper-pagination {margin-top:10px;}
+.water-purifiers_202107 .slide_step .swiper-arrow {top:calc(50% - 10px);}
+.water-purifiers_202107 .slide_step .info_obj {position:relative;}
+.water-purifiers_202107 .slide_step .info_obj li {position:absolute;left:0;top:0;width:100%;opacity:0;}
+.water-purifiers_202107 .slide_step .info_obj .obj1 {position:relative;opacity:1;}
+.water-purifiers_202107 .slide_step .slide_time_pagn {position:absolute;right:10px;bottom:0;z-index:5;}
+
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj3 {transform-origin:25.3% 51.4%;}
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj4 {transform-origin:91% 27%;}
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj5 {position:absolute;left:0;top:inherit;bottom:5.5%;width:50%;padding-left:4%;box-sizing:border-box;color:#da0f47;font-weight:bold;text-align:center;opacity:0;z-index:1;}
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj5 p {display:inline-block;position:relative;color:#da0f47;font-size:7.5vw;line-height:7.5vw;letter-spacing:-1px;}
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj5 strong {display:inline-block;}
+.water-purifiers_202107 .slide_step .c2 .info_obj .obj5 span {display:inline-block;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj2 {animation:fade both 0.7s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step .c1.swiper-slide-active .obj3 {animation:scene02_1_11_ani both 0.7s 0.6s;}
+.water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj2 {animation:fade both 0.6s 0.6s;}
+.water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj3 {animation:scene02_1_21_ani both 0.8s 0.6s;}
+.water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj4 {animation:scene02_1_22_ani both 0.8s 0.6s;}
+.water-purifiers_202107 .slide_step .c2.swiper-slide-active .obj5 {animation:fade both 0.6s 0.6s;}
+
+/* Animation */
+@keyframes scene02_1_11_ani {
+0% {transform:translateY(-10%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes scene02_1_12_ani {
+0% {transform:translateY(4%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes scene02_1_13_ani {
+0% {transform:translateY(-3%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes scene02_1_21_ani {
+0% {transform:rotate(-65deg);opacity:0;}
+100% {transform:rotate(0deg);opacity:1;}
+}
+@keyframes scene02_1_22_ani {
+0% {transform:rotateX(-40deg) rotateY(0deg) rotateZ(-25deg) scale(0.5);opacity:0;}
+100% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);opacity:1;}
+}
+
+
+
+
+
+/*** scene02_1 : 고온 살균 &amp; 스테인리스 직수관 - slide_step2 ***/
+.water-purifiers_202107 .scene03_1_ani {position:relative;margin-top:38px;overflow:hidden;}
+/*
+.water-purifiers_202107 .scene03_1_ani.animate {transform:translateY(50px);opacity:0;transition:transform 0.4s 0s, opacity 0.6s 0s;}
+.water-purifiers_202107 .scene03_1_ani.active {transform:translateY(0);opacity:1;transition-delay:0.1s;}
+*/
+.water-purifiers_202107 .scene03_1_ani.animate .step_obj {opacity:0;transition:opacity 0.8s 0s;}
+.water-purifiers_202107 .scene03_1_ani.animate .step_bg,
+.water-purifiers_202107 .scene03_1_ani.animate .swiper-pagination,
+.water-purifiers_202107 .scene03_1_ani.animate .swiper-arrow {opacity:0;transition:opacity 0.6s 0s;}
+.water-purifiers_202107 .scene03_1_ani.active .step_obj {opacity:1;transition-delay:0.3s;}
+.water-purifiers_202107 .scene03_1_ani.active .step_bg,
+.water-purifiers_202107 .scene03_1_ani.active .swiper-pagination,
+.water-purifiers_202107 .scene03_1_ani.active .swiper-arrow {opacity:1;transition-delay:0.1s;}
+
+.water-purifiers_202107 .slide_step2 {position:relative;}
+.water-purifiers_202107 .slide_step2 .swiper-pagination {margin-top:10px;}
+.water-purifiers_202107 .slide_step2 .swiper-arrow {top:calc(50% + 50px);}
+.water-purifiers_202107 .slide_step2 .step_obj {position:relative;border-radius:10px;overflow:hidden;}
+.water-purifiers_202107 .slide_step2 .step_obj li {position:absolute;left:0;top:0;width:100%;}
+.water-purifiers_202107 .slide_step2 .step_obj.obj2 {transform-origin:68% 34.3%;}
+.water-purifiers_202107 .slide_step2 .slide_time_pagn {position:absolute;right:10px;bottom:0;z-index:5;}
+
+/* step_bg */
+.water-purifiers_202107 .slide_step2 .step_bg {position:relative;height:104px;margin:0 25px 10px 25px;padding-left:calc(50% - 25px);background:#fff;box-sizing:border-box;}
+.water-purifiers_202107 .slide_step2 .step_bg:before {position:absolute;left:0;top:0;width:50%;height:104px;background:#e3e3e3 center/contain no-repeat;border-radius:10px;overflow:hidden;content:"";}
+.water-purifiers_202107 .slide_step2 .c1 .step_bg:before {background-image:url("./img_scene03_1_1c_m.jpg");}
+.water-purifiers_202107 .slide_step2 .c2 .step_bg:before {background-image:url("./img_scene03_1_2c_m.jpg");}
+
+/* step_name */
+.water-purifiers_202107 .slide_step2 .step_name {padding-top:22px;}
+.water-purifiers_202107 .slide_step2 .step_name dt {font-size:14px;font-weight:bold;line-height:20px;}
+.water-purifiers_202107 .slide_step2 .step_name dd {display:block;color:#222;font-size:11px;font-weight:300;line-height:16px;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .slide_step2 .swiper-slide-active .obj1 {animation:fade both 0.7s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step2 .swiper-slide-active .obj2 {animation:scene03_2_ani both 0.5s 0.6s;}
+.water-purifiers_202107 .animate.active .slide_step2 .swiper-slide-active .obj3 {animation:scene03_1_ani both 1.3s 1s;}
+.water-purifiers_202107 .animate.active .slide_step2 .swiper-slide-active .obj4 {animation:fade both 0.7s 1s;}
+
+
+/* Animation */
+@keyframes scene03_1_ani {
+0% {opacity:0;}
+33.3% {opacity:1;}
+66.6% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+
+
+/*** Scene03_2 : 99.99% UVnano 안심살균 ***/
+.water-purifiers_202107 .scene03_2_ani {position:relative;}
+.water-purifiers_202107 .scene03_2_ani li {position:absolute;left:0;top:0;width:100%;}
+.water-purifiers_202107 .scene03_2_ani li:nth-child(2) {transform-origin:33.3% 33.3%;}
+.water-purifiers_202107 .scene03_2_ani li.obj {overflow:hidden;}
+
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(1) {animation:fade both 0.6s 0.6s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(2) {animation:scene03_2_ani both 0.5s 0.6s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li.obj {animation:scene03_1_ani both 1.3s 0.8s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(4) {animation:fade both 0.6s 1.5s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(5) {animation:fade both 0.6s 1.8s;}
+.water-purifiers_202107 .animate.active .scene03_2_ani li:nth-child(6) {animation:fade both 0.6s 2.1s;}
+
+/* Animation */
+@keyframes scene03_2_ani {
+0% {opacity:0;transform:scale(0.85);}
+100% {opacity:1;transform:scale(1);}
+}
+@keyframes scene03_2_ani2 {
+0% {height:0%;opacity:0}
+100% {height:50%;opacity:1;}
+}
+
+
+
+
+
+/*** Scene03_3 : 4단계 올 퓨리 필터 시스템 ***/
+.water-purifiers_202107 .scene03_3_ani {position:relative;}
+.water-purifiers_202107 .scene03_3_ani li {position:absolute;left:0;top:0;width:100%;opacity:0;}
+.water-purifiers_202107 .scene03_3_ani .obj {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.water-purifiers_202107 .scene03_3_ani .obj img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj {animation:scene03_3_ani both ease-out 4s 0.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj11 {animation:fade both 0.8s 1.0s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj12 {animation:fade both 0.8s 1.6s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj12 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:40% center;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj13 {animation:fade both 0.8s 1.3s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj13 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:40% center;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj21 {animation:fade both 0.6s 2.7s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj22 {animation:fade both 0.6s 2.9s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj22 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:61% 36%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj23 {animation:fade both 0.6s 3.1s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj23 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:61% 36%;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj31 {animation:fade both 0.6s 3.0s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj32 {animation:fade both 0.6s 3.2s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj32 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:60% 55%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj33 {animation:fade both 0.6s 3.4s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj33 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:60% 55%;}
+
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj41 {animation:fade both 0.6s 3.3s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj42 {animation:fade both 0.6s 3.5s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj42 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 0.5s;transform-origin:61% 79%;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj43 {animation:fade both 0.6s 3.7s;}
+.water-purifiers_202107 .animate.active .scene03_3_ani .obj43 img {position:relative;animation:scene03_3_ani2 linear both infinite 5.8s 1.6s;transform-origin:61% 79%;}
+
+/* Animation */
+@keyframes scene03_3_ani {
+0% {width:0%;}
+16% {width:39.3%;}
+38% {width:39.3%;}
+54% {width:61%;}
+84% {width:61%;}
+100% {width:100%;}
+}
+@keyframes scene03_3_ani2 {
+0% {transform:scale(0.8);}
+20% {transform:scale(0.9);}
+50% {transform:scale(0.75);}
+70% {transform:scale(1);}
+100% {transform:scale(0.8);}
+}
+
+
+
+
+
+/*** Scene04_1 : 음성 안내 ***/
+.water-purifiers_202107 .scene04_1_ani {position:relative;}
+.water-purifiers_202107 .scene04_1_ani li {position:absolute;left:0;top:0;width:100%;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani both 2.0s 0.6s;}
+.water-purifiers_202107 .animate.active .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 both 0.5s 2.2s;}
+
+/* Animation */
+@keyframes scene04_1_ani {
+0% {opacity:0;transform:scale(0.85) translate(0,0);}
+22% {opacity:1;transform:scale(1) translate(0,0);}
+75% {opacity:1;transform:scale(1) translate(0%,0);}
+100% {opacity:0.6;transform:scale(0.755) translate(2.5%,5.8%)}
+}
+@keyframes scene04_1_ani2 {
+0% {opacity:0;transform:scale(0.85);}
+100% {opacity:1;transform:scale(1);}
+}
+
+
+
+
+
+
+/*** Scene04_2 : 초간편 터치 디스플레이 ***/
+.water-purifiers_202107 .scene04_2_ani {position:relative;}
+.water-purifiers_202107 .scene04_2_ani li {position:absolute;left:0;top:0;width:100%;height:100%;}
+.water-purifiers_202107 .scene04_2_ani li.obj {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.water-purifiers_202107 .scene04_2_ani li.obj img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene04_2_ani li:nth-child(1) {animation:scene04_3_ani both 1 0.8s 0.6s;}
+.water-purifiers_202107 .animate.active .scene04_2_ani li.obj {animation:scene04_2_ani both linear 1.8s 0.8s;}
+.water-purifiers_202107 .animate.active .scene04_2_ani li:nth-child(3) {animation:fade both 0.7s 1.5s;}
+.water-purifiers_202107 .animate.active .scene04_2_ani li:nth-child(4) {animation:fade both 0.9s 1.8s;}
+
+/* Animation */
+@keyframes scene04_2_ani {
+0% {width:30%;}
+100% {opacity:70%;}
+}
+
+
+
+
+
+/*** Scene04_3 : LG ThinQ 앱 ***/
+.water-purifiers_202107 .scene04_3_ani {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
+.water-purifiers_202107 .scene04_3_ani .obj {position:absolute;left:0;top:0;width:100%;}
+.water-purifiers_202107 .scene04_3_ani .obj1 {position:absolute;left:42.8%;top:50%;width:14%;transform:translateY(-50%);}
+.water-purifiers_202107 .scene04_3_ani .obj1:after {position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(218,15,71,0.2);border-radius:35%/37%;content:"";}
+.water-purifiers_202107 .scene04_3_ani .obj1 em:before {position:absolute;left:7%;top:7%;width:86%;height:86%;background:rgba(218,15,71,0.4);border-radius:36%/38%;content:"";}
+.water-purifiers_202107 .scene04_3_ani .obj1 em:after {position:absolute;left:15%;top:15%;width:70%;height:70%;background:#be1e42;border-radius:37%/39%;content:"";z-index:1;}
+.water-purifiers_202107 .scene04_3_ani .obj1 img {position:relative;z-index:2;}
+.water-purifiers_202107 .scene04_3_ani .obj2 {position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;}
+.water-purifiers_202107 .scene04_3_ani .obj2:before,
+.water-purifiers_202107 .scene04_3_ani .obj2 :before,
+.water-purifiers_202107 .scene04_3_ani .obj2:after,
+.water-purifiers_202107 .scene04_3_ani .obj2 :after {display:block;position:absolute;top:50%;width:3px;height:3px;background:url("ico_scene04_3.svg") center/100% no-repeat;content:"";}
+.water-purifiers_202107 .scene04_3_ani .obj2:before {left:37%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 em:before {left:38.5%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 i:before {left:40%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 u:before {left:41.5%;}
+.water-purifiers_202107 .scene04_3_ani .obj2:after {right:37%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 em:after {right:38.5%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 i:after {right:40%;}
+.water-purifiers_202107 .scene04_3_ani .obj2 u:after {right:41.5%;}
+
+/* Active */
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj {animation:scene04_3_ani3 both infinite 6s 0.4s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj1 {animation:fade both 0.8s 0.4s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj1 em:before {animation:scene04_3_ani2 both 1.2s 0.6s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj1:after {animation:scene04_3_ani2 both 1.2s 0.9s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj1:before {animation:scene04_3_ani2 both 1.2s 0.9s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 {animation:fade both 0.8s 1.5s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 u:before,
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 u:after {animation:scene04_3_ani both 3 1.5s 0.4s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 i:before,
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 i:after {animation:scene04_3_ani both 3 1.5s 0.7s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 em:before,
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2 em:after {animation:scene04_3_ani both 3 1.5s 1.0s;}
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2:before,
+.water-purifiers_202107 .animate.active .scene04_3_ani .obj2:after {animation:scene04_3_ani both 3 1.5s 1.2s;}
+
+@media only screen and (min-width:500px) {
+.water-purifiers_202107 .scene04_3_ani .obj2:before,
+.water-purifiers_202107 .scene04_3_ani .obj2 :before,
+.water-purifiers_202107 .scene04_3_ani .obj2:after,
+.water-purifiers_202107 .scene04_3_ani .obj2 :after {width:6px;height:6px;}
+}
+
+/* Animation */
+@keyframes scene04_3_ani {
+0% {opacity:1;}
+50% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes scene04_3_ani2 {
+0% {transform:scale(0.7);}
+50% {transform:scale(1.05);}
+100% {transform:scale(1);}
+}
+@keyframes scene04_3_ani3 {
+0% {opacity:0;}
+20% {opacity:0;}
+30% {opacity:1;}
+70% {opacity:1;}
+100% {opacity:0;}
+}
+
+
+
+
+
+
+/***** Contents *****/
+.water-purifiers_202107 table {width:100%;table-layout:fixed;border-collapse:collapse;border-spacing:0;text-align:center;}
+.water-purifiers_202107 table img {vertical-align:top;}
+.water-purifiers_202107 th, .water-purifiers_202107 td {vertical-align:middle;word-wrap:break-word;word-break:break-all;}
+.water-purifiers_202107 caption {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}
+
+.water-purifiers_202107 .table_ty {position:relative;margin-top:38px;border-top:1px solid #222;}
+.water-purifiers_202107 .table_ty th,
+.water-purifiers_202107 .table_ty td {height:40px;padding:5px 10px;border:solid #ddd;border-width:0 1px 1px 0;box-sizing:border-box;font-size:12px;line-height:16px;}
+.water-purifiers_202107 .table_ty thead th {background:#f2f2f2;}
+.water-purifiers_202107 .table_ty th:last-child,
+.water-purifiers_202107 .table_ty td:last-child {border-right:0;}
+
+
+
+
+/** -Tablet UI- **/
+@media only screen and (min-width:768px) {
+.water-purifiers_202107 .table_ty {margin-top:42px;}
+.water-purifiers_202107 .table_ty th,
+.water-purifiers_202107 .table_ty td {height:50px;padding:5px;font-size:14px;line-height:18px;}
+}
+
+
+/** -PC UI- **/
+@media only screen and (min-width:1280px) {
+.water-purifiers_202107 .table_ty {margin-top:45px;}
+.water-purifiers_202107 .table_ty th,
+.water-purifiers_202107 .table_ty td {height:60px;padding:5px 10px;font-size:16px;line-height:20px;}
+}
+
+
+.water-purifiers_202107 .table_ty thead th.slash {background:#f2f2f2 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="100%" y1="100%" x2="0" y2="0%" stroke="gray" stroke-width="1" opacity="0.2" /></svg>');}
+
+.slash {text-align:left;}
+.slash div {text-align:right;}
+
+
+
+
+
+/*** Animation ***/
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@keyframes txtTop {
+0% {transform:translateY(110%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes imgTop {
+0% {transform:translateY(10%);opacity:0;}
+100% {transform:translateY(0%);opacity:1;}
+}
+@keyframes imgLeft{
+0% {transform:translateX(10%);opacity:0;}
+100% {transform:translateX(0%);opacity:1;}
+}
+@keyframes scale {
+0% {transform:scale(1.1);}
+100% {transform:scale(1);}
+}
+
+
+
+
+
+
+
+
