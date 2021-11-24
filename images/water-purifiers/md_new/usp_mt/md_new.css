@@ -120,7 +120,7 @@
 
 /***** Contents : Box Type *****/
 .water-purifiers_202107 .box + .title {margin-top:30px;}
-.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:0px;overflow:hidden;}
+.water-purifiers_202107 .img {position:relative;margin:38px -25px 0 -25px;border-radius:10px;overflow:hidden;}
 .water-purifiers_202107 .img.not_round {border-radius:0;}
 .water-purifiers_202107 .img_resp {position:relative;margin:38px -25px 0 -25px;text-align:center;overflow:hidden;}
 .water-purifiers_202107 video {display:block;width:100%;}
