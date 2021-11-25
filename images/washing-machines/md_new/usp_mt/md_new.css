@@ -211,8 +211,6 @@
 /** -PC UI- 
 @media only screen and (min-width:1280px) {
 .washing_machines_202107 .section_cont.main .feature_cont {min-height:720px;}
-	
-
 .washing_machines_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
 .washing_machines_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:70%;margin-top:177px;padding:0 75px;}
 .washing_machines_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
@@ -822,6 +820,10 @@
 
 
 
+
+
+
+/**** Etc. ****/
 body {background:#ddd;}
 #contentWrap {max-width:450px;margin:0 auto;background:#fff;}
 .tab p  {max-width:450px;margin:0 auto;background:#fff;overflow:hidden;}
