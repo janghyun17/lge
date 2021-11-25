@@ -9,6 +9,7 @@ video {background:#fff !important;}
 .KRC0004.stage-medium .cpt-wrap .list-btn-area,
 .KRC0004.stage-medium .cpt-wrap>.visual-area,
 .KRC0004 .cpt-wrap .visual-area .bullet-list {max-width:1460px !important;}
+.KRC0004 .cpt-wrap .visual-area {margin-top:0;}
 .KRC0004 .bullet-list .b-txt {margin-top:24px;}
 .KRC0004 .bullet-list .b-txt .mo-only {margin-top:-24px;}
 
