@@ -35,11 +35,7 @@
 
 @media only screen and (min-width:768px) {
 .water-purifiers_202107 {font-size:18px;line-height:26px;}
-	
-
 .water-purifiers_202107 .feature_cont {padding:140px 40px 0 40px;}
-	
-
 .water-purifiers_202107 a.btn_go_info {height:25px;font-size:11px;line-height:20px;transition:color 0.4s;}
 .water-purifiers_202107 a.btn_go_info:hover {color:#da0f47;}
 }
@@ -56,8 +52,6 @@
 .water-purifiers_202107 .feature_cont {max-width:1460px;margin:0 auto;}
 .water-purifiers_202107 .feature_cont.resp {max-width:100%;padding-right:0;padding-left:0;}
 .water-purifiers_202107 .feature_cont.resp .img_resp {margin-right:0;margin-left:0;}
-
-
 .water-purifiers_202107 a.btn_go_info {height:28px;font-size:12px;line-height:20px;}
 }*/
 
@@ -213,7 +207,6 @@
 /** -PC UI- 
 @media only screen and (min-width:1280px) {
 .water-purifiers_202107 .section_cont.main .feature_cont {min-height:720px;}
-	
 .water-purifiers_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
 .water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:100%;margin-top:177px;padding:0 75px;}
 .water-purifiers_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
@@ -587,7 +580,6 @@
 .water-purifiers_202107 .scene03_3_ani2 img {width:100%;max-width:1380px !important;}
 .water-purifiers_202107 .scene03_3_ani2 .obj {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
 .water-purifiers_202107 .scene03_3_ani2 .obj img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
-
 .water-purifiers_202107 .scene03_3_ani2 .obj9 {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
 .water-purifiers_202107 .scene03_3_ani2 .obj9 img {position:absolute;left:0;top:0;width:100vw;max-width:1660px;}
 
@@ -664,7 +656,6 @@
 /*** Scene04_1 : 음성 안내 ***/
 .water-purifiers_202107 .scene04_1_ani {position:relative;}
 .water-purifiers_202107 .scene04_1_ani li {position:absolute;left:0;top:0;width:100%;}
-
 .water-purifiers_202107 .scene04_1_ani li:nth-child(1) {animation:scene04_1_ani infinite both 6.0s 0s;}
 .water-purifiers_202107 .scene04_1_ani li:nth-child(2) {animation:scene04_1_ani2 infinite both 6.0s 0s;}
 
@@ -875,6 +866,11 @@
 
 
 
+
+
+
+
+/**** Etc. ****/
 body {background:#ddd;}
 #contentWrap {max-width:450px;margin:0 auto;background:#fff;}
 .tab p  {max-width:450px;margin:0 auto;background:#fff;overflow:hidden;}
@@ -882,8 +878,6 @@ body {background:#ddd;}
 @media only screen and (min-width:450px) {
 .tab p  {left:50% !important;margin-left:-225px;}
 }
-
-
 
 
 
