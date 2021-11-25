@@ -35,11 +35,7 @@
 
 @media only screen and (min-width:768px) {
 .dryers_202107 {font-size:18px;line-height:26px;}
-	
-
 .dryers_202107 .feature_cont {padding:140px 40px 0 40px;}
-	
-
 .dryers_202107 a.btn_go_info {height:25px;font-size:11px;line-height:20px;transition:color 0.4s;}
 .dryers_202107 a.btn_go_info:hover {color:#da0f47;}
 }
@@ -55,8 +51,6 @@
 .dryers_202107 .section_cont {margin:0 auto;}
 .dryers_202107 .feature_cont {max-width:1460px;margin:0 auto;}
 .dryers_202107 .feature_cont.resp {max-width:100%;padding-right:0;padding-left:0;}
-
-
 .dryers_202107 a.btn_go_info {height:28px;font-size:12px;line-height:20px;}
 }
 */
@@ -210,7 +204,6 @@
 /** -PC UI-
 @media only screen and (min-width:1280px) {
 .dryers_202107 .section_cont.main .feature_cont {min-height:720px;}
-
 .dryers_202107 .section_cont.main .feature_cont .tit {padding:0 75px;}
 .dryers_202107 .section_cont.main .feature_cont .btn_anchor {display:flex;flex-wrap:nowrap;width:70%;margin-top:177px;padding:0 75px;}
 .dryers_202107 .section_cont.main .feature_cont .btn_anchor li {width:100%;margin-top:0;font-size:24px;}
@@ -587,11 +580,7 @@
 .dryers_202107 .scene02_3 .scene02_3_ani:after {width:35px;}
 .dryers_202107 .scene02_3 .swiper-slide {height:450px;}
 .dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 210px);width:390px;height:390px;}
-	
-
 .dryers_202107 .slide_color_type_pagn {margin-top:23px;}
-
-
 .dryers_202107 .slide_color_type .color_obj {left:122px;top:60px;width:368px;height:398px;}
 .dryers_202107 .slide_color_type2 .color_bg {width:330px;height:330px;}
 .dryers_202107 .slide_color_type2 .color_name {left:20px;top:20px;font-size:32px;line-height:32px;}
@@ -607,13 +596,11 @@
 .dryers_202107 .scene02_3 .swiper-slide {height:600px;}
 .dryers_202107 .scene02_3 .color_box_inner {left:calc(50% - 260px);width:520px;height:520px;}
 
-
 .dryers_202107 .slide_color_type_pagn {margin-top:28px;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination {height:20px;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet {width:20px;height:20px;margin:0 16px 0 0;}
 .dryers_202107 .slide_color_type_pagn .swiper-pagination-bullet.swiper-pagination-bullet-active {border-width:2px !important;}
 	
-
 .dryers_202107 .slide_color_type .color_obj {left:165px;top:78px;width:490px;height:530px;}
 .dryers_202107 .slide_color_type2 .color_bg {width:440px;height:440px;}
 .dryers_202107 .slide_color_type2 .color_name {left:25px;top:25px;font-size:42px;line-height:42px;}
@@ -752,21 +739,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** -PC UI- **/
 /*
 @media only screen and (min-width:768px) {
@@ -786,8 +758,7 @@
 
 
 
-
-
+/**** Etc. ****/
 body {background:#ddd;}
 #contentWrap {max-width:450px;margin:0 auto;background:#fff;}
 .tab p  {max-width:450px;margin:0 auto;background:#fff;overflow:hidden;}
@@ -795,6 +766,9 @@ body {background:#ddd;}
 @media only screen and (min-width:450px) {
 .tab p  {left:50% !important;margin-left:-225px;}
 }
+
+
+
 
 
 
