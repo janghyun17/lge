@@ -29,7 +29,7 @@ a {text-decoration:none;}
 li {list-style:none;}
 body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;line-height:22px;-webkit-text-size-adjust:none;-webkit-overflow-scrolling:touch;word-wrap:break-word;word-break:keep-all;white-space:normal;overflow-y:scroll;}
 #wrap {position:relative;margin:20px auto 50px auto;}
-#wrap h1 {padding:30px 30px 60px 30px;color:#fff;font-size:32px;line-height:48px;text-align:center;transition:all 0.4s;letter-spacing:-0.5px;}
+#wrap h1 {position:relative;padding:30px 30px 60px 30px;color:#fff;font-size:32px;line-height:48px;text-align:center;transition:all 0.4s;letter-spacing:-0.5px;}
 #wrap h1 span {position:relative;background:-webkit-linear-gradient(-45deg, #e5484f 15%, #e8eafc, #e5484f 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
 #wrap h1 span:nth-child(1) {animation-delay:1s;}
 .gate_list {margin:0 auto;padding:0 15px;font-size:0;transition:all 0.4s;}
@@ -173,7 +173,9 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 <body>
 <!-- wrap -->
 <div id="wrap">
-	<h1><span>LGE USP</span><br><span>Publishing List</span></h1>
+	<h1>
+		<span>LGE USP</span><br><span>Publishing List</span>
+	</h1>
 	<ul class="gate_list">
 		<li class="">
 			<!--<p class="io"><img src="./etc/svg_star.svg" alt=""></p>-->
