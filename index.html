@@ -18,8 +18,31 @@ $(function(){
 	$('.hit').click(function(){
 		return false;
 	});
+    $(document).mousemove(function(e){
+        o = $('#wrap').offset();
+        $('.dot').css({
+            'top': e.pageY - o.top,
+            'left': e.pageX - o.left
+        });
+    });
+    $('h1, .search, .card_list .list, .btn_nav').mouseover(function(){
+        $('.cursor').css('mix-blend-mode','difference');
+        $('.dot:nth-child(5)').css('transform','scale(0.6)').css('background','#e35fa4').css('animation','scale2 both ease-Out infinite 1.7s');
+        $('.dot:nth-child(4)').css('transform','scale(0.4)')
+        $('.dot:nth-child(3)').css('transform','scale(0.35)')
+        $('.dot:nth-child(2)').css('transform','scale(0.2)')
+        $('.dot:nth-child(1)').css('transform','scale(0.1)')
+	});
+    $('h1, .search, .card_list .list, .btn_nav').mouseleave(function(){
+        $('.cursor').css('mix-blend-mode','color-dodge');
+        $('.dot').css('transform','');
+        $('.dot:nth-child(5)').css('background','#9C27B0').css('animation','scale both ease-Out infinite 1.7s');
+	});
+	$('.card_list .list.no').click(function(){
+		return false;
+    });
+	
 });
-
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900');
@@ -167,6 +190,19 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 	
 	
 .io {position:absolute;right:2%;top:-5%;;width:30%;height:30%;opacity:0.8; z-index:10}
+	
+/** Cursor **/
+:root {cursor:none !important;}
+.cursor {position:absolute;left:0;top:0;z-index:1000;mix-blend-mode:color-dodge;/*filter:url('#goo');*/}
+.dot {position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px 0 0 -30px;background:#e5484f;border-radius:50%;pointer-events:none;z-index:1000;transition:all ease 0.1s, transform ease 0.4s;}
+.dot:nth-child(5) {animation:scale both ease-Out infinite 1.7s;}
+.dot:nth-child(4) {background:#b037ad;transform:scale(0.8);transition:all ease 0.12s;}
+.dot:nth-child(3) {background:#c245aa;transform:scale(0.6);transition:all ease 0.14s;}
+.dot:nth-child(2) {background:#d252a7;transform:scale(0.4);transition:all ease 0.16s;}
+.dot:nth-child(1) {background:#e35fa4;transform:scale(0.2);transition:all ease 0.18s}
+
+
+
 </style>
 </head>
 
@@ -248,5 +284,25 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 	</p>
 </div>
 <!-- //wrap -->
+	
+    <!-- cursor -->
+    <div class="cursor">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <!-- //cursor -->
+	
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<defs>
+		<filter id="goo">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo" />
+			<feBlend in="SourceGraphic" in2="goo" />
+		</filter>
+	</defs>
+</svg>
 </body>
 </html>
