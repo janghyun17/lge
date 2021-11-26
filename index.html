@@ -18,7 +18,7 @@ $(function(){
 	$('.hit').click(function(){
 		return false;
 	});
-	/*
+
 	var filter = "win16|win32|win64|mac";
 	if(navigator.platform){
 		if(0 > filter.indexOf(navigator.platform.toLowerCase())){
@@ -33,7 +33,7 @@ $(function(){
             'left': e.pageX - o.left
         });
     });
-    $('h1, .search, .card_list .list, .btn_nav').mouseover(function(){
+    $('h1, .gate_list li a ').mouseover(function(){
         $('.cursor').css('mix-blend-mode','difference');
         $('.dot:nth-child(5)').css('transform','scale(0.6)').css('background','#e35fa4').css('animation','scale2 both ease-Out infinite 1.7s');
         $('.dot:nth-child(4)').css('transform','scale(0.4)')
@@ -41,12 +41,12 @@ $(function(){
         $('.dot:nth-child(2)').css('transform','scale(0.2)')
         $('.dot:nth-child(1)').css('transform','scale(0.1)')
 	});
-    $('h1, .search, .card_list .list, .btn_nav').mouseleave(function(){
+    $('h1, .gate_list li a ').mouseleave(function(){
         $('.cursor').css('mix-blend-mode','color-dodge');
         $('.dot').css('transform','');
         $('.dot:nth-child(5)').css('background','#9C27B0').css('animation','scale both ease-Out infinite 1.7s');
 	});
-	*/
+
 	$('.card_list .list.no').click(function(){
 		return false;
     });
@@ -293,7 +293,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 	</p>
 </div>
 <!-- //wrap -->
-	
+
     <!-- cursor -->
     <div class="cursor">
         <div class="dot"></div>
