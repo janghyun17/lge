@@ -29,11 +29,11 @@ a {text-decoration:none;}
 li {list-style:none;}
 body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;line-height:22px;-webkit-text-size-adjust:none;-webkit-overflow-scrolling:touch;word-wrap:break-word;word-break:keep-all;white-space:normal;overflow-y:scroll;}
 #wrap {position:relative;margin:20px auto 50px auto;}
-#wrap h1 {padding:30px;color:#fff;font-size:32px;line-height:48px;text-align:center;transition:all 0.4s;letter-spacing:-0.5px;}
-#wrap h1 span {position:relative;background:-webkit-linear-gradient(-45deg, #e5484f 15%, #d3d7f8, #e5484f 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+#wrap h1 {padding:30px 30px 60px 30px;color:#fff;font-size:32px;line-height:48px;text-align:center;transition:all 0.4s;letter-spacing:-0.5px;}
+#wrap h1 span {position:relative;background:-webkit-linear-gradient(-45deg, #e5484f 15%, #e8eafc, #e5484f 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
 #wrap h1 span:nth-child(1) {animation-delay:1s;}
 .gate_list {margin:0 auto;padding:0 15px;font-size:0;transition:all 0.4s;}
-.gate_list li {display:inline-block;;width:calc(100% / 2 - 10px);margin:5px;vertical-align:top;transition:all 0.4s;}
+.gate_list li {display:inline-block;width:calc(100% / 2 - 10px);margin:5px;vertical-align:top;transition:all 0.4s;position: relative;}
 .gate_list li a {display:table;position:relative;width:100%;height:calc((100vw - 30px) / 2 + 60px);padding:10px;box-sizing:border-box;box-shadow:3px 4px 8px 0 rgba(0, 0, 0, 0.4);color:#fff;font-size:22px;font-weight:500;line-height:28px;overflow:hidden;}
 .gate_list li a.hit {cursor:default;}
 .gate_list li a.hit .img:before {opacity:0.4;}
@@ -85,7 +85,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 
 @media all and (min-width:761px) and (max-width:1000px) {
 #wrap {margin:30px auto 100px auto;}
-#wrap h1 {padding:50px;}
+#wrap h1 {padding:50px 50px 70px 50px;}
 .gate_list {padding:0 40px;}
 .gate_list li {width:calc(100%/4 - 11px);}
 .gate_list li a {height:calc((100vw - 80px) / 4 + 40px);}
@@ -143,6 +143,30 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 100% {background-size:200% 100%;background-position:0 center}
 }
 
+	
+/** ani_st **/
+.ani_st {position:absolute;left:50%;top:-22px;width:24px;height:26px;margin-left:-10px;z-index:5;}
+.ani_st .a1 {position:absolute;left:8px;top:0;width:8px;height:8px;background:#fff;border-radius:50%;z-index:1;animation:ani_st1 both infinite 3s;}
+.ani_st .a2 {position:absolute;left:0;top:0;width:24px;height:22px;overflow:hidden;}
+.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #e5484f;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 3s}
+
+@keyframes ani_st1 {
+0% {transform:scale(0.2);opacity:0;}	
+20% {transform:scale(0.2);opacity:0;}
+30% {transform:scale(1.2);opacity:1;}
+34% {transform:scale(1);}
+100% {transform:scale(1);}
+}
+
+@keyframes ani_st2 {
+0% {transform:translateY(150%);border-bottom-width:5px;}
+21% {transform:translateY(-30%);border-bottom-width:22px;}
+25% {transform:translateY(0);border-bottom-width:14px;}
+100% {transform:translateY(0)}
+}
+	
+	
+.io {position:absolute;right:2%;top:-5%;;width:30%;height:30%;opacity:0.8; z-index:10}
 </style>
 </head>
 
@@ -152,6 +176,11 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 	<h1><span>LGE USP</span><br><span>Publishing List</span></h1>
 	<ul class="gate_list">
 		<li class="">
+			<!--<p class="io"><img src="./etc/svg_star.svg" alt=""></p>-->
+			<div class="ani_st">
+				<p class="a1"></p>
+				<p class="a2"><span></span></p>
+			</div>
 			<a href="./images/air-purifier/md_new/usp/md_new_local.html" target="_blank" class="link">
 				<p class="img"></p>
 				<i></i>
