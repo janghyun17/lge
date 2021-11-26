@@ -22,11 +22,9 @@ $(function(){
 	if(navigator.platform){
 		if(0 > filter.indexOf(navigator.platform.toLowerCase())){
 			$('.cursor').css('display','none');
-			$('body').addClass('mb')
 		}
 	}
-	
-	
+
     $(document).mousemove(function(e){
         o = $('#wrap').offset();
         $('.dot').css({
