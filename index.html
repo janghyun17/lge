@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="theme-color" content="#e5484f">
+<meta name="theme-color" content="#f34f45">
 <meta property="og:title" content="LGE USP">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
@@ -44,7 +44,7 @@ $(function(){
     $('h1 strong, .gate_list li a, .btn_box a').mouseleave(function(){
         $('.cursor').css('mix-blend-mode','normal');
         $('.dot').css('transform','');
-        $('.dot:nth-child(5)').css('background','#e5484f').css('animation','scale both ease-Out infinite 1.7s');
+        $('.dot:nth-child(5)').css('background','#f34f45').css('animation','scale both ease-Out infinite 1.7s');
 	});
 
 	$('.card_list .list.no').click(function(){
@@ -63,21 +63,21 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 #wrap {position:relative;margin:0 auto;}
 #wrap h1 {position:relative;padding:30px 30px 60px 30px;color:#fff;font-size:32px;line-height:48px;text-align:center;transition:all 0.4s;letter-spacing:-0.5px;}
 #wrap h1 strong {display:inline-block;vertical-align:top;position:relative;}
-#wrap h1 span {position:relative;background:-webkit-linear-gradient(-45deg, #e5484f 15%, #e8eafc, #e5484f 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
+#wrap h1 span {position:relative;background:-webkit-linear-gradient(-45deg, #f34f45 15%, #e8eafc, #f34f45 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;animation:visual_txt both infinite 6s;}
 #wrap h1 span:nth-child(1) {animation-delay:1s;}
 .gate_list {margin:0 auto;padding:0 15px;font-size:0;transition:all 0.4s;}
 .gate_list li {display:inline-block;width:calc(100% / 2 - 10px);margin:5px;vertical-align:top;transition:all 0.4s;position: relative;}
 .gate_list li a {display:table;position:relative;width:100%;height:calc((100vw - 30px) / 2 + 60px);padding:10px;box-sizing:border-box;box-shadow:3px 4px 8px 0 rgba(0, 0, 0, 0.4);color:#fff;font-size:22px;font-weight:500;line-height:28px;overflow:hidden;}
 .gate_list li a.hit {cursor:default;}
 .gate_list li a.hit .img:before {opacity:0.4;}
-.gate_list li a i {display:none;position:absolute;left:0;top:0;width:100%;height:100%;background:#e5484f;opacity:0;z-index:1;transition:all 0.4s;}
+.gate_list li a i {display:none;position:absolute;left:0;top:0;width:100%;height:100%;background:#f34f45;opacity:0;z-index:1;transition:all 0.4s;}
 .gate_list li a .img {position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
 .gate_list li a .img:before {position:absolute;left:0;top:0;width:100%;height:100%;background:#000;content:"";opacity:1;transition:all 0.4s;}
 .gate_list li a .img img {position:absolute;left:50%;top:50%;width:auto;height:auto;max-width:120%;max-height:120%;transform:translate(-50%,-50%);}
 .gate_list li a .txt {display:table-cell;position:relative;width:100%;height:100%;text-align:center;vertical-align:middle;z-index:5;opacity:0.2;transition:all 0.4s;}
 .gate_list li a strong {display:block;margin-top:10px;font-size:15px;line-height:20px;text-transform:uppercase;}
 .gate_list li a span {display:block;margin-top:50px;font-size:15px;font-weight:300;line-height:20px;font-style:normal;}
-.gate_list li a span u {display:inline-block;margin-top:10px;padding:0 7px;background:#e5484f;border-radius:4px;color:#fff;font-size:12px;vertical-align:top;text-decoration:none;}
+.gate_list li a span u {display:inline-block;margin-top:10px;padding:0 7px;background:#f34f45;border-radius:4px;color:#fff;font-size:12px;vertical-align:top;text-decoration:none;}
 
 .gate_list li a img {width:100%;}
 .gate_list li a em {position:absolute;left:50%;top:50%;display:block;width:60px;height:60px;margin:0 0 0 -30px;opacity:0;transition:all 0.4s;z-index:10;}
@@ -91,14 +91,14 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .gate_list li a.link .txt {opacity:1;}
 .gate_list li a .marker {position:absolute;left:0;top:0;transition:all 0.3s;}
 /*.gate_list li a .marker:before {position:absolute;left:0;top:0;width:0;height:0;border-bottom:27px solid transparent;border-left:25px solid rgba(255,255,255,0.7);content:"";}
-.gate_list li a .marker:after {position:absolute;left:0;top:0;width:0;height:0;border-bottom:25px solid transparent;border-left:23px solid #e5484f;content:"";}*/
-.gate_list li a .marker:before {position:absolute;left:0;top:0;width:0;height:0;border-bottom:27px solid transparent;border-left:25px solid #e5484f;content:"";}
+.gate_list li a .marker:after {position:absolute;left:0;top:0;width:0;height:0;border-bottom:25px solid transparent;border-left:23px solid #f34f45;content:"";}*/
+.gate_list li a .marker:before {position:absolute;left:0;top:0;width:0;height:0;border-bottom:27px solid transparent;border-left:25px solid #f34f45;content:"";}
 .gate_list li a:hover .marker {opacity:0;transform:translateY(-30px);}
 
 .gate_list li.ing a .txt {color:rgba(255,255,255,0.2);}
 .gate_list li.ing a .img:before {opacity:0.4;}
 .gate_list li.end a .txt {color:rgba(255,255,255,0.6);}
-.gate_list li.end a i {background:#e5484f;}
+.gate_list li.end a i {background:#f34f45;}
 /*
 .gate_list li.end a i {background:#24b6b1;}
 .gate_list li.end a span u {background:#24b6b1;}
@@ -161,7 +161,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 	
 .btn_box {margin-top:150px;text-align:center;}
 .btn_box a {display:inline-block;position:relative;padding:50px;color:rgba(255,255,255,0.6);font-size:16px;line-height:16px;}
-.btn_box a:hover {background:-webkit-linear-gradient(-55deg, #e5484f 15%, #fff 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;font-size:17px;line-height:17px;}
+.btn_box a:hover {background:-webkit-linear-gradient(-55deg, #f34f45 15%, #fff 85%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-fill-color:transparent;vertical-align:top;-webkit-box-decoration-break:clone;font-size:17px;line-height:17px;}
 
 @media all and (max-width:760px) {
 .btn_box {margin-top:100px;}
@@ -181,7 +181,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 .ani_st {position:absolute;left:50%;top:-22px;width:24px;height:26px;margin-left:-10px;z-index:5;}
 .ani_st .a1 {position:absolute;left:8px;top:0;width:8px;height:8px;background:#fff;border-radius:50%;z-index:1;animation:ani_st1 both infinite 3s;}
 .ani_st .a2 {position:absolute;left:0;top:0;width:24px;height:22px;overflow:hidden;}
-.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #e5484f;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 3s}
+.ani_st .a2 span {display:block;position:absolute;left:0;top:8px;width:0;height:0;border-top:14px solid none;border-right:12px solid transparent;border-bottom:14px solid #f34f45;border-left:12px solid  transparent;animation:ani_st2 both linear infinite 3s}
 
 @keyframes ani_st1 {
 0% {transform:scale(0.2);opacity:0;}	
@@ -204,12 +204,12 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 /** Cursor **/
 :root {cursor:none !important;}
 .cursor {position:absolute;left:0;top:0;z-index:1000;mix-blend-mode:normal;/*filter:url('#goo');*/}
-.dot {position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px 0 0 -30px;background:#e5484f;border-radius:50%;pointer-events:none;z-index:1000;transition:all ease 0.1s, transform ease 0.4s;}
+.dot {position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px 0 0 -30px;background:#f34f45;border-radius:50%;pointer-events:none;z-index:1000;transition:all ease 0.1s, transform ease 0.4s;}
 .dot:nth-child(5) {animation:scale both ease-Out infinite 1.7s;}
-.dot:nth-child(4) {background:#e54869;transform:scale(0.8);transition:all ease 0.12s;}
-.dot:nth-child(3) {background:#e5487f;transform:scale(0.6);transition:all ease 0.14s;}
-.dot:nth-child(2) {background:#e5488b;transform:scale(0.4);transition:all ease 0.16s;}
-.dot:nth-child(1) {background:#e548a8;transform:scale(0.2);transition:all ease 0.18s}
+.dot:nth-child(4) {background:#f34562;transform:scale(0.8);transition:all ease 0.12s;}
+.dot:nth-child(3) {background:#f3456a;transform:scale(0.6);transition:all ease 0.14s;}
+.dot:nth-child(2) {background:#f34576;transform:scale(0.4);transition:all ease 0.16s;}
+.dot:nth-child(1) {background:#f34587;transform:scale(0.2);transition:all ease 0.18s}
 
 
 
@@ -245,7 +245,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 				<i></i>
 				<p class="txt">세탁기 
 					<strong>New Tromm</strong>
-					<span>2021.12.10 예정<br><u style="background:#fff;color:#e5484f;opacity:0.4;">컨퍼넌트 Ver.</u></span>
+					<span>2021.12.10 예정<br><u style="background:#fff;color:#f34f45;opacity:0.4;">컨퍼넌트 Ver.</u></span>
 				</p>
 				<em></em>
 			</a>
@@ -256,7 +256,7 @@ body {background:#222;font-family:'Noto Sans KR';font-size:16px;font-weight:500;
 				<i></i>
 				<p class="txt">건조기
 					<strong>New Tromm</strong>
-					<span>2021.12.10 예정<br><u style="background:#fff;color:#e5484f;opacity:0.4;">컨퍼넌트 Ver.</u></span>
+					<span>2021.12.10 예정<br><u style="background:#fff;color:#f34f45;opacity:0.4;">컨퍼넌트 Ver.</u></span>
 				</p>
 				<em></em>
 			</a>
