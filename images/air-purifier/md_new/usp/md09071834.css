@@ -28,7 +28,7 @@ video {background:#fff !important;}
 .KRC0004.stage-full .text-area:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
 
 /* KRC0025 */
-.KRC0025 .bullet-list .b-txt {margin-top:24px;}
+.KRC0025 .bullet-list .b-txt {margin-top:24px;padding:0 60px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
 
 
