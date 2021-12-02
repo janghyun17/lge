@@ -473,10 +473,10 @@
 </div>
 <!-- //iw_component (Title) : KRC0004 -->
 	
-<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
+<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 하단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
+	<div class="component-wrap bg-white zero-top zero-btm">
 		<!-- KRC0032 -->
 		<section class="component KRC0032 stage-medium">
 			<!-- component-box -->
@@ -548,9 +548,11 @@ $(function(){
 		e.preventDefault();
 		if($(this).hasClass('on')){
 			$(this).closest('.iw_component').find('.airpurifier_more_area').hide();
+			$(this).closest('.iw_component').find('.airpurifier_more_disclaimer').fadeIn();
 			$(this).removeClass('on').text('더보기');
 		}else{
 			$(this).closest('.iw_component').find('.airpurifier_more_area').fadeIn();
+			$(this).closest('.iw_component').find('.airpurifier_more_disclaimer').hide();
 			$(this).addClass('on').text('닫기');
 			
 		}		
@@ -558,7 +560,11 @@ $(function(){
 });
 </script>
 	
-	
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 시험모델 : FS061PWHA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -657,10 +663,10 @@ $(function(){
 </div>
 <!-- //iw_component (Title) : KRC0004 -->
 	
-<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
+<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 하단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
+	<div class="component-wrap bg-white zero-top zero-btm">
 		<!-- KRC0032 -->
 		<section class="component KRC0032 stage-medium">
 			<!-- component-box -->
@@ -725,6 +731,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 시험모델 : FS061PWHA, 대상모델 : FS061PWHA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -754,6 +765,10 @@ $(function(){
 					</ul>
 				</dd>
 			</dl>
+		</div>
+		<!-- //airpurifier_more_li -->
+		<!-- airpurifier_more_li -->
+		<div class="airpurifier_more_li">
 			<dl>
 				<dt>[대상모델 : FS061PWHA]</dt>
 				<dd>
@@ -881,10 +896,10 @@ $(function(){
 </div>
 <!-- //iw_component (Title) : KRC0004 -->
 	
-<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
+<!-- iw_component (Contents) : KRC0032 / stage-medium / 상단여백없음 / 하단여백없음 / 텍스트정렬 Center : 디스클레이머 (대체텍스트) -->
 <div class="iw_component" id="">
 	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
+	<div class="component-wrap bg-white zero-top zero-btm">
 		<!-- KRC0032 -->
 		<section class="component KRC0032 stage-medium">
 			<!-- component-box -->
@@ -936,6 +951,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 시험모델 : FS061PWHA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -1094,31 +1114,15 @@ $(function(){
 	<!-- //component-wrap -->
 </div>
 <!-- //iw_component (Contents) : KRC0032 -->
-	
-<!-- iw_component (Disclaimer) : KRC0025 / align-left / stage-medium / 상단여백없음 -->
-<div class="iw_component" id="">
-	<!-- component-wrap -->
-	<div class="component-wrap bg-white zero-top">
-		<!-- KRC0025 -->
-		<section class="component KRC0025 full-size stage-medium">
-			<div class="unit-list block1 align-left box-align-center type-wide">
-				<div class="unit-box">
-					<ul class="bullet-list">
-						<li class="b-txt">
-							 * 출처 : 국가소음정보시스템
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<!-- //KRC0025 -->
-	</div>
-	<!-- //component-wrap -->
-</div>
-<!-- //iw_component (Disclaimer) : KRC0025 -->
-	
+
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 출처 : 국가소음정보시스템<br>
+		* 대상모델 : FS061PWHA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -1199,6 +1203,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 시험모델 : FS061PSSA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -1326,6 +1335,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 대상모델 : FS061PWHA<br>* 60㎥ 공간 부유 세균 제거 성능(자사 수정)<br>* 60㎥ 공간 부유 바이러스 제거 성능(자사 수정)
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -1474,6 +1488,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
+	<!-- airpurifier_more_disclaimer -->
+	<div class="airpurifier_more_disclaimer">
+		* 대상모델 : FS061PWHA, 시험모델 : FS061PSSA, 시험모델 : FS061PWHA
+	</div>
+	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->

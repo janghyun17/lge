@@ -156,7 +156,9 @@ video {background:#fff !important;}
 
 
 /* airpurifier_more_area */
-.airpurifier_more_area {display:none;}
+.airpurifier_more_disclaimer {max-width:1460px;margin:0 auto;padding:24px 60px 40px 60px;box-sizing:border-box;color:#666;font-size:14px;font-weight:400;line-height:24px;text-align:center;}
+
+.airpurifier_more_area {display:none;margin-top:80px;padding:80px 0;background:#f7f7f7;}
 .airpurifier_more_li {position:relative;max-width:1460px;margin:0 auto;padding:50px 40px 0 40px;box-sizing:border-box;color:#666;font-size:14px;font-weight:400;line-height:24px;}
 .airpurifier_more_li:first-child {padding-top:0;}
 .airpurifier_more_li * {word-wrap:break-word;word-break:keep-all;white-space:normal;}
@@ -198,7 +200,10 @@ video {background:#fff !important;}
 
 /*** - Mobile UI - ***/
 @media only screen and (max-width:768px) {
+.airpurifier_more_disclaimer {padding:21px 16px 10px 16px;font-size:13px;line-height:21px;}
+	
 /* airpurifier_more_area */
+.airpurifier_more_area {margin-top:60px;padding:20px 0 55px 0;}
 .airpurifier_more_li {padding:0 16px;font-size:13px;line-height:21px;}
 .airpurifier_more_li dl {float:none;width:100%;padding:35px 3% 0 3% !important;}
 .airpurifier_more_li dt {margin-bottom:10px;font-size:15px;line-height:25px;}
