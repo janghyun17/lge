@@ -155,13 +155,15 @@ video {background:#fff !important;}
 
 
 
-/* airpurifier_more_area */
+/*** airpurifier_more ***/
+/* airpurifier_more_disclaimer */
 .airpurifier_more_disclaimer {position: relative;max-width:1460px;margin:0 auto;padding:24px 60px 40px 60px;box-sizing:border-box;color:#666;font-size:14px;font-weight:400;line-height:24px;text-align:center;}
 .airpurifier_more_disclaimer.mt {margin-top:-60px;}
 .airpurifier_more_disclaimer.mt + .airpurifier_more_area {margin-top:20px;}
 .airpurifier_more_disclaimer.mt2 {margin-top:-40px;}
 .airpurifier_more_disclaimer.mt2 + .airpurifier_more_area {margin-top:20px;}
 
+/* airpurifier_more_area */
 .airpurifier_more_area {display:none;margin-top:80px;}
 .airpurifier_more_li {position:relative;max-width:1460px;margin:0 auto;padding:50px 40px 0 40px;box-sizing:border-box;color:#666;font-size:14px;font-weight:400;line-height:24px;}
 .airpurifier_more_li:first-child {padding-top:0;}
@@ -184,6 +186,7 @@ video {background:#fff !important;}
 .airpurifier_more_li .c1 {color:#888;font-size:13px;line-height:22px;}
 .airpurifier_more_li:after {display:block;clear:both;height:0;content:"";overflow:hidden;}
 
+/* btn_airpurifier_more */
 .btn_airpurifier_more {padding:0 0 80px 0;text-align:center;}
 .btn_airpurifier_more.ud {padding-bottom:0;}
 .btn_airpurifier_more a {display:inline-block;position:relative;min-width:80px;padding:7px 15px 7px 35px;box-sizing:border-box;border:1px solid #222;border-radius:20px;font-size:14px;line-height:24px;transition:all 0.4s;}
@@ -204,6 +207,7 @@ video {background:#fff !important;}
 
 /*** - Mobile UI - ***/
 @media only screen and (max-width:768px) {
+/* airpurifier_more_disclaimer */
 .airpurifier_more_disclaimer {padding:21px 16px 10px 16px;font-size:13px;line-height:21px;}
 .airpurifier_more_disclaimer.mt {margin-top:0;}
 .airpurifier_more_disclaimer.mt2 {margin-top:0;}
@@ -221,6 +225,7 @@ video {background:#fff !important;}
 .airpurifier_more_li .b2 {padding-left:18px;}
 .airpurifier_more_li .c1 {color:#999;font-size:12px;line-height:20px;}
 	
+/* btn_airpurifier_more */
 .btn_airpurifier_more {padding:30px 0 0 0;}
 .btn_airpurifier_more a.on {margin-top:0;}
 }
