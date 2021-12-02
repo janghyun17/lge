@@ -18,12 +18,24 @@
 
 <script tyle="text/javascript">
 $(document).ready(function(){
-	$(document).snowfall({
-	image :"./etc/flake.png", 
-		minSize: 3, 
-		maxSize:18, 
-		flakeCount :80
-	});
+	var locW = $(window).innerWidth();
+	var locWs = 768;
+	if(locW > locWs){
+		$(document).snowfall({
+		image :"./etc/flake.png", 
+			minSize: 3, 
+			maxSize:18, 
+			flakeCount :80
+		});
+	}else{
+		$(document).snowfall({
+		image :"./etc/flake.png", 
+			minSize:3, 
+			maxSize:12, 
+			flakeCount :40
+		});
+	}
+
 });
 </script>
 <script>
