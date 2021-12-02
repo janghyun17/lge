@@ -168,6 +168,9 @@ video {background:#fff !important;}
 .airpurifier_more_li {position:relative;max-width:1460px;margin:0 auto;padding:50px 40px 0 40px;box-sizing:border-box;color:#666;font-size:14px;font-weight:400;line-height:24px;}
 .airpurifier_more_li:first-child {padding-top:0;}
 .airpurifier_more_li * {word-wrap:break-word;word-break:keep-all;white-space:normal;}
+.airpurifier_more_li .t1 {padding:0 60px 50px 60px;}
+.airpurifier_more_li .t1 span {display:inline-block;position:relative;padding-left:12px;}
+.airpurifier_more_li .t1 span:before {position:absolute;left:2px;top:3px;content:"*";}
 .airpurifier_more_li dl {float:left;width:50%;padding:50px 60px 0 60px;box-sizing:border-box;}
 .airpurifier_more_li dl:only-child {width:100%;}
 .airpurifier_more_li dl:nth-child(odd) {clear:left;}
@@ -209,11 +212,13 @@ video {background:#fff !important;}
 @media only screen and (max-width:768px) {
 /* airpurifier_more_disclaimer */
 .airpurifier_more_disclaimer {padding:21px 16px 10px 16px;font-size:13px;line-height:21px;}
+.airpurifier_more_disclaimer div {padding:0 3%;}
 .airpurifier_more_disclaimer.mt {margin-top:0;}
 .airpurifier_more_disclaimer.mt2 {margin-top:0;}
 	
 /* airpurifier_more_area */
 .airpurifier_more_area {margin-top:20px;}
+.airpurifier_more_li .t1 {padding:0 3% 0 3%;}
 .airpurifier_more_li {padding:0 16px;font-size:13px;line-height:21px;}
 .airpurifier_more_li dl {float:none;width:100%;padding:35px 3% 0 3% !important;}
 .airpurifier_more_li dt {margin-bottom:10px;font-size:15px;line-height:25px;}
