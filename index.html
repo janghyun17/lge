@@ -13,6 +13,19 @@
 <link rel="shortcut icon" href="./etc/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="./etc/apple-touch-icon.png">
 <script type="text/javascript" src="./html_component/pdp/assets/js/libs/jquery-2.2.4.min.js"></script>
+<script tyle="text/javascript" src="./etc/snowfall.jquery.js"></script>
+<script tyle="text/javascript" src="./etc/snowfall.js"></script> 
+
+<script tyle="text/javascript">
+$(document).ready(function(){
+	$(document).snowfall({
+	image :"./etc/flake.png", 
+		minSize: 3, 
+		maxSize:18, 
+		flakeCount :80
+	});
+});
+</script>
 <script>
 $(function(){
 	$('.hit').click(function(){
