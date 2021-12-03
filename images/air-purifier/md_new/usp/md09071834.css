@@ -229,7 +229,7 @@ video {background:#fff !important;}
 .airpurifier_more_area.mt3 {margin-top:21px;}
 	
 /* airpurifier_more_area */
-.airpurifier_more_area {margin-top:20px;font-size:13px;line-height:21px;}
+.airpurifier_more_area {margin-top:20px;padding-bottom:0;font-size:13px;line-height:21px;}
 .airpurifier_more_area .t1 {padding:0 16px;}
 .airpurifier_more_area .t1 p {padding:0 3%;}
 .airpurifier_more_area .t1 span {display:inline-block;position:relative;padding-left:12px;}
