@@ -542,29 +542,6 @@
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-<script>
-$(function(){
-	$('.btn_airpurifier_more a').click(function(e){
-		e.preventDefault();
-		if($(this).hasClass('on')){
-			$(this).closest('.iw_component').find('.airpurifier_more_area').hide();
-			$(this).closest('.iw_component').find('.airpurifier_more_disclaimer').fadeIn();
-			$(this).removeClass('on').text('더보기');
-		}else{
-			$(this).closest('.iw_component').find('.airpurifier_more_area').fadeIn();
-			$(this).closest('.iw_component').find('.airpurifier_more_disclaimer').hide();
-			$(this).addClass('on').text('닫기');
-			
-		}		
-	});
-});
-</script>
-	
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer">
-		<div>* 시험모델 : FS061PWHA</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -613,8 +590,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene03 : 집중청정 온풍 ### -->
@@ -731,42 +706,8 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer">
-		<div>* 시험모델 : FS061PWHA, 대상모델 : FS061PWHA</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
-		<!-- airpurifier_more_li -->
-		<div class="airpurifier_more_li">
-			<dl>
-				<dt>[시험모델 : FS061PWHA]</dt>
-				<dd>
-					<ul>
-						<li class="li">시험일자 : '21.04.13</li>
-						<li class="li">시험방법 :
-							<ul>
-								<li class="b1">KANOMAX 사 다지점 기류계측기로 유속 측정</li>
-								<li class="b1">측정 위치 : 제품으로부터 2.0m 거리</li>
-								<li class="b1">측정 영역 : 좌우 폭 0.3m, 높이 1.11~1.41m</li>
-								<li class="b1">측정 간격 : 0.15m</li>
-								<li class="b1">측정 주기 : 1초 간격으로 3분간 측정</li>
-							</ul>
-						</li>
-						<li class="li">시험장소 : LG공기과학연구소 실환경 실험실</li>
-						<li class="li">시험조건 : 28±2℃, 45±15%</li>
-						<li class="li">시험결과 : 집중청정(터보풍) 운전 시, 난류강도 최고 44% 확인</li>
-						<li class="li">인증기관 : LG전자 자체 평가</li>
-					</ul>
-					<ul>
-						
-						<li class="b2 c1">실험실 측정 기준으로 실 사용환경에서는 달라질 수 있습니다.</li>
-					</ul>
-				</dd>
-			</dl>
-		</div>
-		<!-- //airpurifier_more_li -->
 		<!-- airpurifier_more_li -->
 		<div class="airpurifier_more_li">
 			<dl>
@@ -781,9 +722,9 @@ $(function(){
 							<ul>
 								<li class="b1">YOKOGAWA 사 체온 계측기로 체온 측정</li>
 								<li class="b1">시험 참가자 : 30 ~ 50대 남녀 18명</li>
-								<li class="b1">측정 위치 : 제품으로부터 2.0m 거리(아파트 평면 상 거실 내 소파 위치)</li>
-								<li class="b1">체온 측정 위치 : 쿨링에 효과적인 말단부 3곳 (손등, 정강이, 발등)과 기류에 민감한 얼굴 3곳 (이마, 뺨, 목)</li>
-								<li class="b1">체온 측정 주기 : 10초 간격으로 30분간 측정
+								<li class="b1">측정 위치: 제품으로부터 2.0m 거리(아파트 평면 상 거실 내 소파 위치)</li>
+								<li class="b1">체온 측정 위치: 쿨링에 효과적인 말단부 3곳 (손등, 정강이, 발등)과 기류에 민감한 얼굴 3곳 (이마, 뺨, 목)</li>
+								<li class="b1">체온 측정 주기 : 10초 간격으로 30분간 측정   
 									<div class="c1">
 										시험 절차: <br>
 										① 준비된 의복으로 환복 후 30분간 28±2℃, 45±15% 조건의 환경에서 대기하며 안정화<br>
@@ -792,7 +733,7 @@ $(function(){
 								</li>
 							</ul>
 						</li>
-						<li class="li">평가방법
+						<li class="li">평가방법    
 							<ul>
 								<li class="b1">총 6곳에서 측정한 체온의 평균값 사용</li>
 								<li class="b1">제품 사용 시작 시 평균체온을 기준으로 1℃ 감소하기 까지 소요되는 시간 산출</li>
@@ -842,12 +783,34 @@ $(function(){
 					</ul>
 				</dd>
 			</dl>
+			<dl>
+				<dt>[시험모델 : FS061PWHA]</dt>
+				<dd>
+					<ul>
+						<li class="li">시험일자 : '21.04.13</li>
+						<li class="li">시험방법 :
+							<ul>
+								<li class="b1">KANOMAX 사 다지점 기류계측기로 유속 측정</li>
+								<li class="b1">측정 위치 : 제품으로부터 2.0m 거리</li>
+								<li class="b1">측정 영역 : 좌우 폭 0.3m, 높이 1.11~1.41m</li>
+								<li class="b1">측정 간격 : 0.15m</li>
+								<li class="b1">측정 주기 : 1초 간격으로 3분간 측정</li>
+							</ul>
+						</li>
+						<li class="li">시험장소 : LG공기과학연구소 실환경 실험실</li>
+						<li class="li">시험조건 : 28±2℃, 45±15%</li>
+						<li class="li">시험결과 : 집중청정(터보풍) 운전 시, 난류강도 최고 44% 확인</li>
+						<li class="li">인증기관 : LG전자 자체 평가</li>
+					</ul>
+					<ul>
+						<li class="b2 c1">실험실 측정 기준으로 실 사용환경에서는 달라질 수 있습니다.</li>
+					</ul>
+				</dd>
+			</dl>
 		</div>
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene04 : 집중청정 송풍 ### -->
@@ -951,11 +914,6 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer">
-		<div>* 시험모델 : FS061PWHA</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -986,8 +944,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene05 : 공간청정 ### -->
@@ -1117,16 +1073,13 @@ $(function(){
 
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer">
-		<div>* 출처 : 국가소음정보시스템<br>* 대상모델 : FS061PWHA</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
-	<div class="airpurifier_more_area">
+	<div class="airpurifier_more_area mt3">
+		<div class="t1">
+			<p><span>출처 : 국가소음정보시스템</span></p>
+		</div>
 		<!-- airpurifier_more_li -->
 		<div class="airpurifier_more_li">
-			<p class="t1"><span>출처 : 국가소음정보시스템</span></p>
 			<dl>
 				<dt>[대상모델 : FS061PWHA]</dt>
 				<dd>
@@ -1152,8 +1105,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more ud"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene07 : 저소음 ### -->
@@ -1203,13 +1154,8 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer mt">
-		<div>* 시험모델 : FS061PSSA</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
-	<div class="airpurifier_more_area">
+	<div class="airpurifier_more_area mt">
 		<!-- airpurifier_more_li -->
 		<div class="airpurifier_more_li">
 			<dl>
@@ -1234,8 +1180,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### //Section Title02 : 깨끗한 에어 ### -->
@@ -1335,11 +1279,6 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer">
-		<div>* 대상모델 : FS061PWHA<br>* 60㎥ 공간 부유 세균 제거 성능(자사 수정)<br>* 60㎥ 공간 부유 바이러스 제거 성능(자사 수정)</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
 	<div class="airpurifier_more_area">
 		<!-- airpurifier_more_li -->
@@ -1398,8 +1337,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene08 : UV nano ### -->
@@ -1482,36 +1419,11 @@ $(function(){
 	
 <!-- iw_component : KRC0099 HTML -->
 <div class="iw_component" id="">
-	<!-- airpurifier_more_disclaimer -->
-	<div class="airpurifier_more_disclaimer mt2">
-		<div>
-			* 한국공기청정협회에서 미세먼지 제거능력, 유해가스 제거율, 오존 발생량, 소음 기준을 통과한 제품에게만 부여하는 CA인증을 획득했습니다.<br>
-			* 대상모델 : FS061PWHA, 시험모델 : FS061PSSA, <br class="mo-only">시험모델 : FS061PWHA
-		</div>
-	</div>
-	<!-- //airpurifier_more_disclaimer -->
 	<!-- airpurifier_more_area -->
-	<div class="airpurifier_more_area">
-		<!-- airpurifier_more_li -->
-		<div class="airpurifier_more_li">
-			<p class="t1"><span>한국공기청정협회에서 미세먼지 제거능력, 유해가스 제거율, 오존 발생량, 소음 기준을 통과한 제품에게만 부여하는 CA인증을 획득했습니다.</span></p>
-			<dl>
-				<dt>[대상모델 : FS061PWHA]</dt>
-				<dd>
-					<ul>
-						<li class="li">시험일자 : 21.07.13 ~ 21.07.19</li>
-						<li class="li">시험방법 : 0.01 ㎛ 직경의 KCl(염화칼륨) 입자 발생 안정화 후 4시간 동안 먼지제거율이 99.999 more % 로 떨어질 때까지 공기청정기를 동작시켜 운전감소를 측정한다.
-							<p class="c1">(참조 규격 : SPS-KACA 002-132:2018, 실내용 공기청정기 부속서 A)</p>
-						</li>
-						<li class="li">시험장소 : 한국건설생활환경시험연구원 (KCL)</li>
-						<li class="li">시험조건 : 온도 : 청정화 챔버크기 : 30.0㎥, 온도 : 23.0±1.0℃, 습도 : 50.0±2.0 %R.H., 운전 조건 : 터보</li>
-						<li class="li">시험결과 : 0.01㎛ 미세먼지 99.999% 제거 (29분 15초 이상 가동시 99.999% 제거)</li>
-					</ul>
-				</dd>
-			</dl>
+	<div class="airpurifier_more_area mt2">
+		<div class="t1">
+			<p><span>한국공기청정협회에서 미세먼지 제거능력, 유해가스 제거율, 오존 발생량, 소음 기준을 통과한 제품에게만 부여하는 CA인증을 획득했습니다.</span></p>
 		</div>
-		<!-- //airpurifier_more_li -->
-		
 		<!-- airpurifier_more_li -->
 		<div class="airpurifier_more_li">
 			<dl>
@@ -1529,7 +1441,7 @@ $(function(){
 							</ul>
 						</li>
 						<li class="li">시험결과 : CA 유해가스 제거 인증 기준 만족<br>
-							CA 가준 : B.2.2 시험대상가스 시험대상 가스는 다음의 5종류로 한다.
+							CA 가준 : B.2.2 시험대상가스 시험대상 가스는 다음의 5종류로 한다
 							<ul class="c1">
 								<li>a) 암모니아(NH3)</li>
 								<li>b) 초산(CH3COOH)</li>
@@ -1553,11 +1465,59 @@ $(function(){
 						<li class="li">시험결과 : 집진수명(1.8년), 탈취수명(2.5년), 1일 5개피 제거 성능 기준</li>
 						<li class="li">시험모델 : FS061PSSA</li>
 						<li class="li">시험일자 : 21.09.27~21.10.22</li>
-						<li class="li">시험방법 : SPS-KACA 002-0132 실내공기청정기 (한국공기청정협회 단체규격) 공기청정기용 미세먼지 센서 성능</li>
-						<li class="li">시험장소 : </li>
-						<li class="li">시험조건 : 특별한 규정이 없는 한 시험은 바람이 없는 상태로서, 통상의 주위 온도 23±5℃, 대기압 760±20mmHg로 유지하는 장소에서 실시한다.</li>
-						<li class="li">시험결과 : 측정범위에서 기준계측기의 고농도에서 ±50% 범위이내, 저농도에서 ±15 ㎛/㎥ 범위이내</li>
-						<li class="li">인증기관 : 건설생활환경시험연구원 (KCL)</li>
+						<li class="li">시험방법 : SPS-KACA 002-0132 실내공기청정기 (한국공기청정협회 단체규격) 청정화능력 시험</li>
+						<li class="li">시험장소 : 한국전자기술연구원 (KETI) 실험실</li>
+						<li class="li">시험조건 : 시험용 공기의 환경조건은 규정이 없는 한, 다음의 범위에서 시험한다.
+							<ul class="c1">
+								<li>a) 온도 : 23±5oC</li>
+								<li>b) 상대습도 : 55±15%</li>
+							</ul>
+						</li>
+						<li class="li">시험결과 : 정격 청정화능력 2.4 ㎥/min에 대한 인증 기준 : 정격 -10% 이상 만족함.</li>
+						<li class="li">인증기관 : 한국공기청정협회</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>[시험모델 : FS061PWHA]</dt>
+				<dd>
+					<ul>
+						<li class="li">시험일자 : 21.07.13 ~ 21.07.19</li>
+						<li class="li">시험방법 : 0.01 ㎛ 직경의 KCl(염화칼륨) 입자 발생 안정화 후 4시간 동안 먼지제거율이 99.999 more % 로 떨어질 때까지 공기청정기를 동작시켜 운전감소를 측정한다. (참조 규격 : SPS-KACA 002-132:2018, 실내용 공기청정기 부속서 A)</li>
+						<li class="li">시험장소 : 한국건설생활환경시험연구원 (KCL)</li>
+						<li class="li">시험조건 : 온도 : 청정화 챔버크기 : 30.0㎥, 온도 : 23.0±1.0℃, 습도 : 50.0±2.0 %R.H., 운전 조건 : 터보</li>
+						<li class="li">시험결과 : 0.01㎛ 미세먼지 99.999% 제거 (29분 15초 이상 가동시 99.999% 제거)</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="pc-only">&nbsp;</dt>
+				<dd>
+					<ul>
+						<li class="li">시험 일시 : ’20. 4. 3</li>
+						<li class="li">시험 기관 : 한국화학융합시험연구원</li>
+						<li class="li">시험 대상 : 항균필터 / 항균 미처리필터(대조군)</li>
+						<li class="li">시험 조건 : 0.4g, (37 ± 1)℃, (18 ± 1)h</li>
+						<li class="li">시험 방법 : KS K 0693 : 2016 감소율(%) : 시험 편과 대조 시험 편의 18시간 배양 후 생균수 비교</li>
+						<li class="li">시험 균주 : Staphylococcus aureus ATCC 6538(황색포도상구균) / Klebsiella pneumoniae ATCC 4352(폐렴간균) / Escherichia coli ATCC 25922(대장균)</li>
+						<li class="li">시험 결과 : 항균 미처리필터 대조군 결과 대비 항균시험(S. aureus) 99.9% 이상, 항균시험(K. pneumoniae) 99.9% 이상, 항균시험(E.coli) 99.9%</li>
+						<li class="li">필터에 포집된 공기에 한합니다.</li>
+						<li class="li">실험실 측정 기준으로 실 사용 환경에서는 달라질 수 있습니다.</li>
+						<li class="li">실험 결과는 제품 초기 성능을 측정한 결과이며, 사용 시간에 따라 달라질 수 있습니다.</li>
+						<li class="li">시험 일시 : ’20. 3. 1 ~ ’20. 3. 31</li>
+						<li class="li">시험 기관 : 서울대학교 보건대학원</li>
+						<li class="li">시험 대상 : 항균필터 / 표준 백포(PET 부직포) 성능 비교(대조군)</li>
+						<li class="li">시험 조건 : 23.1 ~ 24.8℃, 습도 20 ~ 22%</li>
+						<li class="li">시험 방법 : ISO 20743 감소율(%) : 시험 편의 0시간(초기 농도)과 18시간 배양 후 바이러스 감소율 비교</li>
+						<li class="li">시험 균주 : 쥐 코로나바이러스 (mouse hepatitis virus) 
+
+								<p class="b2 c1">COVID19와 다른 균주임</p>
+
+						</li>
+						<li class="li">시험 결과 : 표준백포 대조군 초기대비 99.9% 바이러스 감소</li>
+						<li class="li">필터에 포집된 공기에 한합니다.</li>
+						<li class="li">실험실 측정 기준으로 실 사용 환경에서는 달라질 수 있습니다.</li>
+						<li class="li">실험 결과는 제품 초기 성능을 측정한 결과이며, 사용 시간에 따라 달라질 수 있습니다.</li>
 					</ul>
 				</dd>
 			</dl>
@@ -1565,8 +1525,6 @@ $(function(){
 		<!-- //airpurifier_more_li -->
 	</div>
 	<!-- //airpurifier_more_area -->
-	
-	<p class="btn_airpurifier_more ud"><a href="#"><span>더보기</span></a></p>
 </div>
 <!-- //iw_component : KRC0099 HTML -->
 <!-- #### Scene09 : 트루 토탈케어 필터 ### -->
