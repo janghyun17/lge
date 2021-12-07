@@ -42,8 +42,10 @@ video {background:#fff !important;}
 .KRC0035 .visual-wrap.image-align-left .visual-area {text-align:left;}
 .KRC0035 .visual-wrap.image-align-left .controller-wrap {right:inherit;left:calc(100% - 40px);}
 .KRC0035 .visual-wrap.image-align-right .visual-area {text-align:right;}
+.KRC0035 .visual-wrap.image-align-right .visual-area.animation-box .animation-area {float:right;}
+.KRC0035.align-center {text-align:left;}
+.KRC0035.large .visual-wrap .animation-box .animation-area {max-width:100% !important;}
 .KRC0035.standard  .text-wrap.side-left-text {padding-left:0;}
-.KRC0035.align-left .animation-box .animation-area {max-width:100% !important;}
 
 
 
