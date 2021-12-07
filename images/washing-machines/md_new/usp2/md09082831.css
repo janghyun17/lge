@@ -108,8 +108,8 @@ video {background:#fff !important;}
 .md_feature_cont {position:relative;max-width:1460px;margin:0 auto 80px auto;padding:0 40px;}
 .ico_li {display:flex;flex-wrap:wrap;margin:0 auto 0 auto;}
 .ico_li * {word-wrap:break-word;word-break:keep-all;white-space:normal;}
-.ico_li .li {display:flex;position:relative;width:calc(33.3% + 30px);min-height:80px;margin-top:55px;padding:0 60px 0px 106px;box-sizing:border-box;/*align-items:center;*/}
-.ico_li .li:nth-child(3n) {width:calc(33.3% - 60px);padding-right:0;}
+.ico_li .li {display:flex;position:relative;width:50%;min-height:80px;margin-top:55px;padding:0 70px 0px 106px;box-sizing:border-box;/*align-items:center;*/}
+.ico_li .li:nth-child(2n) {padding-right:0;}
 .ico_li .li .ico {position:absolute;left:10px;top:4px;width:76px;height:76px;}
 .ico_li .li .txt dt {margin-bottom:4px;font-size:24px;font-weight:700;line-height:34px;}
 .ico_li .li .txt {box-sizing:border-box;font-size:18px;line-height:26px;}
