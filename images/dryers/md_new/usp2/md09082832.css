@@ -35,6 +35,8 @@ video {background:#fff !important;}
 .KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
 .KRC0032 .text-align-center {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
 .KRC0032 .box-align-center .bullet-list {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
+.KRC0032 .usp-banner-wrap .carousel-box .text-area.type-narrow {top:0;left:0;max-width:430px;padding:45px 20px 0 50px;transform:translate(0,0);}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area.type-narrow .inner {max-width:100%;}
 
 /* KRC0035 */
 .KRC0035 .animation-box .animation-area {max-width:640px !important;}
@@ -81,6 +83,8 @@ video {background:#fff !important;}
 .KRC0032 .usp-banner-wrap .carousel-box .text-area.align-bottom,
 .KRC0032 .usp-banner-wrap .carousel-box .text-area.align-middle,
 .KRC0032 .usp-banner-wrap .carousel-box .text-area.align-top {padding:0;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box {display:flex;flex-direction:column-reverse;}
+.KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area.type-narrow {max-width:100% !important;margin:0 0 27px 0;padding-top:0 !important;text-align:center !important;}
 		
 /* KRC0035 */
 .KRC0035 .text-wrap.side-left-text,
