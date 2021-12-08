@@ -120,10 +120,10 @@ video {background:#fff !important;}
 .md_feature_cont {margin:0 25px;padding:0;}
 .ico_li .li,
 .ico_li .li:nth-child(3n) {width:100%;min-height:60px;margin-top:25px;padding:0 0 0 72px;}
-.ico_li .li .ico {left:0;top:6px;width:56px;height:56px;}
-.ico_li .li .txt dt {margin-bottom:0;font-size:20px;line-height:30px;}
-.ico_li .li .txt {font-size:14px;line-height:22px;}
-.ico_li .li .txt .disc {margin-top:4px;font-size:13px;line-height:19px;}
+.ico_li .li .ico {left:0;top:2px;width:56px;height:56px;}
+.ico_li .li .txt dt {margin-bottom:2px;font-size:15px;line-height:25px;}
+.ico_li .li .txt {font-size:13px;line-height:18px;}
+.ico_li .li .txt .disc {margin-top:6px;font-size:12px;line-height:17px;}
 }
 
 
