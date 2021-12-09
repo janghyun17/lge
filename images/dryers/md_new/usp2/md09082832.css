@@ -17,11 +17,9 @@ video {background:#fff !important;}
 .KRC0004.stage-wide .title * {font-size:54px;line-height:72px;}
 .KRC0004.stage-wide .text-area .text {margin-top:36px !important;}
 
-
 /* KRC0025 */
 .KRC0025 .bullet-list .b-txt {margin-top:24px;}
 .KRC0025 .bullet-list .b-txt .mo-only {margin-top:-24px;}
-
 
 /* KRC0032 */
 .KRC0032.stage-medium {max-width:1460px;margin-top:56px !important;padding:0 40px;}
@@ -37,6 +35,7 @@ video {background:#fff !important;}
 .KRC0032 .box-align-center .bullet-list {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
 .KRC0032 .usp-banner-wrap .carousel-box .text-area.type-narrow {top:0;left:0;max-width:430px;padding:45px 20px 0 50px;transform:translate(0,0);}
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area.type-narrow .inner {max-width:100%;}
+.component-wrap.bg-white .component.KRC0032 .fc-dark-gray {color:#666 !important;}
 
 /* KRC0035 */
 .KRC0035 .animation-box .animation-area {max-width:640px !important;}
@@ -94,9 +93,15 @@ video {background:#fff !important;}
 .KRC0035 .animation-box .animation-area {max-width:100% !important;}
 .KRC0035 .text-wrap .thumbs {margin-top:0;}
 .KRC0035 .visual-area img {max-width:100% !important;}
-.KRC0035.m-hdline-top .visual-wrap .bullet-list {margin-top:21px;padding:0 25px;}
+.KRC0035.m-hdline-top .visual-wrap .bullet-list {margin-top:21px;padding:0 9px;}
 .KRC0035.m-hdline-top .bm {padding-bottom:60px;}
 }
+
+
+
+
+
+
 
 
 
