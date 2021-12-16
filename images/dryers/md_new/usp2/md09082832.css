@@ -33,7 +33,7 @@ video {background:#fff !important;}
 .KRC0032 .usp-banner-wrap .indi-wrap {bottom:-6px;}
 .KRC0032 .text-align-center {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
 .KRC0032 .box-align-center .bullet-list {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
-.KRC0032 .usp-banner-wrap .carousel-box .text-area.type-narrow {top:0;left:0;max-width:430px;padding:45px 20px 0 50px;transform:translate(0,0);}
+.KRC0032 .usp-banner-wrap .carousel-box .text-area.type-narrow {top:0;left:0;max-width:430px;padding:45px 20px 0 0;transform:translate(0,0);}
 .KRC0032 .usp-banner-wrap .carousel-box .text-area.type-narrow .bullet-list {position:absolute !important;width:1px !important;height:1px !important;clip:rect(1px,1px,1px,1px);word-break:initial;overflow:hidden;z-index:-1;}/* 영상 대체 텍스트 영역 */
 .KRC0032.stage-full .usp-banner-wrap .carousel-box .text-area.type-narrow .inner {max-width:100%;}
 .component-wrap.bg-white .component.KRC0032 .fc-dark-gray {color:#666 !important;}
