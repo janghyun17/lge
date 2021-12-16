@@ -77,7 +77,7 @@ video {background:#fff !important;}
 .KRC0025 .bm {padding-bottom:60px;}
 
 /* KRC0032 */
-.KRC0032.stage-medium {margin-top:28px !important;padding:0 25px;}
+.KRC0032.stage-medium {margin-top:28px !important;padding:0;}/* 12.12.16 모바일 여백 삭제 */
 .KRC0032.stage-medium img {width:100% !important;}
 .KRC0032.stage-medium video {width:100% !important;}
 .KRC0032.stage-full {margin-top:28px !important;}
@@ -98,7 +98,7 @@ video {background:#fff !important;}
 .KRC0035  .text-wrap.side-left-text {padding-left:0;}
 .KRC0035 .animation-box .animation-area {max-width:100% !important;}
 .KRC0035 .text-wrap .thumbs {margin-top:0;}
-.KRC0035 .visual-wrap .visual-area {padding:0 25px;}
+.KRC0035 .visual-wrap .visual-area {padding:0;}/* 12.12.16 모바일 여백 삭제 */
 .KRC0035 .visual-area img {max-width:100% !important;}
 .KRC0035.m-hdline-top .visual-wrap .bullet-list {margin-top:21px;padding:0 9px;}
 .KRC0035.m-hdline-top .bm {padding-bottom:60px;}
