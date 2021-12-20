@@ -58,7 +58,7 @@ video {background:#fff !important;}
 
 
 /*** - Mobile UI - ***/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
 /* Common */
 .component-wrap {padding-bottom:0;}
 	
