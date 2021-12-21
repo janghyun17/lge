@@ -8,13 +8,13 @@
 .s2 {animation:brush2 both infinite linear 3s;}
 @keyframes brush {
 0% {stroke-dashoffset:500;}
-20% {stroke-dashoffset:0;}
+16% {stroke-dashoffset:0;}
 100% {stroke-dashoffset:0;}
 }
 @keyframes brush2 {
 0% {stroke-dashoffset:500;}
 10% {stroke-dashoffset:500;}
-30% {stroke-dashoffset:0;}
+26% {stroke-dashoffset:0;}
 100% {stroke-dashoffset:0;}
 }
 </style>
